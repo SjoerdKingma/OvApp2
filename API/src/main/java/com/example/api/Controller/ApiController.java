@@ -25,5 +25,7 @@ public class ApiController {
     @GetMapping("/Groene")
     public String sayHello(@RequestParam(value = "myName", defaultValue = "Reizen") String name) {
         return String.format("Groene %s!", name);
-    }}
+    }
+
+}
 
