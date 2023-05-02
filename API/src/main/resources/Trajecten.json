@@ -1,0 +1,387 @@
+[
+  {
+    "id": "0",
+    naam: "Amersfoort-Utrecht",
+    Beginstation: "Amersfoort",
+    afstand: 21.5,
+    reistijd: 13,
+    Reismethode:"Train",
+    prijs: 5,
+    eindstation: "Utrecht",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 6
+      },
+      {
+        id: 1,
+        naam: "Utrecht",
+        afstand: 21.5,
+        reistijd: 13,
+        prijs: 5.00,
+        perron: 4
+
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18]
+  },
+  {
+    "id": "1",
+    naam: "Utrecht-Amsterdam",
+    Beginstation: "Utrecht",
+    afstand: 40,
+    reistijd: 30,
+    Reismethode: "Train",
+    prijs: 8.40,
+    eindstation: "Amsterdam",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "Trein delen 7 eerste klas deel 4 & 5",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Utrecht",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 7
+      },
+      {
+        id: 1,
+        naam: "Amsterdam amstel",
+        afstand: 21,
+        reistijd: 33.8,
+        prijs: 7.30,
+        perron: 1
+      },
+      {
+        id: 2,
+        naam: "Amsterdam centraal",
+        afstand: 9,
+        reistijd: 6.2,
+        prijs: 8.40,
+        perron: "8a"
+      }
+    ],
+    vertrektijden: [10.21,14.19,21.12],
+    terugvertrektijden: [10.21,14.19,21.12]
+
+  },
+  {
+    "id": "2",
+    naam: "Amersfoort-Groningen",
+    Beginstation: "Amersfoort",
+    afstand: 194,
+    reistijd: 109,
+    Reismethode: "Trein",
+    prijs: 25.70,
+    eindstation: "Groningen",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity dubbeldekker",
+      "TreinDelen": "Trein delen 4 eerste klas nee",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 1
+      },
+      {
+        id: 1,
+        naam: "Zwolle",
+        afstand: 35,
+        reistijd: 89,
+        prijs: 13.40,
+        perron: 6
+      },
+      {
+        id: 2,
+        naam: "Assen",
+        afstand: 41,
+        reistijd: 77,
+        prijs: 23.60,
+        perron: 3
+      },
+      {
+        id: 3,
+        naam: "Groningen ",
+        afstand: 33,
+        reistijd: 28,
+        prijs: 25.70,
+        perron: "3b"
+      }
+    ],
+    vertrektijden: [8.21,10.19,22.12],
+    terugvertrektijden: [8.21,10.19,22.12]
+  },
+  {
+    "id": "3",
+    naam: "Amersfoort-Enschede",
+    Beginstation: "Amersfoort",
+    afstand: 120,
+    reistijd: 80,
+    Reismethode: "Train",
+    prijs: 21.50,
+    eindstation: "Enschede",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity dubbeldekker",
+      "TreinDelen": "Trein delen 5 eerste klas deel 3",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort centraal",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 2
+      },
+      {
+        id: 1,
+        naam: "Apeldoorn",
+        afstand: 22,
+        reistijd: 45,
+        prijs: 9.10,
+        perron: 4
+      },
+      {
+        id: 2,
+        naam: "Deventer",
+        afstand: 11,
+        reistijd: 14,
+        prijs: 11.90,
+        perron: 1
+      },
+      {
+        id: 3,
+        naam: "Almelo ",
+        afstand: 26,
+        reistijd: 38,
+        prijs: 18.60,
+        perron: 2
+      },
+      {
+        id: 4,
+        naam: "Hengelo ",
+        afstand: 11,
+        reistijd: 15,
+        prijs: 20.40,
+        perron: 3
+      },
+      {
+        id: 5,
+        naam: "Enschede ",
+        afstand: 10,
+        reistijd: 8,
+        prijs: 21.50,
+        perron: 2
+      }
+    ],
+    vertrektijden: [6.25,17.21,11.11],
+    terugvertrektijden: [6.25,17.21,11.11]
+
+  },
+  {
+    "id": "4",
+    naam: "Amersfoort-Den haag",
+    Beginstation: "Amersfoort",
+    afstand: 82,
+    reistijd: 54,
+    Reismethode: "Train",
+    prijs: 16.20,
+    eindstation: "Den haag",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap, toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "Trein delen 6 eerste klas nee",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort centraal",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 6
+      },
+      {
+        id: 1,
+        naam: "Utrecht centraal",
+        afstand: 30,
+        reistijd: 21.7,
+        prijs: 9,
+        perron: 8
+      },
+      {
+        id: 2,
+        naam: "Gouda centraal",
+        afstand: 31,
+        reistijd: 33.2,
+        prijs: 7.10,
+        perron: 8
+      },
+      {
+        id: 3,
+        naam: "Den Haag centraal ",
+        afstand: 49,
+        reistijd: 30.70,
+        prijs: 4.20,
+        perron: 5
+      }
+    ],
+    vertrektijden: [12.25,16.56,22.22],
+    terugvertrektijden: [12.25,16.56,22.22]
+  },
+  {
+    "id": "5",
+    naam: "Amersfoort-Leusden",
+    Beginstation: "Amersfoort",
+    afstand: 8.8,
+    reistijd: 26,
+    Reismethode: "Bus",
+    prijs: 2.53,
+    eindstation: "Leusden",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: nee",
+      "Vervoersmiddel": "Bus",
+      "Toilet": "toilet: niet aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: nee"
+    },
+
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort centraal",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: "E"
+      },
+      {
+        id: 1,
+        naam: "Amersfoort centrum",
+        afstand: 4,
+        reistijd: 1.5,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig"
+
+      },
+      {
+        id: 2,
+        naam: "Amersfoort de Kei",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0.13,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 3,
+        naam: "Amersfoort Blekerssingel",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0.26,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 4,
+        naam: "Leusden Ursuline Weg",
+        afstand: 2,
+        reistijd: 0.5,
+        prijs: 0.52,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 5,
+        naam: "Leusden Heiligenbergerweg",
+        afstand: 1,
+        reistijd: 0.3,
+        prijs: 0.13,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 6,
+        naam: "Leusden Geertrudeshof ",
+        afstand: 2,
+        reistijd: 1.2,
+        prijs: 0.39,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 7,
+        naam: "Leusden Bohemen",
+        afstand: 2,
+        reistijd: 0.8,
+        prijs: 0.26,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 8,
+        naam: "Leusden Arenbos ",
+        afstand: 2,
+        reistijd: 0.7,
+        prijs: 0.26,
+        perron: "maar een perron"
+
+      },
+      {
+        id: 9,
+        naam: "Leusden bedrijventerrein de horst",
+        afstand: 4,
+        reistijd: 1.4,
+        prijs: 0.39,
+        perron: "maar een perron"
+
+      }
+    ],
+    vertrektijden: [7.30,14.21,19.22],
+    terugvertrektijden: [7.30,14.21,19.22]
+  }
+]
