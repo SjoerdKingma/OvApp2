@@ -383,5 +383,257 @@
     ],
     vertrektijden: [7.30,14.21,19.22],
     terugvertrektijden: [7.30,14.21,19.22]
+  },
+  {
+    "id": "6",
+    naam: "Amersfoort Eemplein - Amersfoort Vathorst ",
+    Beginstation: "Amersfoort Eemplein",
+    afstand: 8.7,
+    reistijd: 21,
+    Reismethode:"Bus",
+    prijs: 3.34,
+    eindstation: "Amersfoort Vathorst",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort eemplein",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 6
+      },
+      {
+        id: 1,
+        naam: "Amersfoort de nieuwe stad",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0,13,
+        perron: 4
+      }
+      {
+        id: 2,
+        naam: "Amersfoort kwekersweg",
+        afstand: 1,
+        reistijd: 0.2,
+        prijs: 0.13,
+        perron: 6
+      },
+      {
+        id: 3,
+        naam: "Amersfoort meader mc",
+        afstand: 1,
+        reistijd: 1.7,
+        prijs: 1.26,
+        perron: 4
+      },
+      {
+        id: 4,
+        naam: "Hoogland pastoor pieckweg",
+        afstand: 2,
+        reistijd: 3.7,
+        prijs: 0.39,
+        perron: 6
+      },
+      {
+        id: 5,
+        naam: "Amersfoort drieberg",
+        afstand: 7,
+        reistijd: 2.8,
+        prijs: 1.26,
+        perron: 4
+      },
+      {
+        id: 6,
+        naam: "Amersfoort station vathorst",
+        afstand: 9,
+        reistijd: 0.4,
+        prijs: 0.26,
+        perron: 4
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18]
+  },
+  {
+    "id": "7",
+    naam: "Amersfoort centrum  -Amersfoort amerena",
+    Beginstation: "Amersfoort centrum",
+    afstand: 3.5,
+    reistijd: 5,
+    Reismethode:"Bus",
+    prijs: 1.91,
+    eindstation: "Amersfoort amerena",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort centrum",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 6
+      },
+      {
+        id: 1,
+        naam: "Amersfoort de kei",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0,13,
+        perron: 4
+      }
+      {
+        id: 2,
+        naam: "Amersfoort blekerseiland",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0.13,
+        perron: 6
+      },
+      {
+        id: 3,
+        naam: "Amersfoort hogeweg",
+        afstand: 1,
+        reistijd: 2.3,
+        prijs: 1.26,
+        perron: 4
+      },
+      {
+        id: 4,
+        naam: "Amersfoort amerena",
+        afstand: 2,
+        reistijd: 0.5,
+        prijs: 0.39,
+        perron: 6
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18]
+  },
+  {
+    "id": "8",
+    naam: "Hoogland esdoorlaan - Amersfoort bovist",
+    Beginstation: "Hoogland esdoorlaan",
+    afstand: 3.8,
+    reistijd: 5,
+    Reismethode:"Bus",
+    prijs: 1.52,
+    eindstation: "Amersfoort bovist",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Hoogland esdoorlaan",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 6
+      },
+      {
+        id: 1,
+        naam: "Hoogland kerklaan",
+        afstand: 2,
+        reistijd: 0.6,
+        prijs: 0,13,
+        perron: 4
+      }
+      {
+        id: 2,
+        naam: "Amersfoort spanderswoud",
+        afstand: 2,
+        reistijd: 0.4,
+        prijs: 0.13,
+        perron: 6
+      },
+      {
+        id: 3,
+        naam: "Amersfoort bovist",
+        afstand: 1,
+        reistijd: 0.7,
+        prijs: 1.26,
+        perron: 4
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18]
+  },
+  {
+    "id": "9",
+    naam: "Amersfoort Curacaolaan  - Amersfoort Begraafplaats Rusthof",
+    Beginstation: "Amersfoort Curacaolaan",
+    afstand: 3.7,
+    reistijd: 10,
+    Reismethode:"Bus",
+    prijs: 1.52,
+    eindstation: "Amersfoort Begraafplaats Rusthof",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort, Curacaolaan",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: 6
+      },
+      {
+        id: 1,
+        naam: "Amersfoort, Timorstraat ",
+        afstand: 3,
+        reistijd: 0.6,
+        prijs: 0,13,
+        perron: 4
+      }
+      {
+        id: 2,
+        naam: "Amersfoort Royal HaskoningDHV",
+        afstand: 3,
+        reistijd: 1.2,
+        prijs: 0.13,
+        perron: 6
+      },
+      {
+        id: 3,
+        naam: "Amersfoort Begraafplaats Rusthof",
+        afstand: 4,
+        reistijd: 1.9,
+        prijs: 1.26,
+        perron: 4
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18]
   }
 ]
