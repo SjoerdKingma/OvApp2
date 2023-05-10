@@ -24,7 +24,12 @@
         afstand: 0,
         reistijd: 0,
         prijs: 0,
-        perron: 6
+        perron: 6,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 1,
@@ -32,12 +37,17 @@
         afstand: 21.5,
         reistijd: 13,
         prijs: 5.00,
-        perron: 4
-
+        perron: 4,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       }
     ],
     vertrektijden: [9.15,11.12,15.18],
-    terugvertrektijden: [9.15,11.12,15.18]
+    terugvertrektijden: [9.15,11.12,15.18],
+    kaart: "Amersfoort-Utrecht"
   },
   {
     "id": "1",
@@ -64,7 +74,12 @@
         afstand: 0,
         reistijd: 0,
         prijs: 0,
-        perron: 7
+        perron: 7,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 1,
@@ -72,7 +87,12 @@
         afstand: 21,
         reistijd: 33.8,
         prijs: 7.30,
-        perron: 1
+        perron: 1,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 2,
@@ -80,11 +100,17 @@
         afstand: 9,
         reistijd: 6.2,
         prijs: 8.40,
-        perron: "8a"
+        perron: "8a",
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       }
     ],
     vertrektijden: [10.21,14.19,21.12],
-    terugvertrektijden: [10.21,14.19,21.12]
+    terugvertrektijden: [10.21,14.19,21.12],
+    kaart: "Utrecht-Amsterdam"
 
   },
   {
@@ -105,7 +131,6 @@
       "HandicapToilet": "Handicap toilet: aanwezig",
       "Wifi": "Wifi: aanwezig"
     },
-
     stations: [
       {
         id: 0,
@@ -113,7 +138,12 @@
         afstand: 0,
         reistijd: 0,
         prijs: 0,
-        perron: 1
+        perron: 1,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 1,
@@ -121,7 +151,12 @@
         afstand: 35,
         reistijd: 89,
         prijs: 13.40,
-        perron: 6
+        perron: 6,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 2,
@@ -129,7 +164,12 @@
         afstand: 41,
         reistijd: 77,
         prijs: 23.60,
-        perron: 3
+        perron: 3,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 3,
@@ -137,11 +177,17 @@
         afstand: 33,
         reistijd: 28,
         prijs: 25.70,
-        perron: "3b"
+        perron: "3b",
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       }
     ],
     vertrektijden: [8.21,10.19,22.12],
-    terugvertrektijden: [8.21,10.19,22.12]
+    terugvertrektijden: [8.21,10.19,22.12],
+    kaart: "Amersfoort-Groningen",
   },
   {
     "id": "3",
@@ -161,7 +207,6 @@
       "HandicapToilet": "Handicap toilet: aanwezig",
       "Wifi": "Wifi: aanwezig"
     },
-
     stations: [
       {
         id: 0,
@@ -169,7 +214,12 @@
         afstand: 0,
         reistijd: 0,
         prijs: 0,
-        perron: 2
+        perron: 2,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 1,
@@ -177,7 +227,12 @@
         afstand: 22,
         reistijd: 45,
         prijs: 9.10,
-        perron: 4
+        perron: 4,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 2,
@@ -185,7 +240,12 @@
         afstand: 11,
         reistijd: 14,
         prijs: 11.90,
-        perron: 1
+        perron: 1,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 3,
@@ -193,7 +253,12 @@
         afstand: 26,
         reistijd: 38,
         prijs: 18.60,
-        perron: 2
+        perron: 2,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 4,
@@ -201,7 +266,12 @@
         afstand: 11,
         reistijd: 15,
         prijs: 20.40,
-        perron: 3
+        perron: 3,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 5,
@@ -209,11 +279,17 @@
         afstand: 10,
         reistijd: 8,
         prijs: 21.50,
-        perron: 2
+        perron: 2,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       }
     ],
     vertrektijden: [6.25,17.21,11.11],
-    terugvertrektijden: [6.25,17.21,11.11]
+    terugvertrektijden: [6.25,17.21,11.11],
+    kaart: "Amersfoort-Enschede"
 
   },
   {
@@ -234,7 +310,6 @@
       "HandicapToilet": "Handicap toilet: niet aanwezig",
       "Wifi": "Wifi: aanwezig"
     },
-
     stations: [
       {
         id: 0,
@@ -242,7 +317,12 @@
         afstand: 0,
         reistijd: 0,
         prijs: 0,
-        perron: 6
+        perron: 6,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 1,
@@ -250,7 +330,12 @@
         afstand: 30,
         reistijd: 21.7,
         prijs: 9,
-        perron: 8
+        perron: 8,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 2,
@@ -258,7 +343,12 @@
         afstand: 31,
         reistijd: 33.2,
         prijs: 7.10,
-        perron: 8
+        perron: 8,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 3,
@@ -266,11 +356,17 @@
         afstand: 49,
         reistijd: 30.70,
         prijs: 4.20,
-        perron: 5
+        perron: 5,
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaturants aanwezig",
+        }
       }
     ],
     vertrektijden: [12.25,16.56,22.22],
-    terugvertrektijden: [12.25,16.56,22.22]
+    terugvertrektijden: [12.25,16.56,22.22],
+    kaart: "Amersfoort-Den Haag"
   },
   {
     "id": "5",
@@ -289,7 +385,6 @@
       "HandicapToilet": "Handicap toilet: niet aanwezig",
       "Wifi": "Wifi: nee"
     },
-
     stations: [
       {
         id: 0,
@@ -297,7 +392,12 @@
         afstand: 0,
         reistijd: 0,
         prijs: 0,
-        perron: "E"
+        perron: "E",
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       },
       {
         id: 1,
@@ -305,8 +405,12 @@
         afstand: 4,
         reistijd: 1.5,
         prijs: 0.13,
-        perron: "Hier is maar een perron aanwezig"
-
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 2,
@@ -314,8 +418,12 @@
         afstand: 1,
         reistijd: 0.5,
         prijs: 0.13,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 3,
@@ -323,8 +431,12 @@
         afstand: 1,
         reistijd: 0.5,
         prijs: 0.26,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 4,
@@ -332,8 +444,12 @@
         afstand: 2,
         reistijd: 0.5,
         prijs: 0.52,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 5,
@@ -341,8 +457,12 @@
         afstand: 1,
         reistijd: 0.3,
         prijs: 0.13,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 6,
@@ -350,8 +470,12 @@
         afstand: 2,
         reistijd: 1.2,
         prijs: 0.39,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 7,
@@ -359,8 +483,12 @@
         afstand: 2,
         reistijd: 0.8,
         prijs: 0.26,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 8,
@@ -368,8 +496,12 @@
         afstand: 2,
         reistijd: 0.7,
         prijs: 0.26,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
       },
       {
         id: 9,
@@ -377,11 +509,375 @@
         afstand: 4,
         reistijd: 1.4,
         prijs: 0.39,
-        perron: "maar een perron"
-
+        perron: "maar een perron",
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanzwezig",
+          restuarant: "restaurants aanwezig",
+        }
       }
     ],
     vertrektijden: [7.30,14.21,19.22],
-    terugvertrektijden: [7.30,14.21,19.22]
+    terugvertrektijden: [7.30,14.21,19.22],
+    kaart: "Amersfoort-Leusden"
+
+  },
+  {
+  "id": "6",
+  naam: "Amersfoort Eemplein - Amersfoort Vathorst",
+  Beginstation: "Amersfoort Eemplein",
+  afstand: 8.7,
+  reistijd: 21,
+  Reismethode:"Bus",
+  prijs: 3.34,
+  eindstation: "Amersfoort Vathorst",
+  "accommodaties":
+  {
+    "HandicapToegankelijk": "Handicap toegankelijk: ja",
+    "Vervoersmiddel": "Trein: intercity",
+    "TreinDelen": "6 eerste klas deel 2",
+    "Toilet": "toilet: aanwezig",
+    "HandicapToilet": "Handicap toilet: niet aanwezig",
+    "Wifi": "Wifi: aanwezig"
+  },
+  stations: [
+  {
+    id: 0,
+    naam: "Amersfoort eemplein",
+    afstand: 0,
+    reistijd: 0,
+    prijs: 0,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet niet aanwezig",
+      pinautomaaut: "pinautomaat niet aanwezig",
+      restuarant: "restaurant niet aanwezig",
+    }
+  },
+  {
+    id: 1,
+    naam: "Amersfoort de nieuwe stad",
+    afstand: 1,
+    reistijd: 0.5,
+    prijs: 0.13,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet niet aanwezig",
+      pinautomaaut: "pinautomaat niet aanwezig",
+      restuarant: "restaurant niet aanwezig",
+    }
+  }
+  {
+    id: 2,
+    naam: "Amersfoort kwekersweg",
+    afstand: 1,
+    reistijd: 0.2,
+    prijs: 0.13,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet niet aanwezig",
+      pinautomaaut: "pinautomaat niet aanwezig",
+      restuarant: "restaurant niet aanwezig",
+    }
+  },
+  {
+    id: 3,
+    naam: "Amersfoort meader mc",
+    afstand: 1,
+    reistijd: 1.7,
+    prijs: 1.26,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet niet aanwezig",
+      pinautomaaut: "pinautomaat niet aanwezig",
+      restuarant: "restaurant niet aanwezig",
+    }
+  },
+  {
+    id: 4,
+    naam: "Hoogland pastoor pieckweg",
+    afstand: 2,
+    reistijd: 3.7,
+    prijs: 0.39,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet niet aanwezig",
+      pinautomaaut: "pinautomaat niet aanwezig",
+      restuarant: "restaurant niet aanwezig",
+    }
+  },
+  {
+    id: 5,
+    naam: "Amersfoort drieberg",
+    afstand: 7,
+    reistijd: 2.8,
+    prijs: 1.26,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet niet aanwezig",
+      pinautomaaut: "pinautomaat niet aanwezig",
+      restuarant: "restaurant niet aanwezig",
+    }
+  },
+  {
+    id: 6,
+    naam: "Amersfoort station vathorst",
+    afstand: 9,
+    reistijd: 0.4,
+    prijs: 0.26,
+    perron: "Hier is maar een perron aanwezig",
+    faciliteiten: {
+      toilet: "toilet aanwezig",
+      pinautomaaut: "pinautomaat aanwezig",
+      restuarant: "restaurant aanwezig",
+    }
+  }
+],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18],
+    kaart: "Amersfoort Eemplein - Amersfoort Vathorst"
+  },
+  {
+    "id": "7",
+    naam: "Amersfoort centrum  -Amersfoort amerena",
+    Beginstation: "Amersfoort centrum",
+    afstand: 3.5,
+    reistijd: 5,
+    Reismethode:"Bus",
+    prijs: 1.91,
+    eindstation: "Amersfoort amerena",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort centrum",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet aanwezig",
+          pinautomaaut: "pinautomaat aanwezig",
+          restuarant: "restaurant aanwezig",
+        }
+      },
+      {
+        id: 1,
+        naam: "Amersfoort de kei",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      }
+      {
+        id: 2,
+        naam: "Amersfoort blekerseiland",
+        afstand: 1,
+        reistijd: 0.5,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      },
+      {
+        id: 3,
+        naam: "Amersfoort hogeweg",
+        afstand: 1,
+        reistijd: 2.3,
+        prijs: 1.26,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      },
+      {
+        id: 4,
+        naam: "Amersfoort amerena",
+        afstand: 2,
+        reistijd: 0.5,
+        prijs: 0.39,
+        perron: 6,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18],
+    kaart: "Amersfoort centrum-Amersfoort amerena",
+  },
+  {
+    "id": "8",
+    naam: "Hoogland esdoorlaan - Amersfoort bovist",
+    Beginstation: "Hoogland esdoorlaan",
+    afstand: 3.8,
+    reistijd: 5,
+    Reismethode:"Bus",
+    prijs: 1.52,
+    eindstation: "Amersfoort bovist",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Hoogland esdoorlaan",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      },
+      {
+        id: 1,
+        naam: "Hoogland kerklaan",
+        afstand: 2,
+        reistijd: 0.6,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      }
+      {
+        id: 2,
+        naam: "Amersfoort spanderswoud",
+        afstand: 2,
+        reistijd: 0.4,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      },
+      {
+        id: 3,
+        naam: "Amersfoort bovist",
+        afstand: 1,
+        reistijd: 0.7,
+        prijs: 1.26,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18],
+    kaart: "Hoogland esdoorlaan-Amersfoort bovist",
+  },
+  {
+    "id": "9",
+    naam: "Amersfoort Curacaolaan  - Amersfoort Begraafplaats Rusthof",
+    Beginstation: "Amersfoort Curacaolaan",
+    afstand: 3.7,
+    reistijd: 10,
+    Reismethode:"Bus",
+    prijs: 1.52,
+    eindstation: "Amersfoort Begraafplaats Rusthof",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "toilet: aanwezig",
+      "HandicapToilet": "Handicap toilet: niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    stations: [
+      {
+        id: 0,
+        naam: "Amersfoort, Curacaolaan",
+        afstand: 0,
+        reistijd: 0,
+        prijs: 0,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      },
+      {
+        id: 1,
+        naam: "Amersfoort, Timorstraat ",
+        afstand: 3,
+        reistijd: 0.6,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      }
+      {
+        id: 2,
+        naam: "Amersfoort Royal HaskoningDHV",
+        afstand: 3,
+        reistijd: 1.2,
+        prijs: 0.13,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      },
+      {
+        id: 3,
+        naam: "Amersfoort Begraafplaats Rusthof",
+        afstand: 4,
+        reistijd: 1.9,
+        prijs: 1.26,
+        perron: "Hier is maar een perron aanwezig",
+        faciliteiten: {
+          toilet: "toilet niet aanwezig",
+          pinautomaaut: "pinautomaat niet aanwezig",
+          restuarant: "restaurant niet aanwezig",
+        }
+      }
+    ],
+    vertrektijden: [9.15,11.12,15.18],
+    terugvertrektijden: [9.15,11.12,15.18],
+    kaart: "Amersfoort Curacaolaan-Amersfoort Begraafplaats Rusthof"
+
   }
 ]
