@@ -1,4 +1,4 @@
-package com.Ov2App.Web;
+package com.Ov2App.Web.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
