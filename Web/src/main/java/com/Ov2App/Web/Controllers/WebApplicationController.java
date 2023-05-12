@@ -1,15 +1,19 @@
-package com.Ov2App.Web;
+package com.Ov2App.Web.Controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
-@RestController
+@Controller
 public class WebApplicationController {
 
-    @GetMapping("/")
-    public String getRoot() {
-        return "Web Application from Spring Boot";
+    @GetMapping("/index")
+    public ModelAndView index() {
+        ModelAndView model = new ModelAndView();
+        return model;
     }
     @RequestMapping("/goodbye")
     public String goodbye(){
