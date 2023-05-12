@@ -9,24 +9,23 @@ public class TrajectJson {
     public String Reismethode;
     public Double prijs;
     public String eindstation;
-    public Station[] stations;
-    public String[] vertrektijden;
-    public String[] terugvertrektijden;
     public Accommodaties accommodaties;
+    public Station[] stations;
+    public String kaart;
 
-    public TrajectJson(int id, String naam, String beginstation, Double afstand, Double reistijd, String Reismethode, Double prijs, String eindstation, Accommodaties accommodaties,Station[] stations, String[] vertrektijden, String[] terugvertrektijden) {
+    public TrajectJson(int id, String naam, String beginstation, Double afstand, Double reistijd, String reismethode, Double prijs, String eindstation, Accommodaties accommodaties, Station[] stations, String kaart) {
         this.id = id;
         this.naam = naam;
         this.beginstation = beginstation;
         this.afstand = afstand;
         this.reistijd = reistijd;
-        this.Reismethode = Reismethode;
+        Reismethode = reismethode;
         this.prijs = prijs;
         this.eindstation = eindstation;
+        this.accommodaties = accommodaties;
         this.stations = stations;
-        this.vertrektijden = vertrektijden;
-        this.terugvertrektijden = terugvertrektijden;
-        this.accommodaties=accommodaties;}
+        this.kaart = kaart;
+    }
 
     public int getId() {
         return id;
@@ -48,41 +47,73 @@ public class TrajectJson {
         return beginstation;
     }
 
+    public void setBeginstation(String beginstation) {
+        this.beginstation = beginstation;
+    }
+
     public Double getAfstand() {
         return afstand;
+    }
+
+    public void setAfstand(Double afstand) {
+        this.afstand = afstand;
     }
 
     public Double getReistijd() {
         return reistijd;
     }
 
+    public void setReistijd(Double reistijd) {
+        this.reistijd = reistijd;
+    }
+
     public String getReismethode() {
         return Reismethode;
+    }
+
+    public void setReismethode(String reismethode) {
+        Reismethode = reismethode;
     }
 
     public Double getPrijs() {
         return prijs;
     }
 
+    public void setPrijs(Double prijs) {
+        this.prijs = prijs;
+    }
+
     public String getEindstation() {
         return eindstation;
+    }
+
+    public void setEindstation(String eindstation) {
+        this.eindstation = eindstation;
+    }
+
+    public Accommodaties getAccommodaties() {
+        return accommodaties;
+    }
+
+    public void setAccommodaties(Accommodaties accommodaties) {
+        this.accommodaties = accommodaties;
     }
 
     public Station[] getStations() {
         return stations;
     }
 
-    public String[] getVertrektijden() {
-        return vertrektijden;
+    public void setStations(Station[] stations) {
+        this.stations = stations;
     }
 
-    public String[] getTerugvertrektijden() {
-        return terugvertrektijden;
-    }
-    public Accommodaties getAccommodaties() {
-        return accommodaties;
+    public String getKaart() {
+        return kaart;
     }
 
+    public void setKaart(String kaart) {
+        this.kaart = kaart;
+    }
 
     @Override
     public String toString() {
@@ -92,11 +123,12 @@ public class TrajectJson {
                 ", beginstation='" + beginstation + '\'' +
                 ", afstand=" + afstand +
                 ", reistijd=" + reistijd +
-                ", reismethode='" + Reismethode + '\'' +
+                ", Reismethode='" + Reismethode + '\'' +
                 ", prijs=" + prijs +
                 ", eindstation='" + eindstation + '\'' +
+                ", accommodaties=" + accommodaties +
                 ", stations=" + Arrays.toString(stations) +
-                ", vertrektijden=" + Arrays.toString(vertrektijden) +
-                ", terugvertrektijden=" + Arrays.toString(terugvertrektijden) +
+                ", kaart='" + kaart + '\'' +
                 '}';
-    }}
+    }
+}
