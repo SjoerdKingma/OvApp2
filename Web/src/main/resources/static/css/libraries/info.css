@@ -1,9 +1,44 @@
-
 .header {
-    background: #eee;
+    background: #07960d;
     padding: 0 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
 }
 
+.input{
+    border-style: dashed;
+    height: 30vh;
+    background: #49cdfd;
+}
+
+.divfromto{
+text-align: center;
+
+}
+
+
+
+.input .fromto{
+width: 15%;
+}
+
+.route{
+    border-style: dashed;
+    position: fixed;
+    bottom: 0;
+    height: 60vh;
+    width: 40%;
+    background: #49cdfd;
+}
+
+.info{
+    border-style: dashed;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 60vh;
+    width: 60%;
+    background: #49cdfd;
+}
