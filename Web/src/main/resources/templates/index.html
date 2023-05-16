@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
-
 </head>
 <body>
+
+<select id="select-lang">
+    <option  id="nl" selected>NL</option>
+    <option  id="en" >EN</option>
+</select>
+
+<!--<select onchange="changeLanguage(this.value)">-->
+<!--    <option value="nl">NL</option>-->
+<!--    <option value="en">EN</option>-->
+<!--</select>-->
+
+<button type="button" th:text="#{en}" onclick="window.location.href='http://localhost:8080/?localeData=en'"></button>
+<button type="button" th:text="#{nl}" onclick="window.location.href='http://localhost:8080/?localeData=nl'"></button>
+<!--<button id="translate"></button>-->
+<p th:text="#{van}"> pp</p>
+<p th:text="#{naar}">pp </p>
+<!--<p data-i18n="van"> van </p>-->
+<!--<p data-i18n="naar"> naar </p>-->
 Dit is de index pagina.
+<!--<script src="/Web/src/main/resources/static/javascript/libraries/Language.js"></script>-->
+
 </body>
 </html>
