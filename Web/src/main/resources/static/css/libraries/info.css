@@ -13,24 +13,36 @@
     background: #49cdfd;
 }
 
-.divfromto{
-text-align: center;
-
+.divFromTo{
+    text-align: center;
 }
 
 
 
-.input .fromto{
-width: 15%;
+.input .fromTo{
+    width: 15%;
 }
 
 .route{
-    border-style: dashed;
     position: fixed;
     bottom: 0;
     height: 60vh;
     width: 40%;
     background: #49cdfd;
+}
+
+.route .routeList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.route .routeListItem{
+    border-style: solid;
+    padding: 0% 0% 10% 0%;
+    background: #eee;
 }
 
 .info{
@@ -41,4 +53,16 @@ width: 15%;
     height: 60vh;
     width: 60%;
     background: #49cdfd;
+}
+
+.info .submitButtonInfo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0% 2.5% 2.5% 0%;
+}
+
+.input .submitButtonRoute{
+    position: fixed;
+    margin: 1% 0% 0% 7%;
 }
