@@ -11,16 +11,48 @@
     border-style: dashed;
     height: 30vh;
     background: #49cdfd;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transportTypeGridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.gridSubmitRouteButton{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.submitRouteButton{
+    margin: 0px 3px 0px 0px;
 }
 
 .divFromTo{
-    text-align: center;
+text-align: center;
 }
 
-
-
 .input .fromTo{
-    width: 15%;
+width: 100%;
+margin: 0px 3px 0px 3px;
+}
+
+.input .transportType{
+    width: 5%;
+    text-align: left;
 }
 
 .route{
@@ -60,9 +92,4 @@
     right: 0;
     bottom: 0;
     margin: 0% 2.5% 2.5% 0%;
-}
-
-.input .submitButtonRoute{
-    position: fixed;
-    margin: 1% 0% 0% 7%;
 }

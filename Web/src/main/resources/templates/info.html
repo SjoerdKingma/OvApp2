@@ -13,22 +13,57 @@
     <p>test</p>
     <p>test2</p>
     </header>
-
+<!--
 <div class="input">
     <div class="divFromTo">
-        <label>Selecteer uw stations</label>
-        <br>
-        <select class="fromTo" >
-            <option value="Amersfoort"></option>
-            <option value="Amsterdam"></option>
+        <div><label>Selecteer uw stations</label></div>
+
+        <div id="fromTo-inputRegion-container">
+            <div id="fromTo-inputRegion">
+                <select class="fromTo" >
+                    <option value="Amersfoort">Amersfoort</option>
+                    <option value="Amsterdam">Amsterdam</option>
+                </select>
+                <select class="fromTo">
+                    <option value="Amsterdam">Amsterdam</option>
+                </select>
+            </div>
+        </div>
+
+        <select id="transportType">
+            <option value="Trein">Trein</option>
+            <option value="Bus">Bus</option>
         </select>
-        <select class="fromTo">
-            <option value="Amsterdam"></option>
-        </select>
-        <br>
-        <input class="submitButtonRoute" type="submit" value="Reis plannen">
+            <input class="submitButtonRoute" type="submit" value="Reis plannen">
     </div>
 </div>
+-->
+
+    <div class="input">
+        <div class="gridItem"></div>
+        <div class="gridItem">
+            <select class="fromTo" >
+                <option value="Amersfoort">Amersfoort</option>
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+            <select class="fromTo">
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+        </div>
+        <div class="transportTypeGridItem">
+            <select id="transportType">
+                <option value="Trein">Trein</option>
+                <option value="Bus">Bus</option>
+            </select>
+        </div>
+        <div class="gridItem"></div>
+        <div class="gridSubmitRouteButton">
+            <input class="submitRouteButton" type="submit" value="Reis plannen">
+        </div>
+        <div class="gridItem"></div>
+    </div>
+
+
 <div class="route">
     <ul class="routeList">
         <li class="routeListItem">1</li>
