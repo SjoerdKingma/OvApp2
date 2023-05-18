@@ -9,10 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class WebApplicationController {
 
     @GetMapping("/index")
-//     public ModelAndView index() {
-    public ModelAndView index(@RequestParam(required = false) String lang) {
+    public ModelAndView index() {
+//    public ModelAndView index(@RequestParam(required = false) String lang) {
         ModelAndView model = new ModelAndView();
-        System.out.println(lang);
+//        System.out.println(lang);
         return model;
 
     }

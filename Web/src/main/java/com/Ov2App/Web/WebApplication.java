@@ -28,6 +28,7 @@ public class WebApplication implements WebMvcConfigurer {
 	public static void main(String[] args) {
 
 		Locale locale = new Locale("nl", "NL");
+		Locale locale1 = new Locale("en","US");
 		ResourceBundle resourceBundle = ResourceBundle.getBundle("bundle", locale);
 		System.out.println(resourceBundle.getString("van"));
 
