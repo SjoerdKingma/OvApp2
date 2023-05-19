@@ -39,4 +39,17 @@ public class Accommodaties {
 
     public String getWifi() {
         return Wifi;
-    }}
+    }
+
+    @Override
+    public String toString() {
+        return "Accommodaties{" +
+                "HandicapToegankelijk='" + HandicapToegankelijk + '\'' +
+                ", Vervoersmiddel='" + Vervoersmiddel + '\'' +
+                ", TreinDelen='" + TreinDelen + '\'' +
+                ", Toilet='" + Toilet + '\'' +
+                ", HandicapToilet='" + HandicapToilet + '\'' +
+                ", Wifi='" + Wifi + '\'' +
+                '}';
+    }
+}

@@ -1,0 +1,445 @@
+{
+  "Stationsdetails": [
+    {
+      "id": 0,
+      "naam": "Amersfoort",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 1,
+      "naam": "Utrecht",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 2,
+      "naam": "Utrecht",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 3,
+      "naam": "Amsterdam amstel",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 4,
+      "naam": "Amsterdam centraal",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 5,
+      "naam": "Amersfoort",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 6,
+      "naam": "Zwolle",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 7,
+      "naam": "Assen",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 8,
+      "naam": "Groningen ",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 9,
+      "naam": "Amersfoort centraal",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 10,
+      "naam": "Apeldoorn",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 11,
+      "naam": "Deventer",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 12,
+      "naam": "Almelo ",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 14,
+      "naam": "Hengelo ",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 15,
+      "naam": "Enschede ",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 16,
+      "naam": "Amersfoort centraal",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 17,
+      "naam": "Utrecht centraal",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 18,
+      "naam": "Gouda centraal",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 19,
+      "naam": "Den Haag centraal ",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restuarant": "restaturants aanwezig"
+      }
+    },
+    {
+      "id": 20,
+      "naam": "Amersfoort centraal",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 21,
+      "naam": "Amersfoort centrum",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 22,
+      "naam": "Amersfoort de Kei",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 23,
+      "naam": "Amersfoort Blekerssingel",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 24,
+      "naam": "Leusden Ursuline Weg",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 25,
+      "naam": "Leusden Heiligenbergerweg",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 27,
+      "naam": "Leusden Geertrudeshof ",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 28,
+      "naam": "Leusden Bohemen",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 29,
+      "naam": "Leusden Arenbos ",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 30,
+      "naam": "Leusden bedrijventerrein de horst",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanzwezig",
+        "restaurant": "restaurants aanwezig"
+      }
+    },
+    {
+      "id": 31,
+      "naam": "Amersfoort eemplein",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 32,
+      "naam": "Amersfoort de nieuwe stad",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 33,
+      "naam": "Amersfoort kwekersweg",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 34,
+      "naam": "Amersfoort meader mc",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 35,
+      "naam": "Hoogland pastoor pieckweg",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 36,
+      "naam": "Amersfoort drieberg",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 37,
+      "naam": "Amersfoort station vathorst",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanwezig",
+        "restuarant": "restaurant aanwezig"
+      }
+    },
+    {
+      "id": 38,
+      "naam": "Amersfoort centrum",
+      "Faciliteiten": {
+        "toilet": "toilet aanwezig",
+        "pinautomaat": "pinautomaat aanwezig",
+        "restuarant": "restaurant aanwezig"
+      }
+    },
+    {
+      "id": 40,
+      "naam": "Amersfoort de kei",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 41,
+      "naam": "Amersfoort blekerseiland",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 42,
+      "naam": "Amersfoort hogeweg",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 43,
+      "naam": "Amersfoort amerena",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 44,
+      "naam": "Hoogland esdoorlaan",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 45,
+      "naam": "Hoogland kerklaan",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 46,
+      "naam": "Amersfoort spanderswoud",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 47,
+      "naam": "Amersfoort bovist",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 48,
+      "naam": "Amersfoort, Curacaolaan",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 49,
+      "naam": "Amersfoort, Timorstraat ",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 50,
+      "naam": "Amersfoort Royal HaskoningDHV",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    },
+    {
+      "id": 51,
+      "naam": "Amersfoort Begraafplaats Rusthof",
+      "Faciliteiten": {
+        "toilet": "toilet niet aanwezig",
+        "pinautomaat": "pinautomaat niet aanwezig",
+        "restaurant": "restaurant niet aanwezig"
+      }
+    }
+  ]
+}

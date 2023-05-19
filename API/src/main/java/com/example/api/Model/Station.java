@@ -1,34 +1,23 @@
 package com.example.api.Model;
 public class Station {
     public int id;
-    public String naam;
     public Float afstand;
     public Float reistijd;
     public Float prijs;
-    public String perron;
 
-    public Station(int id, String naam, Float afstand, Float reistijd, Float prijs, String perron) {
+    public Station(int id, Float afstand, Float reistijd, Float prijs) {
         this.id = id;
-        this.naam = naam;
         this.afstand = afstand;
         this.reistijd = reistijd;
         this.prijs = prijs;
-        this.perron = perron;
     }
 
-    public int getId(){
-        return this.id;}
+    public int getId() {
+        return id;
+    }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getNaam() {
-        return naam;
-    }
-
-    public void setNaam(String naam) {
-        this.naam = naam;
     }
 
     public Float getAfstand() {
@@ -46,27 +35,22 @@ public class Station {
     public void setReistijd(Float reistijd) {
         this.reistijd = reistijd;
     }
-    public Float getPrijs() {return prijs;}
 
-    public void setPrijs(Float prijs) {this.prijs = prijs;}
-
-    public String getPerron() {
-        return perron;
+    public Float getPrijs() {
+        return prijs;
     }
 
-    public void setPerron(String perron) {
-        this.perron = perron;
+    public void setPrijs(Float prijs) {
+        this.prijs = prijs;
     }
 
     @Override
     public String toString() {
         return "Station{" +
                 "id=" + id +
-                ", naam='" + naam + '\'' +
                 ", afstand=" + afstand +
                 ", reistijd=" + reistijd +
                 ", prijs=" + prijs +
-                ", perron='" + perron + '\'' +
                 '}';
     }
 }

@@ -8,20 +8,30 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.example.api.Model.Faciliteiten;
 import com.example.api.Model.Station;
+import com.example.api.Model.Stationsdetails;
 import com.example.api.Model.TrajectJson;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 public class GsonReader {
+    private final ArrayList<TrajectJson> trajecten = new ArrayList<>();
+
+    public ArrayList<TrajectJson> GsonReader ()throws IOException{
+        readTrajectenJson();
+        return trajecten;
+    }
+
+
     private List<TrajectJson> readTrajectenJson()throws IOException {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
 
-        Reader reader = Files.newBufferedReader(Paths.get("src/main/Trajecten.json"));
-        List<TrajectJson> trajecten = new Gson().fromJson(reader, new TypeToken<List<TrajectJson>>() {}.getType()); //TODO: Change List to ArrayList
+        Reader trajectenreader = Files.newBufferedReader(Paths.get("src/main/Trajecten.json"));
+        List<TrajectJson> trajecten = new Gson().fromJson(trajectenreader, new TypeToken<List<TrajectJson>>() {}.getType()); //TODO: Change List to ArrayList
 
         // convert JSON array to list of users
 
@@ -42,16 +52,47 @@ public class GsonReader {
                 System.out.println(
                         "Station " + stations.get(a).getId() + "\n" +
                                 "id=" + stations.get(a).getId() + "\n" +
-                                "naam=" + stations.get(a).getNaam() + "\n" +
                                 "afstand=" + stations.get(a).getAfstand() + "\n" +
                                 "reistijd=" + stations.get(a).getReistijd() + "\n"+
                                 "prijs=" + stations.get(a).getPrijs());
             }
 
             trajecten.forEach(System.out::println);}
-        reader.close();
+        trajectenreader.close();
         return trajecten;
     }
+    private List<Stationsdetails> readStationsdetails()throws IOException {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+
+        Reader Stationsdetailsreader = Files.newBufferedReader(Paths.get("src/main/Stationsdetails.json"));
+        List<Stationsdetails> Stationsdetails = new Gson().fromJson(Stationsdetailsreader, new TypeToken<List<Stationsdetails>>() {}.getType()); //TODO: Change List to ArrayList
+
+
+        for (int i = 0; i < Stationsdetails.size(); i++){
+            List<Faciliteiten> faciliteiten= List.of(Stationsdetails.get(i).getFaciliteiten());
+
+
+            System.out.println(
+                    "id"+Stationsdetails.get(i).getId() + "\n" +
+                            "naam" + Stationsdetails.get(i).getNaam() + "\n" +
+                            "faciliteiten:"
+            );
+            for (int a = 0; a < faciliteiten.size(); a++){
+                System.out.println(
+                        "toilet"+faciliteiten.get(a).getToilet() + "\n" +
+                                "pinautomaat" + faciliteiten.get(a).getPinautomaat() + "\n" +
+                                "restaurant:" + faciliteiten.get(a).getRestaurant()
+                );
+            }
+
+        }
+
+
+        return Stationsdetails;
+    }
+
 
     public void printTrajecten(List<TrajectJson> trajecten){
         for (int i = 0; i < trajecten.size(); i++){

@@ -5,7 +5,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-.rectangle{
+#rectangle{
     width: 1500px;
     height: 1000px;
     position: absolute;
@@ -16,7 +16,7 @@ body{
     font-family: "Times New Roman", serif;
     font-size: 18px;
 }
-.rectangle .Favoritejourney{
+#rectangle #Favoritejourney{
     width: 1200px;
     height: 200px;
     top: 10%;
@@ -26,28 +26,28 @@ body{
     text-align: center;
 
 }
-.Favoritejourney .FavoriteVan{
+#Favoritejourney #FavoriteVan{
     top: 5%;
     left: 10%;
     position: absolute;
     font-size: 32px;
     font-family: "Times New Roman", serif;
 }
-.Favoritejourney .FavoriteNaar{
+#Favoritejourney #FavoriteNaar{
     top: 5%;
     left: 50%;
     position: absolute;
     font-size: 32px;
     font-family: "Times New Roman", serif;
 }
-.Favoritejourney .FavoriteVoertuig{
+#Favoritejourney #FavoriteVoertuig{
     top: 25%;
     left: 10%;
     position: absolute;
     font-size: 32px;
     font-family: "Times New Roman", serif;
 }
-.form{
+#form{
     width: 1500px;
     height: 200px;
     position: absolute;
@@ -58,28 +58,28 @@ body{
     font-family: "Times New Roman", serif;
     font-size: 18px;
 }
-.form .Vantext{
+#form #Vantext{
     top: 10%;
     left: 18%;
     font-size: 32px;
     position: absolute;
 
 }
-.form .van{
+#form #van{
     height: 32px;
 }
 
-.form .Naartext{
+#form #Naartext{
     top: 10%;
     left: 50%;
     font-size: 32px;
     position: absolute;
 
 }
-.form .naar{
+#form #naar{
     height: 32px;
 }
-.form .Addtofavorites{
+#form #Addtofavorites{
     top: 50%;
     left: 50%;
     height: 15px;
@@ -87,8 +87,14 @@ body{
     font-size: 32px;
     position: absolute;
 }
-.form .Addtofavorites .Planreis{
+#form #Addtofavorites #Planreis{
     height: 15px;
     font-size: 32px;
     position: absolute;
+}
+@media only screen and (max-width:800px) {
+    body{
+        height: 90%;
+        width: 90%;
+    }
 }
