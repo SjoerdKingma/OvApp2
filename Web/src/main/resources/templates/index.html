@@ -12,11 +12,15 @@
 
 <h1 th:text="#{greeting}"></h1>
 
-
-<select>
-    <option value="nl" th:selected="${#locale == 'nl'}">Dutch</option>
-    <option value="en" th:selected="${#locale == 'en'}">English</option>
+<select id="locale">
+    <option class="lang-option"  value="nl">Dutch</option>
+    <option class="lang-option"  value="en">English</option>
 </select>
+
+<!--<select>-->
+<!--    <option value="nl" th:selected="${#locale == 'nl'}">Dutch</option>-->
+<!--    <option value="en" th:selected="${#locale == 'en'}">English</option>-->
+<!--</select>-->
 
 <!--<select onchange="location = this.value">-->
 <!--    <option value="http://localhost:8080/index?lang=nl">Dutch</option>-->
@@ -28,7 +32,7 @@
 <p th:text="#{naar}">pp </p>
 
 Dit is de index pagina.
-<!--<script src="/Web/src/main/resources/static/javascript/libraries/Language.js"></script>-->
+<script src="/javascript/SelectLang.js"></script>
 
 </body>
 </html>
