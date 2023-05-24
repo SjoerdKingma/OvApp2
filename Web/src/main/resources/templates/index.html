@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
 <h1 th:text="#{greeting}"></h1>
 
 <select id="locale">
@@ -22,6 +23,31 @@
 <p th:text="#{naar}">pp </p>
 
 Dit is de index pagina.
+
+
+
+<form id="form" class="form">
+    <div id="Vantext" class="Vantext">
+        <label for="Van" >Van:</label>
+        <input type="text" id="Van" class="van" name="Van">
+    </div>
+    <div id="Naartext" class="Naartext">
+        <label for="naar">Naar:</label>
+        <input type="text" class="naar" id="naar" name="naar">
+    </div>
+    <div class="Addtofavorites" id="Addtofavorites">
+        <input type="submit" value="Voeg toe aan favorieten">
+        <input type="submit" value="Plan reis">
+    </div>
+</form>
+<ul class="rectangle" id="rectangle">
+    <li class="Favoritejourney" id="Favoritejourney">
+        <p class="FavoriteVan" id="FavoriteVan"> Van:</p>
+        <p class="FavoriteNaar" id="FavoriteNaar">Naar:</p>
+        <p class="FavoriteVoertuig" id="FavoriteVoertuig">Voertuig:</p>
+    </li>
+</ul>
+
 <script src="/javascript/SelectLang.js"></script>
 
 </body>
