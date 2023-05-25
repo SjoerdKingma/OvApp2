@@ -1,4 +1,4 @@
-package Model;
+package com.Ov2App.Web.Model;
 
 import java.util.Arrays;
 public class TrajectJson {

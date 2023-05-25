@@ -1,4 +1,4 @@
-package Model;
+package com.Ov2App.Web.Model;
 
 public class Faciliteiten {
     public String toilet;

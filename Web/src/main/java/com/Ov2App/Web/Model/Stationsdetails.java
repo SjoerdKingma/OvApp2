@@ -1,4 +1,4 @@
-package Model;
+package com.Ov2App.Web.Model;
 
 public class Stationsdetails {
     public Integer id;
