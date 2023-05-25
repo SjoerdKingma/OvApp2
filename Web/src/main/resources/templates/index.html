@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,9 +9,6 @@
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
 </head>
-<body>
-
-<!-- hier staat de code voor header-->
 <header class="header">
     <div>
         <div class="logo">
@@ -20,42 +20,42 @@
 
     </div>
     <div class="language-options">
-        <img src="/images/Nl.png" alt="nl">
-        <img src="/images/Eng.png" alt="Eng">
+        <img id="image-nl" src="/images/Nl.png" alt="nl">
+        <img id="image-en" src="/images/Eng.png" alt="Eng">
 
 
         <select id="language-select">
-            <option value="en">English</option>
-            <option value="nl">Netherlands</option>
+            <option class="option" value="en">English</option>
+            <option class="option" value="nl">Netherlands</option>
         </select>
     </div>
 
 </header>
-<!-- hier worden andere codes toegevoegd-->
-
-
+<body>
 
 <form id="form" class="form">
     <div id="Vantext" class="Vantext">
-        <label for="Van" >Van:</label>
+        <label for="Van" th:text="#{van}">Van:</label>
         <input type="text" id="Van" class="van" name="Van">
     </div>
     <div id="Naartext" class="Naartext">
-        <label for="naar">Naar:</label>
+        <label for="naar" th:text="#{naar}">Naar:</label>
         <input type="text" class="naar" id="naar" name="naar">
     </div>
     <div class="Addtofavorites" id="Addtofavorites">
-        <input type="submit" value="Voeg toe aan favorieten">
-        <input type="submit" value="Plan reis">
+        <input type="submit" th:value="#{Voeg}" >
+        <input type="submit" th:value="#{Plan}" >
     </div>
 </form>
 <ul class="rectangle" id="rectangle">
     <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan"> Van:</p>
-        <p class="FavoriteNaar" id="FavoriteNaar">Naar:</p>
-        <p class="FavoriteVoertuig" id="FavoriteVoertuig">Voertuig:</p>
+        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
+        <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
+        <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
     </li>
 </ul>
+
+<script src="/javascript/SelectLang.js"></script>
 
 </body>
 </html>
