@@ -25,3 +25,20 @@
 
 changeLocale();
 
+
+ function changeImg(){
+   let header = document.querySelector('.header');
+   const imgNL= document.getElementById('');
+   const imgEN= document.getElementById('');
+   let value = languageSelect.options[languageSelect.selectedIndex].value;
+   if (value === 'nl') {
+       header.appendChild(imgNL);
+     } else if (value === 'en') {
+       header.appendChild(imgEN);
+ }
+
+ }
+
+ changeImg();
+
+
