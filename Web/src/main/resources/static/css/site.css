@@ -100,8 +100,6 @@ body{
     background: aliceblue;
     position: absolute;
     text-align: center;
-    text-shadow: 0dvb;}
-
 }
 
 .Favoritejourney .FavoriteVan{
@@ -136,11 +134,10 @@ body{
       background: #90EE90;
       font-family: "Times New Roman", serif;
       font-size: 18px;
-     /* display: flex;
-     /* align-items: center;
-      /*justify-content: center;*/
-     /* flex-direction: column;*/
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       flex-direction: column;
 
 }
 .form .Vantext{
