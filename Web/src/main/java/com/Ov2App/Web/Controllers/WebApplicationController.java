@@ -1,5 +1,8 @@
 package com.Ov2App.Web.Controllers;
 
+
+import ch.qos.logback.core.model.Model;
+
 import com.Ov2App.Web.Data.ApiConsumer;
 import org.json.simple.JSONArray;
 
@@ -19,6 +22,8 @@ public class WebApplicationController {
         return model;
 
     }
+
+
     @RequestMapping("/goodbye")
     public String goodbye(){
         return "Goodbye from Spring Boot";

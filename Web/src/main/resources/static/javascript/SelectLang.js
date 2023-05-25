@@ -1,9 +1,9 @@
 
-  const languageSelect = document.getElementById('locale');
+  const languageSelect = document.getElementById('language-select');
 
   function changeLocale() {
     languageSelect.addEventListener('change', function() {
-    const selectedLang = locale.value;
+    const selectedLang = languageSelect.value;
     const url = new URL(window.location.href);// current URL
     const searchParams = url.searchParams;
     searchParams.set('lang', selectedLang);
@@ -27,14 +27,17 @@ changeLocale();
 
 
  function changeImg(){
-   let header = document.querySelector('.header');
-   const imgNL= document.getElementById('');
-   const imgEN= document.getElementById('');
-   let value = languageSelect.options[languageSelect.selectedIndex].value;
+   const header = document.querySelector('.header');
+   const imgNL= document.getElementById('image-nl');
+   const imgEN= document.getElementById('image-en');
+   const imageOptions = document.getElementById('language-options');
+   const value = languageSelect.options[languageSelect.selectedIndex].value;
    if (value === 'nl') {
-       header.appendChild(imgNL);
+       imageOptions.appendChild(imgNL);
+       imageOptions.removeChild(imgEN);
      } else if (value === 'en') {
-       header.appendChild(imgEN);
+       imageOptions.appendChild(imgEN);
+       imageOptions.removeChild(imgNL);
  }
 
  }

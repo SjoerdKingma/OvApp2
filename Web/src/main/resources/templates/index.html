@@ -1,29 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title></title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
 </head>
+<header class="header">
+    <div>
+        <div class="logo">
+            <img src="/images/bus.jpg" alt="Logo">
+            <span>FriendlyTrans</span>
+        </div>
+        <div class="go-green">Go Green</div>
+        <!--<div class="connector-line"></div> -->
+
+    </div>
+    <div class="language-options">
+        <img id="image-nl" src="/images/Nl.png" alt="nl">
+        <img id="image-en" src="/images/Eng.png" alt="Eng">
+
+
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="nl">Netherlands</option>
+        </select>
+    </div>
+
+</header>
 <body>
-
-
 <!--<h1 th:text="#{greeting}"></h1>-->
 
-<select id="locale">
-    <option class="lang-option"  value="nl">Dutch</option>
-    <option class="lang-option"  value="en">English</option>
-</select>
+<!--<select id="locale">-->
+<!--    <option class="lang-option"  value="nl">Dutch</option>-->
+<!--    <option class="lang-option"  value="en">English</option>-->
+<!--</select>-->
 
 
 <!--<p th:text="#{van}"> pp</p>-->
 <!--<p th:text="#{naar}">pp </p>-->
 
-<!--Dit is de index pagina.-->
+<!-- hier staat de code voor header-->
 
+<!-- hier worden andere codes toegevoegd-->
 
 
 <form id="form" class="form">
@@ -42,7 +64,7 @@
 </form>
 <ul class="rectangle" id="rectangle">
     <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"9> Van:</p>
+        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
         <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
         <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
     </li>

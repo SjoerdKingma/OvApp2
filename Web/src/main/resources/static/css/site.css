@@ -1,20 +1,95 @@
+
+/* General style */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header style */
+.header {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo style */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b8345;
+  font-family: "Segoe Script", cursive;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* "Go Green" style */
+.go-green {
+  font-size: 18px;
+  color: #3b8345;
+  font-family: Arial, sans-serif;
+  margin-left: 10px;
+}
+
+/* Connector line style */
+.connector-line {
+  width: 1px;
+  height: 20px;
+  background-color: #999;
+  margin: 0 10px;
+}
+
+/* Favorite style */
+
+
+/* Language options style */
+.language-options {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.language-options img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.language-options select {
+  padding: 4px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+}
+/*=======
 body{
     background: url("BlueSky.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 .rectangle{
-    width: 1500px;
-    height: 1000px;
-    position: absolute;
-    top: 33%;
-    left: 20%;
-    line-height: 100px;
-    background: #90EE90;
-    font-family: "Times New Roman", serif;
-    font-size: 18px;
+     width: 1800px;
+        height: 1000px;
+        position: absolute;
+        top: 33%;
+        left: 6%;
+        line-height: 100px;
+       /* background: #90EE90;*/
+        font-family: "Times New Roman", serif;
+        font-size: 18px;
 }
 
 .rectangle .Favoritejourney{
@@ -26,6 +101,8 @@ body{
     position: absolute;
     text-align: center;
     text-shadow: 0dvb;}
+
+}
 
 .Favoritejourney .FavoriteVan{
     top: 5%;
@@ -49,15 +126,22 @@ body{
     font-family: "Times New Roman", serif;
 }
 .form{
-    width: 1500px;
-    height: 200px;
-    position: absolute;
-    top: 11%;
-    left: 20%;
-    line-height: 100px;
-    background: #90EE90;
-    font-family: "Times New Roman", serif;
-    font-size: 18px;
+
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #90EE90;
+      font-family: "Times New Roman", serif;
+      font-size: 18px;
+     /* display: flex;
+     /* align-items: center;
+      /*justify-content: center;*/
+     /* flex-direction: column;*/
+
+
 }
 .form .Vantext{
     top: 10%;
