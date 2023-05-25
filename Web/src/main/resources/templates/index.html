@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
 <!-- hier staat de code voor header-->
 <header class="header">
     <div>
@@ -16,7 +17,7 @@
         </div>
         <div class="go-green">Go Green</div>
         <div class="connector-line"></div>
-        <button class="favorite">Favorite</button>
+
     </div>
     <div class="language-options">
         <img src="/images/Nl.png" alt="nl">
@@ -32,6 +33,29 @@
 </header>
 <!-- hier worden andere codes toegevoegd-->
 
+
+
+<form id="form" class="form">
+    <div id="Vantext" class="Vantext">
+        <label for="Van" >Van:</label>
+        <input type="text" id="Van" class="van" name="Van">
+    </div>
+    <div id="Naartext" class="Naartext">
+        <label for="naar">Naar:</label>
+        <input type="text" class="naar" id="naar" name="naar">
+    </div>
+    <div class="Addtofavorites" id="Addtofavorites">
+        <input type="submit" value="Voeg toe aan favorieten">
+        <input type="submit" value="Plan reis">
+    </div>
+</form>
+<ul class="rectangle" id="rectangle">
+    <li class="Favoritejourney" id="Favoritejourney">
+        <p class="FavoriteVan" id="FavoriteVan"> Van:</p>
+        <p class="FavoriteNaar" id="FavoriteNaar">Naar:</p>
+        <p class="FavoriteVoertuig" id="FavoriteVoertuig">Voertuig:</p>
+    </li>
+</ul>
 
 </body>
 </html>

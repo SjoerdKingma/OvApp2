@@ -42,7 +42,6 @@ public class GsonReader {
                 System.out.println(
                         "Station " + stations.get(a).getId() + "\n" +
                                 "id=" + stations.get(a).getId() + "\n" +
-                                "naam=" + stations.get(a).getNaam() + "\n" +
                                 "afstand=" + stations.get(a).getAfstand() + "\n" +
                                 "reistijd=" + stations.get(a).getReistijd() + "\n"+
                                 "prijs=" + stations.get(a).getPrijs());
