@@ -23,6 +23,11 @@ public class WebApplicationController {
 
     }
 
+    @GetMapping("/info")
+    public ModelAndView info() {
+        ModelAndView model = new ModelAndView();
+        return model;
+    }
 
     @RequestMapping("/goodbye")
     public String goodbye(){
