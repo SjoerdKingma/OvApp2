@@ -8,7 +8,6 @@
 }
 
 .input{
-    border-style: dashed;
     height: 30vh;
     background: #49cdfd;
     display: grid;
@@ -78,7 +77,6 @@ margin: 0px 3px 0px 3px;
 }
 
 .info{
-    border-style: dashed;
     position: fixed;
     bottom: 0;
     right: 0;
