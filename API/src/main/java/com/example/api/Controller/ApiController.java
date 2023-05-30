@@ -46,8 +46,6 @@ public class ApiController {
         JsonArray trajects = x.get("trajecten").getAsJsonArray();
 
         for (int i = 0; i < trajects.size(); i++){
-            Object<TrajectJson> traject=new Object();
-
         }
         JSONArray jsonArray = new JSONArray();
         jsonArray.add("Amersfoort-Amsterdam");
