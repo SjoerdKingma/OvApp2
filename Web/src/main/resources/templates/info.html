@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>info</title>
@@ -31,15 +32,15 @@
     </div>
 
 </header>
-    <form action="" >
+    <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
         <div class="input">
             <div class="gridItem"></div>
             <div class="gridItem">
-                <select class="fromTo" >
+                <select class="fromTo" th:field="*{inputA}"  >
                     <option value="Amersfoort">Amersfoort</option>
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
-                <select class="fromTo">
+                <select class="fromTo" th:field="*{inputB}">
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
             </div>
