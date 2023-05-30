@@ -44,6 +44,15 @@ public class ApiController {
         for (int i = 0; i < trajecten.size(); i++){
             JSONObject jsonObject=new JSONObject();
             jsonObject.put("id",trajecten.get(i).getId());
+            jsonObject.put("naam",trajecten.get(i).getNaam());
+            jsonObject.put("beginstation",trajecten.get(i).getBeginstation());
+            jsonObject.put("afstand",trajecten.get(i).getAfstand());
+            jsonObject.put("reistijd",trajecten.get(i).getReistijd());
+            jsonObject.put("reismethode",trajecten.get(i).getReismethode());
+            jsonObject.put("prijs",trajecten.get(i).getPrijs());
+            jsonObject.put("eindstaiond",trajecten.get(i).getEindstation());
+            jsonObject.put("accomodaties",trajecten.get(i).getAccommodaties());
+            jsonObject.put("stations",trajecten.get(i).getStations());
             jsonArray.add(jsonObject);
         }
         jsonArray.add("Amersfoort-Amsterdam");
