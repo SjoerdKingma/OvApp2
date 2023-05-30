@@ -5,8 +5,11 @@ import com.example.api.Model.Station;
 import com.example.api.Model.TrajectJson;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +32,23 @@ public class ApiController {
     }
 
     @GetMapping("/Trajecten")
-    public JSONArray getTrajecten(){
+    public JSONArray getTrajecten() throws IOException {
+
+
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+
+        Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/Trajecten.json"));
+        JsonObject x = new Gson().fromJson(reader, new TypeToken<JsonObject>(){});
+        //JsonObject traject = new Gson().fromJson(reader, new TypeToken<JSONObject>() {}.getType());
+
+        JsonArray trajects = x.get("trajecten").getAsJsonArray();
+
+        for (int i = 0; i < trajects.size(); i++){
+            Object<TrajectJson> traject=new Object();
+
+        }
         JSONArray jsonArray = new JSONArray();
         jsonArray.add("Amersfoort-Amsterdam");
         jsonArray.add("Amersfoort-Arnhem");
