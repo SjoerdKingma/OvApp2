@@ -33,23 +33,19 @@ public class ApiController {
 
     @GetMapping("/Trajecten")
     public JSONArray getTrajecten() throws IOException {
-
-
+        JSONArray jsonArray = new JSONArray();
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
 
         Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/Trajecten.json"));
-        JsonObject x = new Gson().fromJson(reader, new TypeToken<JsonObject>(){});
-        //JsonObject traject = new Gson().fromJson(reader, new TypeToken<JSONObject>() {}.getType());
+        List<TrajectJson> trajecten = new Gson().fromJson(reader, new TypeToken<List<TrajectJson>>() {}.getType());
 
-        JsonArray trajects = x.get("trajecten").getAsJsonArray();
-
-        for (int i = 0; i < trajects.size(); i++){
-            Object<TrajectJson> traject=new Object();
-
+        for (int i = 0; i < trajecten.size(); i++){
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("id",trajecten.get(i).getId());
+            jsonArray.add(jsonObject);
         }
-        JSONArray jsonArray = new JSONArray();
         jsonArray.add("Amersfoort-Amsterdam");
         jsonArray.add("Amersfoort-Arnhem");
         return jsonArray;
