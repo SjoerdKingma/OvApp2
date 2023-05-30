@@ -5,35 +5,20 @@
     <title></title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(function() {
+    $("#header-placeholder").load("header.html");
+});
+</script>
+
 </head>
 <body>
 
 <!-- hier staat de code voor header-->
-<header class="header">
-    <div>
-        <div class="logo">
-            <img src="/images/bus.jpg" alt="Logo">
-            <span>FriendlyTrans</span>
-        </div>
-        <div class="go-green">Go Green</div>
-        <!--<div class="connector-line"></div> -->
+<div id="header-placeholder"></div>
 
-    </div>
-    <div class="language-options">
-        <img src="/images/Nl.png" alt="nl">
-        <img src="/images/Eng.png" alt="Eng">
-
-
-        <select id="language-select">
-            <option value="en">English</option>
-            <option value="nl">Netherlands</option>
-        </select>
-    </div>
-
-</header>
 <!-- hier worden andere codes toegevoegd-->
-
-
 
 <form id="form" class="form">
     <div id="Vantext" class="Vantext">
@@ -56,6 +41,5 @@
         <p class="FavoriteVoertuig" id="FavoriteVoertuig">Voertuig:</p>
     </li>
 </ul>
-
 </body>
 </html>

@@ -21,7 +21,9 @@ public class WebApplicationController {
     @GetMapping("/index")
     public ModelAndView index() {
         ModelAndView model = new ModelAndView();
-
+//
+        model.addObject("header","header");
+        model.setViewName("index");
         return model;
 
     }
