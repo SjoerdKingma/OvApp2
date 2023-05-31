@@ -15,19 +15,28 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 public class GsonReader {
-    private List<TrajectJson> readTrajectenJson()throws IOException {
+    private final ArrayList<TrajectJson> trajectJsons = new ArrayList<>();
+
+    public ArrayList<TrajectJson> GsonReader() throws IOException {
+        readTrajectenJson();
+        return trajectJsons;
+
+    }
+
+    private List<TrajectJson> readTrajectenJson() throws IOException {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
 
         Reader reader = Files.newBufferedReader(Paths.get("src/main/Trajecten.json"));
-        List<TrajectJson> trajecten = new Gson().fromJson(reader, new TypeToken<List<TrajectJson>>() {}.getType()); //TODO: Change List to ArrayList
+        List<TrajectJson> trajecten = new Gson().fromJson(reader, new TypeToken<List<TrajectJson>>() {
+        }.getType());
 
         // convert JSON array to list of users
 
         // print users
-        for (int i = 0; i < trajecten.size(); i++){
-            List<Station> stations= List.of(trajecten.get(i).getStations());
+        for (int i = 0; i < trajecten.size(); i++) {
+            List<Station> stations = List.of(trajecten.get(i).getStations());
 
             System.out.println(
                     "naam=" + trajecten.get(i).getNaam() + "\n" +
@@ -36,24 +45,25 @@ public class GsonReader {
                             "reistijd=" + trajecten.get(i).getReistijd() + "\n" +
                             "Reismethode=" + trajecten.get(i).getReismethode() + "\n" +
                             "prijs=" + trajecten.get(i).getPrijs() + "\n" +
-                            "eindstation=" + trajecten.get(i).getEindstation() + "\n"+
+                            "eindstation=" + trajecten.get(i).getEindstation() + "\n" +
                             "stations:");
-            for (int a = 0; a < stations.size(); a++){
+            for (int a = 0; a < stations.size(); a++) {
                 System.out.println(
                         "Station " + stations.get(a).getId() + "\n" +
                                 "id=" + stations.get(a).getId() + "\n" +
                                 "afstand=" + stations.get(a).getAfstand() + "\n" +
-                                "reistijd=" + stations.get(a).getReistijd() + "\n"+
+                                "reistijd=" + stations.get(a).getReistijd() + "\n" +
                                 "prijs=" + stations.get(a).getPrijs());
             }
 
-            trajecten.forEach(System.out::println);}
+            trajecten.forEach(System.out::println);
+        }
         reader.close();
         return trajecten;
     }
 
-    public void printTrajecten(List<TrajectJson> trajecten){
-        for (int i = 0; i < trajecten.size(); i++){
+    public void printTrajecten(List<TrajectJson> trajecten) {
+        for (int i = 0; i < trajecten.size(); i++) {
             System.out.println(
                     "naam=" + trajecten.get(i).getNaam() + "\n" +
                             "Beginstation=" + trajecten.get(i).getBeginstation() + "\n" +
