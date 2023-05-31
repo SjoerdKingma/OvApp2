@@ -38,7 +38,7 @@ public class ApiController {
                 .setPrettyPrinting()
                 .create();
 
-        Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/Trajecten.json"));
+        Reader reader = Files.newBufferedReader(Paths.get("json/Trajecten.json"));
         List<TrajectJson> trajecten = new Gson().fromJson(reader, new TypeToken<List<TrajectJson>>() {}.getType());
 
         for (int i = 0; i < trajecten.size(); i++){
