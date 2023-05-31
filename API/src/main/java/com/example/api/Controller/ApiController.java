@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.api.Model.TrajectJson;
 
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
@@ -38,7 +40,9 @@ public class ApiController {
                 .setPrettyPrinting()
                 .create();
 
-        Reader reader = Files.newBufferedReader(Paths.get("json/Trajecten.json"));
+        Path path = Paths.get("API/src/main/resources/static/json/Trajecten.json");
+        Reader reader = Files.newBufferedReader(path);
+
         List<TrajectJson> trajecten = new Gson().fromJson(reader, new TypeToken<List<TrajectJson>>() {}.getType());
 
         for (int i = 0; i < trajecten.size(); i++){
@@ -55,8 +59,6 @@ public class ApiController {
             jsonObject.put("stations",trajecten.get(i).getStations());
             jsonArray.add(jsonObject);
         }
-        jsonArray.add("Amersfoort-Amsterdam");
-        jsonArray.add("Amersfoort-Arnhem");
         return jsonArray;
     }
 
