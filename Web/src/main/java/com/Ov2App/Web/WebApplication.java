@@ -19,9 +19,6 @@ public class WebApplication {
 		messageSource.setDefaultEncoding("UTF-8");
 		System.out.println(messageSource.getMessage("van", null, locale));
 		SpringApplication.run(WebApplication.class, args);
-
-
-
 	}
 
 

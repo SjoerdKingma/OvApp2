@@ -31,6 +31,12 @@ public class WebApplicationController {
 
     @PostMapping("/info")
     public String infoSubmit(@ModelAttribute Info info, Model model) {
+        if(info.getInputA().equals(info.getInputB())){
+            info.setTest("hetzelfde");
+        }
+        else{
+            info.setTest("niet hetzelfde");
+        }
         model.addAttribute("info", info);
         return "info";
     }
