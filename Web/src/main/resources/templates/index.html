@@ -34,13 +34,19 @@
     </div>
 </form>
 
-<ul class="rectangle" id="rectangle">
+
+
+<ul th:each="value : ${inputValues}" class="rectangle" id="rectangle">
+
     <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
-        <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
+<!--        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>-->
+        <p>From: <span th:text="${value.from}"></span></p>
+<!--        <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>-->
+        <p>To: <span th:text="${value.to}"></span></p>
         <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
     </li>
 </ul>
+
 
 <script src="/javascript/SelectLang.js"></script>
 <script src="/javascript/favourites.js"></script>
