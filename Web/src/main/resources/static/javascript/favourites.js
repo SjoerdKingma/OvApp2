@@ -8,10 +8,7 @@
 
    addButton.addEventListener('click', function(){
 
-    console.log("Add Favorite button clicked");
-
        var inputValues = JSON.parse(localStorage.getItem('inputValues')) || [];
-
        var value = {
         "From": fromValue.value,
          "To": toValue.value
