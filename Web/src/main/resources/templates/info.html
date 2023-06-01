@@ -72,14 +72,18 @@
     </ul>
 
 </div>
+<!--<div class="tooltip">Hover over me-->
+<!--    <span class="tooltiptext">Tooltip text</span>-->
+<!--</div>-->
 
-
-<div class="info">
+<div class="info tooltip">
     <div>
         <p th:text="'van: ' + ${info.inputA}"/>
         <p th:text="'naar: ' + ${info.inputB}" />
         <p th:text="'test: '+ ${info.test}" />
     </div>
+
+    <span class="tooltiptext">Tooltip text</span>
 <input class="submitButtonInfo" type="submit" value="Reis plannen">
 </div>
 
