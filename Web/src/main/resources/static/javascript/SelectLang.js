@@ -26,30 +26,6 @@
 changeLocale();
 
 
-// function changeImg(){
-//   const header = document.querySelector('.header');
-//   const imageOptions = document.getElementById('language-options');
-//   const imageOpt = document.querySelector('option')
-//   const imgNL= document.getElementById('image-nl');
-//   const imgEN= document.getElementById('image-en');
-//
-//   const value = languageSelect.options[languageSelect.selectedIndex].value;
-//   while (imageOptions.imageOpt) {
-//        imageOptions.removeChild(imageOpt);
-//      }
-//   if (value === 'nl') {
-//       console.log(value);
-//       imageOptions.appendChild(imgNl);
-//       imageOptions.removeChild(imgEN);
-//     } else if (value === 'en') {
-//       imageOptions.appendChild(imgEN);
-//       imageOptions.removeChild(imgNL);
-// }
-//
-// }
-//
-// changeImg();
-
 
 
 
