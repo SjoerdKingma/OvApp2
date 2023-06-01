@@ -14,7 +14,7 @@
 </header>
 <body>
 
-<form id="form" class="form">
+<form id="formID" class="formClass">
     <div id="Vantext" class="Vantext">
         <label for="Van" th:text="#{van}">Van:</label>
         <input type="text" id="van" class="van" name="van">
@@ -25,13 +25,12 @@
         <input type="text" class="naar" id="naar" name="naar">
     </div>
 
-    <div class="submits" id="submits" >
-<!--        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>-->
-<!--        <button type="button" id="planTrip" th:text="#{Plan}" > plan</button>-->
-<!--    </div>-->
-        <input type="submit" th:value="#{Voeg}" >
-        <input type="submit" th:value="#{Plan}" >
-    </div>
+    <div class="submitsClass" id="submitsID" >
+        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
+        <button id="planReis" th:text="#{Plan}" > plan</button>
+
+<!--        <input type="submit" th:value="#{Voeg}" >-->
+<!--        <input type="submit" th:value="#{Plan}" >-->
     </div>
 </form>
 

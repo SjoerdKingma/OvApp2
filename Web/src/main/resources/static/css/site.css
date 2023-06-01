@@ -133,7 +133,7 @@ body{
     font-size: 32px;
     font-family: "Times New Roman", serif;
 }
-.form{
+/*.formClass{
 
       width: 100%;
       height: 200px;
@@ -150,28 +150,28 @@ body{
        flex-direction: column;
 
 }
-.form .Vantext{
+.formClass .Vantext{
     top: 10%;
     left: 18%;
     font-size: 32px;
     position: absolute;
 
 }
-.form .van{
+.formClass .van{
     height: 32px;
 }
 
-.form .Naartext{
+.formClass .Naartext{
     top: 10%;
     left: 50%;
     font-size: 32px;
     position: absolute;
 
 }
-.form .naar{
+.formClass .naar{
     height: 32px;
 }
-.form .submits{
+.formClass .submits{
     top: 50%
     left: 50%;
     height: 15px;
@@ -179,7 +179,7 @@ body{
     font-size: 32px;
     position: absolute;
 }
-/*.form .submits .Planreis{
+.formClass .submitsClass .PlanReis{
     height: 15px;
     font-size: 32px;
     position: absolute;
