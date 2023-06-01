@@ -1,35 +1,16 @@
 <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<html lang="en">
-<html xmlns:th="http://www.thymeleaf.org">
-<html>
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
+
 </head>
-<header class="header">
-    <div>
-        <div class="logo">
-            <img src="/images/bus.jpg" alt="Logo">
-            <span>FriendlyTrans</span>
-        </div>
-        <div class="go-green">Go Green</div>
-        <!--<div class="connector-line"></div> -->
-
-    </div>
-    <div class="language-options">
-        <img id="image-nl" src="/images/Nl.png" alt="nl">
-        <img id="image-en" src="/images/Eng.png" alt="Eng">
-
-       
-        <select id="language-select">
-            <option class="option" value="en">English</option>
-            <option class="option" value="nl">Netherlands</option>
-        </select>
-    </div>
-
+<header>
+<!-- hieronder staat de header -->
+ <div th:replace="fragments/header :: header" ></div>
 </header>
 <body>
 
@@ -38,15 +19,22 @@
         <label for="Van" th:text="#{van}">Van:</label>
         <input type="text" id="van" class="van" name="van">
     </div>
-<div id="Naartext" class="Naartext" action="apiCall" method="post">
+
+    <div id="Naartext" class="Naartext" action="apiCall" method="post">
         <label for="naar" th:text="#{naar}">Naar:</label>
         <input type="text" class="naar" id="naar" name="naar">
     </div>
+
     <div class="submits" id="submits" >
-        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
-        <button type="button" id="planTrip" th:text="#{Plan}" > plan</button>
+<!--        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>-->
+<!--        <button type="button" id="planTrip" th:text="#{Plan}" > plan</button>-->
+<!--    </div>-->
+        <input type="submit" th:value="#{Voeg}" >
+        <input type="submit" th:value="#{Plan}" >
+    </div>
     </div>
 </form>
+
 <ul class="rectangle" id="rectangle">
     <li class="Favoritejourney" id="Favoritejourney">
         <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
@@ -57,5 +45,6 @@
 
 <script src="/javascript/SelectLang.js"></script>
 <script src="/javascript/favourites.js"></script>
+
 </body>
 </html>

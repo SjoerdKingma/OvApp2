@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>info</title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/libraries/info.css">
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 
 <body>
 
-    <header class="header">
-    </header>
-    <form>
+<header class="header">
+    <div>
+        <div class="logo">
+            <img src="/images/bus.jpg" alt="Logo">
+            <span>FriendlyTrans</span>
+        </div>
+        <div class="go-green">Go Green</div>
+        <!--<div class="connector-line"></div> -->
+
+    </div>
+    <div class="language-options">
+        <img id="image-nl" src="/images/Nl.png" alt="nl">
+        <img id="image-en" src="/images/Eng.png" alt="Eng">
+
+
+        <select id="language-select">
+            <option class="option" value="en">English</option>
+            <option class="option" value="nl">Netherlands</option>
+        </select>
+    </div>
+
+</header>
+    <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
         <div class="input">
             <div class="gridItem"></div>
             <div class="gridItem">
-                <select class="fromTo" >
+                <select class="fromTo" th:field="*{inputA}"  >
                     <option value="Amersfoort">Amersfoort</option>
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
-                <select class="fromTo">
+                <select class="fromTo" th:field="*{inputB}">
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
             </div>
@@ -54,6 +75,11 @@
 
 
 <div class="info">
+    <div>
+        <p th:text="'van: ' + ${info.inputA}"/>
+        <p th:text="'naar: ' + ${info.inputB}" />
+        <p th:text="'test: '+ ${info.test}" />
+    </div>
 <input class="submitButtonInfo" type="submit" value="Reis plannen">
 </div>
 
