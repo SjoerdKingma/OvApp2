@@ -30,7 +30,7 @@ public class WebApplicationController {
     }
 
     @PostMapping("/info")
-    public String greetingSubmit(@ModelAttribute Info info, Model model) {
+    public String infoSubmit(@ModelAttribute Info info, Model model) {
         model.addAttribute("info", info);
         return "info";
     }

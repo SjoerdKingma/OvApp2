@@ -5,6 +5,8 @@ public class Info {
     public String inputA;
     public String inputB;
 
+    public String test;
+
     public String getInputA() {
         return inputA;
     }
@@ -20,4 +22,13 @@ public class Info {
     public void setInputB(String inputB) {
         this.inputB = inputB;
     }
+
+    public String getTest() {
+        return test;
+    }
+
+    public void setTest(String test) {
+        this.test = test;
+    }
+
 }
