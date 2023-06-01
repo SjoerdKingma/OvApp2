@@ -2,7 +2,10 @@ package com.Ov2App.Web.Controllers;
 
 
 import com.Ov2App.Web.Data.ApiConsumer;
+import com.Ov2App.Web.Data.DummyData;
+import com.Ov2App.Web.Model.Accommodaties;
 import com.Ov2App.Web.Model.Info;
+import com.Ov2App.Web.Model.TrajectJson;
 import org.json.simple.JSONArray;
 
 import org.springframework.stereotype.Controller;
@@ -11,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.Console;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 @Controller
 public class WebApplicationController {
@@ -31,6 +36,7 @@ public class WebApplicationController {
     @GetMapping("/info")
     public String infofrom(Model model){
         model.addAttribute("info", new Info());
+        model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
         return "info";
     }
 
@@ -43,6 +49,8 @@ public class WebApplicationController {
             info.setTest("niet hetzelfde");
         }
         model.addAttribute("info", info);
+
+        model.addAttribute("selectedTrip", DummyData.getDummyData());
         return "info";
     }
 

@@ -273,14 +273,14 @@ margin: 0px 3px 0px 3px;
 
 /*Start of Tooltip*/
 /* Tooltip container */
-.tooltip {
-  position: relative;
+.ov2app-tooltip {
+  /*position: relative;*/
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.ov2app-tooltip .ov2app-tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -295,7 +295,7 @@ margin: 0px 3px 0px 3px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.ov2app-tooltip:hover .ov2app-tooltiptext {
   visibility: visible;
 }
 /*End of Tooltip*/

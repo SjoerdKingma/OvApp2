@@ -7,6 +7,8 @@ public class Info {
 
     public String test;
 
+    private TrajectJson trip;
+
     public String getInputA() {
         return inputA;
     }
@@ -31,4 +33,11 @@ public class Info {
         this.test = test;
     }
 
+    public TrajectJson getTrip() {
+        return trip;
+    }
+
+    public void setTrip(TrajectJson trip) {
+        this.trip = trip;
+    }
 }

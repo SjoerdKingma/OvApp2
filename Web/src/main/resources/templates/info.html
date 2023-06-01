@@ -72,18 +72,21 @@
     </ul>
 
 </div>
-<!--<div class="tooltip">Hover over me-->
-<!--    <span class="tooltiptext">Tooltip text</span>-->
-<!--</div>-->
 
-<div class="info tooltip">
+
+<div class="info">
     <div>
         <p th:text="'van: ' + ${info.inputA}"/>
         <p th:text="'naar: ' + ${info.inputB}" />
         <p th:text="'test: '+ ${info.test}" />
     </div>
+    <div class="ov2app-tooltip">Accomodaties bekijken
+        <span class="ov2app-tooltiptext">
+            <span th:text="'Handicaptoegankelijk: ' + ${selectedTrip.accommodaties.HandicapToegankelijk}"></span>
+<!--            <span th:text="'Handicaptoegankelijk: ' + ${trip.HandicapToegankelijk}"></span>-->
+        </span>
+    </div>
 
-    <span class="tooltiptext">Tooltip text</span>
 <input class="submitButtonInfo" type="submit" value="Reis plannen">
 </div>
 
