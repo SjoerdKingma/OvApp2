@@ -82,8 +82,17 @@
     </div>
     <div class="ov2app-tooltip">Accomodaties bekijken
         <span class="ov2app-tooltiptext">
-            <span th:text="'Handicaptoegankelijk: ' + ${selectedTrip.accommodaties.HandicapToegankelijk}"></span>
-<!--            <span th:text="'Handicaptoegankelijk: ' + ${trip.HandicapToegankelijk}"></span>-->
+<!--            Accommodaties-->
+            <span><b>Accomodaties</b></span>
+            <span th:text="'Handicaptoegankelijk: ' + ${selectedTrip.accommodaties.getHandicapToegankelijk}"></span>
+            <span th:text="'Voervoersmiddel: ' + ${selectedTrip.accommodaties.getVervoersmiddel}"></span>
+            <span th:text="'TreinDelen: ' + ${selectedTrip.accommodaties.getTreinDelen}"></span>
+            <span th:text="'Toilet: ' + ${selectedTrip.accommodaties.getToilet}"></span>
+            <span th:text="'HandicapToilet: ' + ${selectedTrip.accommodaties.getHandicapToilet}"></span>
+            <span th:text="'Wifi: ' + ${selectedTrip.accommodaties.getWifi}"></span>
+
+<!--            Facilities-->
+            <span><b>Stationsfaciliteiten</b></span>
         </span>
     </div>
 
