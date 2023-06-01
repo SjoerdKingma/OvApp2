@@ -1,37 +1,17 @@
 <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<html lang="en">
-<html xmlns:th="http://www.thymeleaf.org">
-<html>
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
+
+
 </head>
-<header class="header">
-    <div>
-        <div class="logo">
-            <img src="/images/bus.jpg" alt="Logo">
-            <span>FriendlyTrans</span>
-        </div>
-        <div class="go-green">Go Green</div>
-        <!--<div class="connector-line"></div> -->
-
-    </div>
-    <div class="language-options">
-        <img id="image-nl" src="/images/Nl.png" alt="nl">
-        <img id="image-en" src="/images/Eng.png" alt="Eng">
-
-
-        <select id="language-select">
-            <option class="option" value="en">English</option>
-            <option class="option" value="nl">Netherlands</option>
-        </select>
-    </div>
-
-</header>
 <body>
+<!-- hieronder staat de header -->
+<div th:replace="fragments/header :: header" ></div>
 
 <form id="form" class="form">
     <div id="Vantext" class="Vantext">
@@ -55,7 +35,7 @@
     </li>
 </ul>
 
-<script src="/javascript/SelectLang.js"></script>
+<!--<script src="/javascript/SelectLang.js"></script> -->
 
 </body>
 </html>
