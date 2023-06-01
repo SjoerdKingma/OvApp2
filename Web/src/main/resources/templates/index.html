@@ -14,7 +14,7 @@
 </header>
 <body>
 
-<form id="formID" class="formClass">
+<form id="form" class="form">
     <div id="Vantext" class="Vantext">
         <label for="Van" th:text="#{van}">Van:</label>
         <input type="text" id="van" class="van" name="van">
@@ -25,25 +25,21 @@
         <input type="text" class="naar" id="naar" name="naar">
     </div>
 
-    <div class="submitsClass" id="submitsID" >
+    <div class="submits" id="submits" >
         <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
         <button id="planReis" th:text="#{Plan}" > plan</button>
-
-<!--        <input type="submit" th:value="#{Voeg}" >-->
-<!--        <input type="submit" th:value="#{Plan}" >-->
     </div>
 </form>
-
-
+<script th:inline="javascript">
+  var inputValues = JSON.parse(localStorage.getItem('values')) || [];
+</script>
 
 <ul th:each="value : ${inputValues}" class="rectangle" id="rectangle">
 
     <li class="Favoritejourney" id="Favoritejourney">
-<!--        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>-->
-        <p>From: <span th:text="${value.from}"></span></p>
-<!--        <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>-->
-        <p>To: <span th:text="${value.to}"></span></p>
-        <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
+        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}">From: <span th:text="${value.from}"></span></p>
+        <p class="FavoriteNaar" id="FavoriteNaar"  th:text="#{naar}">To: <span th:text="${value.to}"></span></p>
+<!--        <p class="FavoriteVoertuig" id="FavoriteVoertuig" th:text="#{naar}">To: <span th:text="${value.to}"></span></p>-->
     </li>
 </ul>
 

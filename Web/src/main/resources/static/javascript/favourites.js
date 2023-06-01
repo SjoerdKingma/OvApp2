@@ -8,8 +8,6 @@
 
    addButton.addEventListener('click', function(){
 
-//     e.preventDefault();    //stop form from submitting
-
     console.log("Add Favorite button clicked");
 
        var inputValues = JSON.parse(localStorage.getItem('inputValues')) || [];
@@ -25,9 +23,9 @@
 
        console.log(localStorage);
 
-                // Clear the form inputs
-       document.getElementById('van').value = '';
-       document.getElementById('naar').value = '';
+//                // Clear the form inputs
+//       document.getElementById('van').value = '';
+//       document.getElementById('naar').value = '';
 
     });
   }
