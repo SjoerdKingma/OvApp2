@@ -1,24 +1,39 @@
-console.log("hi");
 
-const addButton = document.getElementById("addFavourite");
+//  document.addEventListener('DOMContentLoaded', function() {
+//  const form = document.getElementById('form');
+//  const addButton = document.getElementById('addFavourite');
+//  var fromValue = document.getElementById('van').value;
+//  var toValue = document.getElementById('naar').value;
 
-addButton.addEventListener("click", function(event){
-//event.preventDefault();
-//var fromValue = document.getElementById('van');
-//var toValue = document.getElementById('naar');
-//var inputValues = Json.parse(localStorage.geItem('inputValues') || [])
-//var values = {
-//        "From": fromValue,
-//        "To": toValue
-//  };
+   function saveFavourite(){
+//    e.preventDefault();    //stop form from submitting
+     console.log("Add Favorite button clicked");
+      }
+document.getElementById("addFavourite").addEventListener("click", saveFavourite);
+
+//    event.preventDefault();
+////    event.stopPropagation()
 //
-//inputValues.push(values);
+//   var inputValues = JSON.parse(localStorage.getItem('inputValues')) || [];
 //
-//localStorage.setItem('inputValues', JSON.stringify(inputValues));
+//   var values = {
+//    "From": fromValue,
+//     "To": toValue
+//   };
 //
-// // Clear the form input
-//document.querySelector('input[name="inputValue"]').value = '';
+//   inputValues.push(values);
+//
+//   localStorage.setItem('inputValues', JSON.stringify(inputValues));
+//
+//            // Clear the form inputs
+//    document.getElementById('van').value = '';
+//     document.getElementById('naar').value = '';
+//
+// addButton.addEventListener('click', saveFavourite);
+//   });
 
-console.log("hiiii");
 
-});
+
+
+
+

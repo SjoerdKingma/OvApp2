@@ -23,7 +23,7 @@
         <img id="image-nl" src="/images/Nl.png" alt="nl">
         <img id="image-en" src="/images/Eng.png" alt="Eng">
 
-
+       
         <select id="language-select">
             <option class="option" value="en">English</option>
             <option class="option" value="nl">Netherlands</option>
@@ -42,9 +42,9 @@
         <label for="naar" th:text="#{naar}">Naar:</label>
         <input type="text" class="naar" id="naar" name="naar">
     </div>
-    <div class="submits" id="submits" action="apiCall" method="post">
-        <button type="submit" id="addFavourite" th:text="#{button1.text}" > Add</button>
-        <input type="submit" th:value="#{Plan}" >
+    <div class="submits" id="submits" >
+        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
+        <button type="button" id="planTrip" th:text="#{Plan}" > plan</button>
     </div>
 </form>
 <ul class="rectangle" id="rectangle">
