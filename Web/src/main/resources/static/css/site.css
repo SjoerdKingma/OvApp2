@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 20vh;
 }
 
 /* Logo style */
@@ -28,7 +29,7 @@
 }
 
 .logo img {
-  height: 100px;
+  height: 15vh;
   margin-right: 10px;
 }
 
@@ -50,6 +51,14 @@
   border-radius: 4px;
   cursor: pointer;
   margin-left: 20px;
+  }
+
+/* Connector line style */
+.connector-line {
+  width: 1px;
+  height: 20px;
+  background-color: #999;
+  margin: 0 10px;
 }
 
 /* Language options style */
@@ -175,4 +184,89 @@ body{
     font-size: 32px;
     position: absolute;
 
+}
+
+.input{
+    height: 25vh;
+    background: #49cdfd;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transportTypeGridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.gridSubmitRouteButton{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.submitRouteButton{
+    margin: 0px 3px 0px 0px;
+}
+
+.divFromTo{
+text-align: center;
+}
+
+.input .fromTo{
+width: 100%;
+margin: 0px 3px 0px 3px;
+}
+
+.input .transportType{
+    width: 5%;
+    text-align: left;
+}
+
+.route{
+    position: fixed;
+    bottom: 0;
+    height: 55vh;
+    width: 40%;
+    background: #49cdfd;
+}
+
+.route .routeList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.route .routeListItem{
+    border-style: solid;
+    padding: 0% 0% 10% 0%;
+    background: #eee;
+}
+
+.info{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 55vh;
+    width: 60%;
+    background: #49cdfd;
+}
+
+.info .submitButtonInfo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0% 2.5% 2.5% 0%;
 }
