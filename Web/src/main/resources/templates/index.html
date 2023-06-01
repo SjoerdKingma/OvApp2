@@ -30,19 +30,13 @@
         <button id="planReis" th:text="#{Plan}" > plan</button>
     </div>
 </form>
-<script th:inline="javascript">
-  var inputValues = JSON.parse(localStorage.getItem('values')) || [];
-</script>
-
-<ul th:each="value : ${inputValues}" class="rectangle" id="rectangle">
+<ul class="rectangle" id="rectangle">
 
     <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}">From: <span th:text="${value.from}"></span></p>
-        <p class="FavoriteNaar" id="FavoriteNaar"  th:text="#{naar}">To: <span th:text="${value.to}"></span></p>
-<!--        <p class="FavoriteVoertuig" id="FavoriteVoertuig" th:text="#{naar}">To: <span th:text="${value.to}"></span></p>-->
+        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}">From: </p>
+        <p class="FavoriteNaar" id="FavoriteNaar"  th:text="#{naar}">To: <</p>
     </li>
 </ul>
-
 
 <script src="/javascript/SelectLang.js"></script>
 <script src="/javascript/favourites.js"></script>
