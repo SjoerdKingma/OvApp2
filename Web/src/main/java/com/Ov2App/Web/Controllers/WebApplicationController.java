@@ -41,7 +41,7 @@ public class WebApplicationController {
     }
 
     @GetMapping("/index")
-    public String index(Model model){
+    public String index(Model model, @RequestParam(required = false) String lang){
         model.addAttribute("info", new Info());
         model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
         return "index";

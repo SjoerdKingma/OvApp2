@@ -38,16 +38,16 @@
 //
 //showFavourites();
 
-function chooseFromFavourits(){
-  const ulFav = document.getElementById('li');
-  ulFav.addEventListener('click' ,function(){
-  fromValue.append(fromValue.value);
-  toValue.append(toValue.value);// or use textContent
-
-
-  })
-
-
-
-
-}
+//function chooseFromFavourits(){
+//  const ulFav = document.getElementById('li');
+//  ulFav.addEventListener('click' ,function(){
+//  fromValue.append(fromValue.value);
+//  toValue.append(toValue.value);// or use textContent
+//
+//
+//  })
+//
+//
+//
+//
+//}
