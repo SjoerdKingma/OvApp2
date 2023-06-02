@@ -128,7 +128,7 @@ body{
 .form{
 
       width: 100%;
-      height: 200px;
+      height: 40vh;
       position: absolute;
       top: 20%;
       left: 50%;
@@ -163,9 +163,7 @@ body{
 .form .naar{
     height: 32px;
 }
-.form .Addtofavorites{
-    top: 50%
-    left: 50%;
+.Addtofavorites{
     height: 15px;
     line-height: 32px;
     font-size: 32px;
@@ -175,47 +173,94 @@ body{
     height: 15px;
     font-size: 32px;
     position: absolute;
-
 }
 
-.input{
-    height: 25vh;
-    background: #49cdfd;
+.favorites{
+opacity: 1;
+height: 40vh;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
+
+.favorites_ul{
+    list-style-type: none;
+}
+
+.backgroundspacer{
+height: 20hv;
+width: 100%;
+background: #90EE90;
+}
+
+.inputindex{
+    height: 40vh;
+    background: #90EE90;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
     display: grid;
     grid-template-columns: 30% 40% 30%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input{
+    height: 25vh;
+    background: #90EE90;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+
 .gridItem {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .transportTypeGridItem {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
   align-items: center;
 }
 
 .gridSubmitRouteButton{
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
-  align-items: center;
+
   justify-content: right;
 }
 
 .submitRouteButton{
     margin: 0px 3px 0px 0px;
+    width: 30%;
+    height: 27px;
+    font-size: 80%;
 }
 
 .divFromTo{
 text-align: center;
 }
 
-.input .fromTo{
+.fromTo{
 width: 100%;
 margin: 0px 3px 0px 3px;
 }

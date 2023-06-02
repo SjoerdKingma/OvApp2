@@ -11,6 +11,34 @@
 <!-- hieronder staat de header -->
 <div th:replace="fragments/header :: header" ></div>
 
+<form action="#" th:action="@{/info}" th:object="${info}" method="post" >
+    <div class="inputindex">
+        <div class="gridItem"></div>
+        <div class="gridItem">
+            <select class="fromTo" th:field="*{inputA}"  >
+                <option value="Amersfoort">Amersfoort</option>
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+            <select class="fromTo" th:field="*{inputB}">
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+        </div>
+        <div class="transportTypeGridItem">
+            <select id="transportType">
+                <option value="Trein">Trein</option>
+                <option value="Bus">Bus</option>
+            </select>
+        </div>
+        <div class="gridItem"></div>
+        <div class="gridSubmitRouteButton">
+            <input class="submitRouteButton" type="submit" value="Plan reis">
+                <input class="submitRouteButton" type="button" th:value="#{Voeg}" >
+        </div>
+        <div class="gridItem"></div>
+    </div>
+</form>
+
+<!--
 <form id="form" class="form">
     <div id="Vantext" class="Vantext">
         <label for="Van" th:text="#{van}">Van:</label>
@@ -25,13 +53,17 @@
         <input type="submit" th:value="#{Plan}" onclick="">
     </div>
 </form>
-<ul class="rectangle" id="rectangle">
-    <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
-        <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
-        <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
-    </li>
-</ul>
+-->
+
+<div class="favorites">
+    <ul class="favorites_ul">
+        <li class="Favoritejourney" id="Favoritejourney">
+            <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
+            <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
+            <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
+        </li>
+    </ul>
+</div>
 
 <!--<script src="/javascript/SelectLang.js"></script> -->
 
