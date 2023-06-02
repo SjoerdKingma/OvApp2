@@ -25,23 +25,28 @@ function showFavourites(){
      if(inputValues>0){
         inputValues.forEach((value) => {
         const liFav = document.createElement('li');
-        //add from and to text from resource Bundle.
+        //add from and to texts from resource Bundle.
         liFav.textContent += "From": fromValue.value,"To:",toValue.value;
         const pFav = document.createElement('p');
         const spanFav = document.createElement('span');
         pFav.appendChild(spanFav);
         ulFav.appendChild(liFav);
-});
-
-}
-
-
-}
+    });
+   }
+ }
 
 
 showFavourites();
 
 function chooseFromFavourits(){
+  const ulFav = document.getElementById('li');
+  ulFav.addEventListener('click' ,function(){
+  fromValue.append(fromValue.value);
+  toValue.append(toValue.value);// or use textContent
+
+
+  })
+
 
 
 
