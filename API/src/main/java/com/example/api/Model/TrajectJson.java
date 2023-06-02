@@ -6,7 +6,7 @@ public class TrajectJson {
     public String beginstation;
     public Double afstand;
     public Double reistijd;
-    public String Reismethode;
+    public String reismethode;
     public Double prijs;
     public String eindstation;
     public Accommodaties accommodaties;
@@ -19,7 +19,7 @@ public class TrajectJson {
         this.beginstation = beginstation;
         this.afstand = afstand;
         this.reistijd = reistijd;
-        Reismethode = reismethode;
+        this.reismethode = reismethode;
         this.prijs = prijs;
         this.eindstation = eindstation;
         this.accommodaties = accommodaties;
@@ -68,11 +68,11 @@ public class TrajectJson {
     }
 
     public String getReismethode() {
-        return Reismethode;
+        return reismethode;
     }
 
     public void setReismethode(String reismethode) {
-        Reismethode = reismethode;
+        this.reismethode = reismethode;
     }
 
     public Double getPrijs() {
@@ -123,7 +123,7 @@ public class TrajectJson {
                 ", beginstation='" + beginstation + '\'' +
                 ", afstand=" + afstand +
                 ", reistijd=" + reistijd +
-                ", Reismethode='" + Reismethode + '\'' +
+                ", Reismethode='" + reismethode + '\'' +
                 ", prijs=" + prijs +
                 ", eindstation='" + eindstation + '\'' +
                 ", accommodaties=" + accommodaties +

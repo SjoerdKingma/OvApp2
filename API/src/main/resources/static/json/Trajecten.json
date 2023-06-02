@@ -5,7 +5,7 @@
     "beginstation": "Amersfoort",
     "afstand": 21.5,
     "reistijd": 13,
-    "Reismethode":"Train",
+    "reismethode":"Train",
     "prijs": 5,
     "eindstation": "Utrecht",
     "accommodaties":
@@ -33,8 +33,6 @@
         "perron": 4
       }
     ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort-Utrecht"
   },
   {
@@ -78,8 +76,6 @@
         "perron": "8a"
       }
     ],
-    "vertrektijden": [10.21,14.19,21.12],
-    "terug vertrektijden": [10.21,14.19,21.12],
     "kaart": "Utrecht-Amsterdam"
 
   },
@@ -131,8 +127,6 @@
         "perron": "3b"
       }
     ],
-    "vertrektijden": [8.21,10.19,22.12],
-    "terug vertrektijden": [8.21,10.19,22.12],
     "kaart": "Amersfoort-Groningen"
   },
   {
@@ -197,8 +191,6 @@
         "perron": 2
       }
     ],
-    "vertrektijden": [6.25,17.21,11.11],
-    "terug vertrektijden": [6.25,17.21,11.11],
     "kaart": "Amersfoort-Enschede"
 
   },
@@ -250,8 +242,6 @@
         "perron": 5
       }
     ],
-    "vertrektijden": [12.25,16.56,22.22],
-    "terug vertrektijden": [12.25,16.56,22.22],
     "kaart": "Amersfoort-Den Haag"
   },
   {
@@ -345,8 +335,6 @@
         "perron": "Hier is maar een perron aanwezig"
       }
     ],
-    "vertrektijden": [7.30,14.21,19.22],
-    "terug vertrektijden": [7.30,14.21,19.22],
     "kaart": "Amersfoort-Leusden"
   },
   {
@@ -419,8 +407,6 @@
      "perron": "Hier is maar een perron aanwezig"
   }
 ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort Eemplein - Amersfoort Vathorst"
   },
   {
@@ -477,8 +463,6 @@
         "prijs": 0.39,
         "perron": "Hier is maar een perron aanwezig"
       }],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort centrum-Amersfoort amerena"
   },
   {
@@ -530,8 +514,6 @@
          "perron": "Hier is maar een perron aanwezig"
       }
     ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Hoogland esdoorlaan-Amersfoort bovist"
   },
   {
@@ -582,8 +564,6 @@
          "perron": "Hier is maar een perron aanwezig"
       }
     ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort Curacaolaan-Amersfoort Begraafplaats Rusthof"
 
   }

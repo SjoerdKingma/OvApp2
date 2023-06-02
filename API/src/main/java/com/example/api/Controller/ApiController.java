@@ -61,7 +61,7 @@ public class ApiController {
             jsonObject.put("reistijd", trajecten.get(i).getReistijd());
             jsonObject.put("reismethode", trajecten.get(i).getReismethode());
             jsonObject.put("prijs", trajecten.get(i).getPrijs());
-            jsonObject.put("eindstaiond", trajecten.get(i).getEindstation());
+            jsonObject.put("eindstation", trajecten.get(i).getEindstation());
             jsonObject.put("accomodaties", trajecten.get(i).getAccommodaties());
             jsonObject.put("stations", trajecten.get(i).getStations());
             List<Station> stations1 = List.of(trajecten.get(i).getStations());

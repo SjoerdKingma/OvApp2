@@ -2,7 +2,9 @@ package com.Ov2App.Web.Controllers;
 
 
 import com.Ov2App.Web.Data.ApiConsumer;
+import com.Ov2App.Web.Data.Traject;
 import com.Ov2App.Web.Model.Info;
+import com.Ov2App.Web.Model.TrajectJson;
 import org.json.simple.JSONArray;
 
 import org.springframework.stereotype.Controller;
@@ -10,7 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.Console;
+import java.util.ArrayList;
 
 @Controller
 public class WebApplicationController {
@@ -28,10 +30,22 @@ public class WebApplicationController {
 
     }
 
-    @GetMapping("/info")
-    public String infofrom(Model model){
+    @RequestMapping("/info")
+    public ModelAndView infofrom(Model model){
+        ArrayList<TrajectJson> trajectJsons = null;
+        try{
+            trajectJsons = Traject.gettrajecten();
+        }catch(Exception ex){
+            System.out.println(ex);
+        }
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("data", trajectJsons);
         model.addAttribute("info", new Info());
-        return "info";
+
+
+        return modelAndView;
+
     }
 
     @PostMapping("/info")

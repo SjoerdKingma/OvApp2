@@ -1,26 +1,28 @@
 package com.Ov2App.Web.Model;
 
 import java.util.Arrays;
+import java.util.List;
+
 public class TrajectJson {
-    public int id;
+    public Long id;
     public String naam;
     public String beginstation;
     public Double afstand;
     public Double reistijd;
-    public String Reismethode;
+    public String reismethode;
     public Double prijs;
     public String eindstation;
     public Accommodaties accommodaties;
-    public Station[] stations;
+    public List<Station> stations;
     public String kaart;
 
-    public TrajectJson(int id, String naam, String beginstation, Double afstand, Double reistijd, String reismethode, Double prijs, String eindstation, Accommodaties accommodaties, Station[] stations, String kaart) {
+    public TrajectJson(Long id, String naam, String beginstation, Double afstand, Double reistijd, String reismethode, Double prijs, String eindstation, Accommodaties accommodaties, List<Station> stations, String kaart) {
         this.id = id;
         this.naam = naam;
         this.beginstation = beginstation;
         this.afstand = afstand;
         this.reistijd = reistijd;
-        Reismethode = reismethode;
+        this.reismethode = reismethode;
         this.prijs = prijs;
         this.eindstation = eindstation;
         this.accommodaties = accommodaties;
@@ -28,11 +30,11 @@ public class TrajectJson {
         this.kaart = kaart;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -69,11 +71,11 @@ public class TrajectJson {
     }
 
     public String getReismethode() {
-        return Reismethode;
+        return reismethode;
     }
 
     public void setReismethode(String reismethode) {
-        Reismethode = reismethode;
+        this.reismethode = reismethode;
     }
 
     public Double getPrijs() {
@@ -100,11 +102,11 @@ public class TrajectJson {
         this.accommodaties = accommodaties;
     }
 
-    public Station[] getStations() {
+    public List<Station> getStations() {
         return stations;
     }
 
-    public void setStations(Station[] stations) {
+    public void setStations(List<Station> stations) {
         this.stations = stations;
     }
 
@@ -124,11 +126,11 @@ public class TrajectJson {
                 ", beginstation='" + beginstation + '\'' +
                 ", afstand=" + afstand +
                 ", reistijd=" + reistijd +
-                ", Reismethode='" + Reismethode + '\'' +
+                ", Reismethode='" + reismethode + '\'' +
                 ", prijs=" + prijs +
                 ", eindstation='" + eindstation + '\'' +
                 ", accommodaties=" + accommodaties +
-                ", stations=" + Arrays.toString(stations) +
+                ", stations=" + Arrays.toString(new List[]{stations}) +
                 ", kaart='" + kaart + '\'' +
                 '}';
     }
