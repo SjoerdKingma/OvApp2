@@ -18,12 +18,7 @@ public class WebApplicationController {
     @GetMapping("/index")
     public ModelAndView index(@RequestParam(required = false) String lang) {
         ModelAndView model = new ModelAndView();
-
-//
-
-
         System.out.println(lang);
-
         return model;
 
     }
