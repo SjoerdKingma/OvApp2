@@ -298,4 +298,14 @@ margin: 0px 3px 0px 3px;
 .ov2app-tooltip:hover .ov2app-tooltiptext {
   visibility: visible;
 }
+
+.accommodation{
+    padding-left: 10px;
+    text-align: left;
+}
 /*End of Tooltip*/
+
+.line-break{
+    content: "";
+    display: block;
+}
