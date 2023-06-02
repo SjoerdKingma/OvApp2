@@ -283,8 +283,9 @@ margin: 0px 3px 0px 3px;
 .ov2app-tooltip .ov2app-tooltiptext {
   visibility: hidden;
   width: 240px;
-  background-color: black;
-  color: #fff;
+  background-color: white;
+  opacity: 0.7;
+  color: black;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;

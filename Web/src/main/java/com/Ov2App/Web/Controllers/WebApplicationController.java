@@ -50,7 +50,7 @@ public class WebApplicationController {
         }
         model.addAttribute("info", info);
 
-        model.addAttribute("selectedTrip", DummyData.getDummyData());
+        model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
         return "info";
     }
 
