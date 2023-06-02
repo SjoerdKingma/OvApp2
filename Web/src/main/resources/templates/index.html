@@ -6,7 +6,6 @@
     <title></title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
-
 </head>
 <header>
 <!-- hieronder staat de header -->
@@ -14,29 +13,59 @@
 </header>
 <body>
 
-<form id="form" class="form">
-    <div id="Vantext" class="Vantext">
-        <label for="Van" th:text="#{van}">Van:</label>
-        <input type="text" id="van" class="van" name="van">
-    </div>
+<!--<form id="form" class="form">-->
+<!--    <div id="Vantext" class="Vantext">-->
+<!--        <label for="Van" th:text="#{van}">Van:</label>-->
+<!--        <input type="text" id="van" class="van" name="van">-->
+<!--    </div>-->
 
-    <div id="Naartext" class="Naartext" action="apiCall" method="post">
-        <label for="naar" th:text="#{naar}">Naar:</label>
-        <input type="text" class="naar" id="naar" name="naar">
-    </div>
+<!--    <div id="Naartext" class="Naartext" action="apiCall" method="post">-->
+<!--        <label for="naar" th:text="#{naar}">Naar:</label>-->
+<!--        <input type="text" class="naar" id="naar" name="naar">-->
+<!--    </div>-->
 
-    <div class="submits" id="submits" >
-        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
-        <button id="planReis" th:text="#{Plan}" > plan</button>
+<!--    <div class="submits" id="submits" >-->
+<!--        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>-->
+<!--        <button id="planReis" th:text="#{Plan}" > plan</button>-->
+<!--    </div>-->
+<!--</form>-->
+<form action="#" th:action="@{/info}" th:object="${info}" method="post" >
+    <div class="inputindex">
+        <div class="gridItem"></div>
+        <div class="gridItem">
+            <p th:text="#{van}" class="fromToText">van:</p>
+            <select  class="fromTo" th:field="*{inputA}"  >
+                <option value="Amersfoort">Amersfoort</option>
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+            <p th:text="#{naar}" class="fromToText">naar:</p>
+            <select  class="fromTo" th:field="*{inputB}">
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+        </div>
+        <div class="transportTypeGridItem">
+            <select id="transportType">
+                <option value="Trein">Trein</option>
+                <option value="Bus">Bus</option>
+            </select>
+        </div>
+        <div class="gridItem"></div>
+        <div class="gridSubmitRouteButton">
+            <input class="submitRouteButton" type="submit" value="Plan reis">
+                <input class="submitRouteButton" type="button" th:value="#{Voeg}" >
+        </div>
+        <div class="gridItem"></div>
     </div>
 </form>
-<ul class="rectangle" id="rectangle">
 
-    <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}">From: </p>
-        <p class="FavoriteNaar" id="FavoriteNaar"  th:text="#{naar}">To: <</p>
-    </li>
-</ul>
+<div class="favorites">
+    <ul class="favorites_ul">
+        <li class="Favoritejourney" id="Favoritejourney">
+            <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
+            <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
+        </li>
+    </ul>
+</div>
 
 <script src="/javascript/SelectLang.js"></script>
 <script src="/javascript/favourites.js"></script>

@@ -53,14 +53,6 @@
   margin-left: 20px;
   }
 
-/* Connector line style */
-.connector-line {
-  width: 1px;
-  height: 20px;
-  background-color: #999;
-  margin: 0 10px;
-}
-
 /* Language options style */
 .language-options {
   display: flex;
@@ -136,7 +128,7 @@ body{
 .form{
 
       width: 100%;
-      height: 200px;
+      height: 40vh;
       position: absolute;
       top: 20%;
       left: 50%;
@@ -171,9 +163,13 @@ body{
 .form .naar{
     height: 32px;
 }
+
 .form .submits{
     top: 50%
     left: 50%;
+
+.Addtofavorites{
+
     height: 15px;
     line-height: 32px;
     font-size: 32px;
@@ -183,48 +179,99 @@ body{
     height: 15px;
     font-size: 32px;
     position: absolute;
+<<<<<<< HEAD
 
 }*/
 
-.input{
-    height: 25vh;
-    background: #49cdfd;
+}
+
+
+.favorites{
+height: 40vh;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
+
+.favorites_ul{
+    list-style-type: none;
+}
+
+.inputindex{
+    background: white;
+    height: 40vh;
+    background: #90EE90;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
     display: grid;
     grid-template-columns: 30% 40% 30%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input{
+    height: 25vh;
+    background: #90EE90;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+
 .gridItem {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .transportTypeGridItem {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
   align-items: center;
 }
 
 .gridSubmitRouteButton{
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
-  align-items: center;
+
   justify-content: right;
 }
 
 .submitRouteButton{
     margin: 0px 3px 0px 0px;
+    width: 30%;
+    height: 27px;
+    font-size: 80%;
 }
 
 .divFromTo{
 text-align: center;
 }
 
-.input .fromTo{
+.fromTo{
 width: 100%;
+margin: 0px 3px 0px 3px;
+}
+
+.fromToText{
+text-align: center;
 margin: 0px 3px 0px 3px;
 }
 
@@ -269,4 +316,44 @@ margin: 0px 3px 0px 3px;
     right: 0;
     bottom: 0;
     margin: 0% 2.5% 2.5% 0%;
+}
+
+/*Start of Tooltip*/
+/* Tooltip container */
+.ov2app-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.ov2app-tooltip .ov2app-tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: white;
+  opacity: 0.7;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.ov2app-tooltip:hover .ov2app-tooltiptext {
+  visibility: visible;
+}
+
+.accommodation{
+    padding-left: 10px;
+    text-align: left;
+}
+/*End of Tooltip*/
+
+.line-break{
+    content: "";
+    display: block;
 }

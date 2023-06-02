@@ -1,11 +1,13 @@
 package com.Ov2App.Web.Model;
 public class Station {
-    public int id;
-    public Float afstand;
-    public Float reistijd;
-    public Float prijs;
+    private int id;
+    private Float afstand;
+    private Float reistijd;
+    private Float prijs;
 
-    public Station(int id, Float afstand, Float reistijd, Float prijs) {
+    private Facilities facilities;
+
+    public Station(int id, Float afstand, Float reistijd, Float prijs, Facilities facilities) {
         this.id = id;
         this.afstand = afstand;
         this.reistijd = reistijd;
@@ -52,5 +54,13 @@ public class Station {
                 ", reistijd=" + reistijd +
                 ", prijs=" + prijs +
                 '}';
+    }
+
+    public Facilities getFacilities() {
+        return facilities;
+    }
+
+    public void setFacilities(Facilities facilities) {
+        this.facilities = facilities;
     }
 }
