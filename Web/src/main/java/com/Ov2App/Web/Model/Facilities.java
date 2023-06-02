@@ -1,11 +1,11 @@
 package com.Ov2App.Web.Model;
 
-public class Faciliteiten {
+public class Facilities {
     public String toilet;
     public String pinautomaat;
     public String restaurant;
 
-    public Faciliteiten(String toilet, String pinautomaat, String restaurant) {
+    public Facilities(String toilet, String pinautomaat, String restaurant) {
         this.toilet = toilet;
         this.pinautomaat = pinautomaat;
         this.restaurant = restaurant;
