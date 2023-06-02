@@ -1,8 +1,5 @@
 package com.Ov2App.Web.Model;
-
 import java.util.Arrays;
-import java.util.List;
-
 public class TrajectJson {
     public Long id;
     public String naam;
@@ -13,10 +10,10 @@ public class TrajectJson {
     public Double prijs;
     public String eindstation;
     public Accommodaties accommodaties;
-    public List<Station> stations;
+    public Station[] stations;
     public String kaart;
 
-    public TrajectJson(Long id, String naam, String beginstation, Double afstand, Double reistijd, String reismethode, Double prijs, String eindstation, Accommodaties accommodaties, List<Station> stations, String kaart) {
+    public TrajectJson(Long id, String naam, String beginstation, Double afstand, Double reistijd, String reismethode, Double prijs, String eindstation, Accommodaties accommodaties, Station[] stations, String kaart) {
         this.id = id;
         this.naam = naam;
         this.beginstation = beginstation;
@@ -102,11 +99,11 @@ public class TrajectJson {
         this.accommodaties = accommodaties;
     }
 
-    public List<Station> getStations() {
+    public Station[] getStations() {
         return stations;
     }
 
-    public void setStations(List<Station> stations) {
+    public void setStations(Station[] stations) {
         this.stations = stations;
     }
 
@@ -130,7 +127,7 @@ public class TrajectJson {
                 ", prijs=" + prijs +
                 ", eindstation='" + eindstation + '\'' +
                 ", accommodaties=" + accommodaties +
-                ", stations=" + Arrays.toString(new List[]{stations}) +
+                ", stations=" + Arrays.toString(stations) +
                 ", kaart='" + kaart + '\'' +
                 '}';
     }

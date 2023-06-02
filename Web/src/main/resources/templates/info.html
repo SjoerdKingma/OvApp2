@@ -37,11 +37,10 @@
             <div class="gridItem"></div>
             <div class="gridItem">
                 <select class="fromTo" th:field="*{inputA}">
-                    <option value="test"> test</option>
-                    <option th:each="traject: ${data}" th:text="${traject.naam}">
+                    <option th:each="station: ${stations}" th:text="${station}" th:value="${station}">
                 </select>
                 <select class="fromTo" th:field="*{inputB}">
-                    <option value="Amsterdam">Amsterdam</option>
+                    <option th:each="traject: ${data}" th:text="${traject.naam}" th:value="${traject.id}">
                 </select>
             </div>
             <div class="transportTypeGridItem">

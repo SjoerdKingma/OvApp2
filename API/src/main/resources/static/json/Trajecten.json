@@ -41,7 +41,7 @@
     "beginstation": "Utrecht",
     "afstand": 40,
     "reistijd": 30,
-    "Reismethode": "Train",
+    "reismethode": "Train",
     "prijs": 8.40,
     "eindstation": "Amsterdam",
     "accommodaties":
@@ -85,7 +85,7 @@
     "beginstation": "Amersfoort",
     "afstand": 194,
     "reistijd": 109,
-    "Reismethode": "Trein",
+    "reismethode": "Trein",
     "prijs": 25.70,
     "eindstation": "Groningen",
     "accommodaties":
@@ -135,7 +135,7 @@
     "beginstation": "Amersfoort",
     "afstand": 120,
     "reistijd": 80,
-    "Reismethode": "Train",
+    "reismethode": "Train",
     "prijs": 21.50,
     "eindstation": "Enschede",
     "accommodaties":
@@ -200,7 +200,7 @@
     "beginstation": "Amersfoort",
     "afstand": 82,
     "reistijd": 54,
-    "Reismethode": "Train",
+    "reismethode": "Train",
     "prijs": 16.20,
     "eindstation": "Den haag",
     "accommodaties":
@@ -250,7 +250,7 @@
     "beginstation": "Amersfoort",
     "afstand": 8.8,
     "reistijd": 26,
-    "Reismethode": "Bus",
+    "reismethode": "Bus",
     "prijs": 2.53,
     "eindstation": "Leusden",
     "accommodaties":
@@ -343,7 +343,7 @@
   "beginstation": "Amersfoort Eemplein",
   "afstand": 8.7,
   "reistijd": 21,
-  "Reismethode":"Bus",
+  "reismethode":"Bus",
   "prijs": 3.34,
   "eindstation": "Amersfoort Vathorst",
   "accommodaties":
@@ -415,7 +415,7 @@
     "beginstation": "Amersfoort centrum",
     "afstand": 3.5,
     "reistijd": 5,
-    "Reismethode":"Bus",
+    "reismethode":"Bus",
     "prijs": 1.91,
     "eindstation": "Amersfoort amerena",
     "accommodaties":
@@ -471,7 +471,7 @@
     "beginstation": "Hoogland esdoorlaan",
     "afstand": 3.8,
     "reistijd": 5,
-    "Reismethode":"Bus",
+    "reismethode":"Bus",
     "prijs": 1.52,
     "eindstation": "Amersfoort bovist",
     "accommodaties":
@@ -522,7 +522,7 @@
     "beginstation": "Amersfoort Curacaolaan",
     "afstand": 3.7,
     "reistijd": 10,
-    "Reismethode":"Bus",
+    "reismethode":"Bus",
     "prijs": 1.52,
     "eindstation": "Amersfoort Begraafplaats Rusthof",
     "accommodaties":

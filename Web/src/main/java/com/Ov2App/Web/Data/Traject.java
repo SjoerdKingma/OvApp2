@@ -31,14 +31,24 @@ public class Traject {
                 double prijs = (double) json.get("prijs");
                 String eindstation =  json.get("eindstation").toString();
                 Accommodaties accommodaties = (Accommodaties) json.get("accommodaties");
-                var stations = json.get("stations");
-                List<Station> station1 =new ArrayList<Station>();
-                station1.add((Station) stations);
 
-                String Kaart = json.get("Kaart").toString();
+                JSONArray  stations = (JSONArray) json.get("stations");
+                Station[] stations2 = new Station[stations.size()];
+                for (var y = 0; y < stations.size(); y++) {
+                    var currentStation = (JSONObject) stations.get(y);
+                    Long stationId = (Long) currentStation.get("id");
+                    Double stationsafstand= (Double) currentStation.get("afstand");
+                    Double stationsreistijd= (Double) currentStation.get("reistijd");
+                    Double stationsprijs= (Double) currentStation.get("prijs");
+                    Station station=new Station(Math.toIntExact(stationId),stationsafstand,stationsreistijd,stationsprijs);
+                    stations2[y]=  station;
+                }
+
+
+                    String kaart = json.get("kaart").toString();
                 // convert to ProductModel
                 //ProductModel product = new ProductModel(id, name, price, count, total);
-                TrajectJson trajectJson=new TrajectJson(id,naam,beginstation,afstand,reistijd,reismethode,prijs,eindstation,accommodaties, station1,Kaart);
+                TrajectJson trajectJson=new TrajectJson(id,naam,beginstation,afstand,reistijd,reismethode,prijs,eindstation,accommodaties,stations2,kaart);
                 trajectJsons.add(trajectJson);
             } catch (Exception e) {
                 System.out.println(e);

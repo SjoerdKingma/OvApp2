@@ -64,6 +64,7 @@ public class ApiController {
             jsonObject.put("eindstation", trajecten.get(i).getEindstation());
             jsonObject.put("accomodaties", trajecten.get(i).getAccommodaties());
             jsonObject.put("stations", trajecten.get(i).getStations());
+            jsonObject.put("kaart", trajecten.get(i).getKaart());
             List<Station> stations1 = List.of(trajecten.get(i).getStations());
             for (int b = 0; b < stations1.size(); b++) {
                 List<Stationsdetails> stationsdetails=new ArrayList<>();

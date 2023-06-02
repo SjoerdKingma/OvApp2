@@ -1,11 +1,11 @@
 package com.Ov2App.Web.Model;
 public class Station {
     public int id;
-    public Float afstand;
-    public Float reistijd;
-    public Float prijs;
+    public Double afstand;
+    public Double reistijd;
+    public Double prijs;
 
-    public Station(int id, Float afstand, Float reistijd, Float prijs) {
+    public Station(int id, Double afstand, Double reistijd, Double prijs) {
         this.id = id;
         this.afstand = afstand;
         this.reistijd = reistijd;
@@ -20,27 +20,27 @@ public class Station {
         this.id = id;
     }
 
-    public Float getAfstand() {
+    public Double getAfstand() {
         return afstand;
     }
 
-    public void setAfstand(Float afstand) {
+    public void setAfstand(Double afstand) {
         this.afstand = afstand;
     }
 
-    public Float getReistijd() {
+    public Double getReistijd() {
         return reistijd;
     }
 
-    public void setReistijd(Float reistijd) {
+    public void setReistijd(Double reistijd) {
         this.reistijd = reistijd;
     }
 
-    public Float getPrijs() {
+    public Double getPrijs() {
         return prijs;
     }
 
-    public void setPrijs(Float prijs) {
+    public void setPrijs(Double prijs) {
         this.prijs = prijs;
     }
 

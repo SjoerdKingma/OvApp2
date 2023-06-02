@@ -4,14 +4,17 @@ package com.Ov2App.Web.Controllers;
 import com.Ov2App.Web.Data.ApiConsumer;
 import com.Ov2App.Web.Data.Traject;
 import com.Ov2App.Web.Model.Info;
+import com.Ov2App.Web.Model.Station;
 import com.Ov2App.Web.Model.TrajectJson;
 import org.json.simple.JSONArray;
 
+import org.json.simple.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.Console;
 import java.util.ArrayList;
 
 @Controller
@@ -30,8 +33,8 @@ public class WebApplicationController {
 
     }
 
-    @RequestMapping("/info")
-    public ModelAndView infofrom(Model model){
+    @GetMapping("/info")
+    public String infofrom(Model model){
         ArrayList<TrajectJson> trajectJsons = null;
         try{
             trajectJsons = Traject.gettrajecten();
@@ -39,13 +42,21 @@ public class WebApplicationController {
             System.out.println(ex);
         }
 
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("data", trajectJsons);
+        model.addAttribute("data", trajectJsons);
+        model.addAttribute("stations", getUniqueStations(trajectJsons));
         model.addAttribute("info", new Info());
+        return "info";
+    }
 
-
-        return modelAndView;
-
+    private ArrayList<String> getUniqueStations(ArrayList<TrajectJson> trajectJsons){
+        ArrayList<String> uniqueStations = new ArrayList<>();
+        for (var i = 0; i < trajectJsons.size(); i++) {
+            Station[] stations=trajectJsons.get(i).getStations();
+            for (var j = 0; j < stations.length; j++) {
+                uniqueStations.add(String.valueOf(stations[j].id));
+            }
+        }
+        return uniqueStations;
     }
 
     @PostMapping("/info")
