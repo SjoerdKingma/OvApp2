@@ -40,7 +40,7 @@
                     <option th:each="station: ${stations}" th:text="${station}" th:value="${station}">
                 </select>
                 <select class="fromTo" th:field="*{inputB}">
-                    <option th:each="traject: ${data}" th:text="${traject.naam}" th:value="${traject.id}">
+                    <option th:each="station: ${stations}" th:text="${station}" th:value="${station}">
                 </select>
             </div>
             <div class="transportTypeGridItem">

@@ -20,6 +20,7 @@
     "stations": [
       {
         "id": 0,
+        "naam": "Amersfoort",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -27,6 +28,7 @@
       },
       {
         "id": 1,
+        "naam": "Utrecht",
         "afstand": 21.5,
         "reistijd": 13,
         "prijs": 5.00,
@@ -56,6 +58,7 @@
     "stations": [
       {
         "id": 2,
+        "naam": "Utrecht",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -63,6 +66,7 @@
       },
       {
         "id": 3,
+        "naam": "Amsterdam amstel",
         "afstand": 21,
         "reistijd": 33.8,
         "prijs": 7.30,
@@ -70,6 +74,7 @@
       },
       {
         "id": 4,
+        "naam": "Amsterdam centraal",
         "afstand": 9,
         "reistijd": 6.2,
         "prijs": 8.40,
@@ -100,6 +105,7 @@
     "stations": [
       {
         "id": 5,
+        "naam": "Amersfoort",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -107,6 +113,7 @@
       },
       {
         "id": 6,
+        "naam": "Zwolle",
         "afstand": 35,
         "reistijd": 89,
         "prijs": 13.40,
@@ -114,6 +121,7 @@
       },
       {
         "id": 7,
+        "naam": "Assen",
         "afstand": 41,
         "reistijd": 77,
         "prijs": 23.60,
@@ -121,6 +129,7 @@
       },
       {
         "id": 8,
+        "naam": "Groningen ",
         "afstand": 33,
         "reistijd": 28,
         "prijs": 25.70,
@@ -150,6 +159,7 @@
     "stations": [
       {
         "id": 9,
+        "naam": "Amersfoort centraal",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -157,6 +167,7 @@
       },
       {
         "id": 10,
+        "naam": "Apeldoorn",
         "afstand": 22,
         "reistijd": 45,
         "prijs": 9.10,
@@ -164,6 +175,7 @@
       },
       {
         "id": 11,
+        "naam": "Deventer",
         "afstand": 11,
         "reistijd": 14,
         "prijs": 11.90,
@@ -171,6 +183,7 @@
       },
       {
         "id": 12,
+        "naam": "Almelo ",
         "afstand": 26,
         "reistijd": 38,
         "prijs": 18.60,
@@ -178,6 +191,7 @@
       },
       {
         "id": 14,
+        "naam": "Hengelo ",
         "afstand": 11,
         "reistijd": 15,
         "prijs": 20.40,
@@ -185,6 +199,7 @@
       },
       {
         "id": 15,
+        "naam": "Enschede ",
         "afstand": 10,
         "reistijd": 8,
         "prijs": 21.50,
@@ -215,6 +230,7 @@
     "stations": [
       {
         "id": 16,
+        "naam": "Amersfoort centraal",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -222,6 +238,7 @@
       },
       {
         "id": 17,
+        "naam": "Utrecht centraal",
         "afstand": 30,
         "reistijd": 21.7,
         "prijs": 9,
@@ -229,6 +246,7 @@
       },
       {
         "id": 18,
+        "naam": "Gouda centraal",
         "afstand": 31,
         "reistijd": 33.2,
         "prijs": 7.10,
@@ -236,6 +254,7 @@
       },
       {
         "id": 19,
+        "naam": "Den Haag centraal ",
         "afstand": 49,
         "reistijd": 30.70,
         "prijs": 4.20,
@@ -264,6 +283,7 @@
     "stations": [
       {
         "id": 20,
+        "naam": "Amersfoort centraal",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -271,6 +291,7 @@
       },
       {
         "id": 21,
+        "naam": "Amersfoort centrum",
         "afstand": 4,
         "reistijd": 1.5,
         "prijs": 0.13,
@@ -278,6 +299,7 @@
       },
       {
         "id": 22,
+        "naam": "Amersfoort de Kei",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.13,
@@ -285,6 +307,7 @@
       },
       {
         "id": 23,
+        "naam": "Amersfoort Blekerssingel",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.26, 
@@ -293,6 +316,7 @@
       },
       {
         "id": 24,
+        "naam": "Leusden Ursuline Weg",
         "afstand": 2,
         "reistijd": 0.5,
         "prijs": 0.52,
@@ -300,6 +324,7 @@
       },
       {
         "id": 25,
+        "naam": "Leusden Heiligenbergerweg",
         "afstand": 1,
         "reistijd": 0.3,
         "prijs": 0.13,
@@ -307,6 +332,7 @@
       },
       {
         "id": 27,
+        "naam": "Leusden Geertrudeshof ",
         "afstand": 2,
         "reistijd": 1.2,
         "prijs": 0.39,
@@ -314,6 +340,7 @@
       },
       {
         "id": 28,
+        "naam": "Leusden Bohemen",
         "afstand": 2,
         "reistijd": 0.8,
         "prijs": 0.26,
@@ -329,6 +356,7 @@
       },
       {
         "id": 30,
+        "naam": "Leusden bedrijventerrein de horst",
         "afstand": 4,
         "reistijd": 1.4,
         "prijs": 0.39,
@@ -358,6 +386,7 @@
   "stations": [
   {
     "id": 31,
+    "naam": "Amersfoort eemplein",
     "afstand": 0,
     "reistijd": 0,
     "prijs": 0,
@@ -365,6 +394,7 @@
   },
   {
     "id": 32,
+    "naam": "Amersfoort de nieuwe stad",
     "afstand": 1,
     "reistijd": 0.5,
     "prijs": 0.13,
@@ -372,6 +402,7 @@
   },
   {
     "id": 33,
+    "naam": "Amersfoort kwekersweg",
     "afstand": 1,
     "reistijd": 0.2,
     "prijs": 0.13,
@@ -379,6 +410,7 @@
   },
   {
     "id": 34,
+    "naam": "Amersfoort meader mc",
     "afstand": 1,
     "reistijd": 1.7,
     "prijs": 1.26,
@@ -386,6 +418,7 @@
   },
   {
     "id": 35,
+    "naam": "Hoogland pastoor pieckweg",
     "afstand": 2,
     "reistijd": 3.7,
     "prijs": 0.39,
@@ -401,6 +434,7 @@
   },
   {
     "id": 37,
+    "naam": "Amersfoort station vathorst",
     "afstand": 9,
     "reistijd": 0.4,
     "prijs": 0.26,
@@ -430,6 +464,7 @@
     "stations": [
       {
         "id": 38,
+        "naam": "Amersfoort centrum",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -437,6 +472,7 @@
       },
       {
         "id": 40,
+        "naam": "Amersfoort de kei",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.13,
@@ -444,6 +480,7 @@
       },
       {
         "id": 41,
+        "naam": "Amersfoort blekerseiland",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.13,
@@ -451,6 +488,7 @@
       },
       {
         "id": 42,
+        "naam": "Amersfoort hogeweg",
         "afstand": 1,
         "reistijd": 2.3,
         "prijs": 1.26,
@@ -458,6 +496,7 @@
       },
       {
         "id": 43,
+        "naam": "Amersfoort amerena",
         "afstand": 2,
         "reistijd": 0.5,
         "prijs": 0.39,
@@ -486,6 +525,7 @@
     "stations": [
       {
         "id": 44,
+        "naam": "Hoogland esdoorlaan",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -501,6 +541,7 @@
       },
       {
         "id": 46,
+        "naam": "Amersfoort spanderswoud",
         "afstand": 2,
         "reistijd": 0.4,
         "prijs": 0.13,
@@ -508,6 +549,7 @@
       },
       {
         "id": 47,
+        "naam": "Amersfoort bovist",
         "afstand": 1,
         "reistijd": 0.7,
         "prijs": 1.26,
@@ -537,6 +579,7 @@
     "stations": [
       {
         "id": 48,
+        "naam": "Amersfoort, Curacaolaan",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -544,6 +587,7 @@
       },
       {
         "id": 49,
+        "naam": "Amersfoort, Timorstraat ",
         "afstand": 3,
         "reistijd": 0.6,
         "prijs": 0.13,
@@ -551,6 +595,7 @@
       },
       {
         "id": 50,
+        "naam": "Amersfoort Royal HaskoningDHV",
         "afstand": 3,
         "reistijd": 1.2,
         "prijs": 0.13,
@@ -558,6 +603,7 @@
       },
       {
         "id": 51,
+        "naam": "Amersfoort Begraafplaats Rusthof",
         "afstand": 4,
         "reistijd": 1.9,
         "prijs": 1.26,

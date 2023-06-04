@@ -37,10 +37,11 @@ public class Traject {
                 for (var y = 0; y < stations.size(); y++) {
                     var currentStation = (JSONObject) stations.get(y);
                     Long stationId = (Long) currentStation.get("id");
+                    String stationsnaam = currentStation.get("naam").toString();
                     Double stationsafstand= (Double) currentStation.get("afstand");
                     Double stationsreistijd= (Double) currentStation.get("reistijd");
                     Double stationsprijs= (Double) currentStation.get("prijs");
-                    Station station=new Station(Math.toIntExact(stationId),stationsafstand,stationsreistijd,stationsprijs);
+                    Station station=new Station(Math.toIntExact(stationId),stationsnaam,stationsafstand,stationsreistijd,stationsprijs);
                     stations2[y]=  station;
                 }
 

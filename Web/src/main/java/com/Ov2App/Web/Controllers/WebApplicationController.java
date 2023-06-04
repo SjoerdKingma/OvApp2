@@ -53,7 +53,9 @@ public class WebApplicationController {
         for (var i = 0; i < trajectJsons.size(); i++) {
             Station[] stations=trajectJsons.get(i).getStations();
             for (var j = 0; j < stations.length; j++) {
-                uniqueStations.add(String.valueOf(stations[j].id));
+                if (!uniqueStations.contains(stations[j].naam)){
+                    uniqueStations.add(String.valueOf(stations[j].naam));
+                }
             }
         }
         return uniqueStations;
