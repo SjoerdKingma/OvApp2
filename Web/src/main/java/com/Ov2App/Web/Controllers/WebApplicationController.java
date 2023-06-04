@@ -61,13 +61,27 @@ public class WebApplicationController {
         return uniqueStations;
     }
 
+
+
     @PostMapping("/info")
     public String infoSubmit(@ModelAttribute Info info, Model model) {
-        if(info.getInputA().equals(info.getInputB())){
-            info.setTest("hetzelfde");
+        ArrayList<TrajectJson> trajectJsons = null;
+        try{
+            trajectJsons = Traject.gettrajecten();
+        }catch(Exception ex){
+            System.out.println(ex);
         }
-        else{
-            info.setTest("niet hetzelfde");
+        for (var i = 0; i < trajectJsons.size(); i++) {
+            Station[] stations=trajectJsons.get(i).getStations();
+            for (var j = 0; j < stations.length; j++) {
+                ArrayList<String> uniqueStations = new ArrayList<>();
+                uniqueStations.add(stations[j].naam);
+                if(uniqueStations.contains(info.getInputA())&&uniqueStations.contains(info.getInputB())){
+                    info.setVan(info.getInputA());
+                }
+            }
+
+
         }
         model.addAttribute("info", info);
         return "info";

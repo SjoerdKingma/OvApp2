@@ -32,7 +32,8 @@
     </div>
 
 </header>
-    <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
+<body>
+    <form action="#" th:action="@{/info}" th:object="${info}" method="get" >
         <div class="input">
             <div class="gridItem"></div>
             <div class="gridItem">
@@ -51,7 +52,7 @@
             </div>
             <div class="gridItem"></div>
             <div class="gridSubmitRouteButton">
-                <input class="submitRouteButton" type="submit" value="Reis plannen">
+                <input class="submitRouteButton" type="submit" action="#" th:action="@{/info}" th:object="${info}" method="get" value="Reis plannen">
             </div>
             <div class="gridItem"></div>
         </div>
@@ -59,7 +60,11 @@
 
 <div class="route">
     <ul class="routeList">
-        <li class="routeListItem">1</li>
+        <li class="routeListItem">
+            <h1 th:field="*{Van}"></h1>
+            <h2></h2>
+            <h3></h3>
+        </li>
         <li class="routeListItem">2</li>
         <li class="routeListItem">3</li>
         <li class="routeListItem">4</li>

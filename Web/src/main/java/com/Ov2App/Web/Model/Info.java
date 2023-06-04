@@ -6,6 +6,10 @@ public class Info {
     public String inputB;
 
     public String test;
+    public String Van;
+    public String Naar;
+
+    public String Voertuig;
 
     public String getInputA() {
         return inputA;
@@ -31,4 +35,27 @@ public class Info {
         this.test = test;
     }
 
+    public String getVan() {
+        return Van;
+    }
+
+    public void setVan(String van) {
+        Van = van;
+    }
+
+    public String getNaar() {
+        return Naar;
+    }
+
+    public void setNaar(String naar) {
+        Naar = naar;
+    }
+
+    public String getVoertuig() {
+        return Voertuig;
+    }
+
+    public void setVoertuig(String voertuig) {
+        Voertuig = voertuig;
+    }
 }
