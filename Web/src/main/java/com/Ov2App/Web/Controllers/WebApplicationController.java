@@ -46,6 +46,7 @@ public class WebApplicationController {
         model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
         return "index";
     }
+
     @RequestMapping("apiCall")
     public ModelAndView ApiCall(){
 

@@ -136,13 +136,13 @@ body{
       background: #90EE90;
       font-family: "Times New Roman", serif;
       font-size: 18px;
-      /* display: flex;*/
+      display: flex;
       align-items: center;
       justify-content: center;
-     /* flex-direction: column;*/
+      flex-direction: column;
 
 }
-/* .form .Vantext{
+.form .Vantext{
     top: 10%;
     left: 18%;
     font-size: 32px;
@@ -179,9 +179,9 @@ body{
     height: 15px;
     font-size: 32px;
     position: absolute;
-<<<<<<< HEAD
 
-}*/
+
+}
 
 }
 
@@ -207,22 +207,6 @@ bottom: 0;
     grid-template-columns: 30% 40% 30%;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .input{
