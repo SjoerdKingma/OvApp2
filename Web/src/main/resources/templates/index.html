@@ -14,7 +14,8 @@
 </header>
 <body>
 
-<form id="form" class="form">
+<form >
+    <div id="form" class="form">
     <div id="Vantext" class="Vantext">
         <label for="Van" th:text="#{van}">Van:</label>
         <input type="text" id="van" class="van" name="van">
@@ -24,20 +25,20 @@
         <label for="naar" th:text="#{naar}">Naar:</label>
         <input type="text" class="naar" id="naar" name="naar">
     </div>
-
-    <div class="submits" id="submits" >
-        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
-        <button id="planReis" th:text="#{Plan}" > plan</button>
     </div>
 </form>
 
+<div class="submits" id="submits" >
+    <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
+    <button id="planReis" th:text="#{Plan}" > plan</button>
+</div>
 
 <ul class="rectangle" id="rectangle">
 
-    <li class="Favoritejourney" id="Favoritejourney">
-        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}">From: </p>
-        <p class="FavoriteNaar" id="FavoriteNaar"  th:text="#{naar}">To: <</p>
-    </li>
+<!--    <li class="Favoritejourney" id="Favoritejourney">-->
+<!--        <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}">From: </p>-->
+<!--        <p class="FavoriteNaar" id="FavoriteNaar"  th:text="#{naar}">To: <</p>-->
+<!--    </li>-->
 </ul>
 
 <script src="/javascript/SelectLang.js"></script>
