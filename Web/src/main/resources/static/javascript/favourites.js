@@ -10,7 +10,7 @@
   function addFavourite(){
       addButton.addEventListener('click', function(){
 //       localStorage.clear();
-      const values = { 'From': fromValue.value, 'To': toValue.value }; 
+      const values = { 'From': fromValue.value, 'To': toValue.value };
       console.log(values);
       const inputValuesExists = inputValues.some(item => item.From === values.From && item.To === values.To);
        if(inputValuesExists){
@@ -19,8 +19,9 @@
        inputValues.push(values);
        localStorage.setItem('inputValues', JSON.stringify(inputValues)); // convert to String
        console.log(localStorage);
+       loadLayer();
        }
-     loadLayer();
+
     });
 
   }
