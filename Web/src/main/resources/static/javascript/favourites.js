@@ -4,38 +4,43 @@
   const fromValue = document.getElementById('van');
   const toValue = document.getElementById('naar');
   var inputValues =[];
-  const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else if there are already values in localStorage.
+  const values = { 'From': fromValue.value, 'To': toValue.value };
+  let p = JSON.parse(localStorage.getItem('inputValues'));
 
   function addFavourite(){
       addButton.addEventListener('click', function(){
 //       localStorage.clear();
-      const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else if there are already values in localStorage.
-       console.log(values);
+      const values = { 'From': fromValue.value, 'To': toValue.value }; 
+      console.log(values);
+      const inputValuesExists = inputValues.some(item => item.From === values.From && item.To === values.To);
+       if(inputValuesExists){
+       console.log(" exists");
+       } else {
        inputValues.push(values);
        localStorage.setItem('inputValues', JSON.stringify(inputValues)); // convert to String
        console.log(localStorage);
-        loadLayer();
+       }
+     loadLayer();
     });
 
   }
 
    addFavourite();
 
-
   function loadLayer() {
-
-        let p = JSON.parse(localStorage.getItem('inputValues')); // convert back to an object
+        let p = JSON.parse(localStorage.getItem('inputValues')); // convert back to a JSON object
         for (let i = 0; i < p.length; i++) {
-            let n  = createLayer(p[i]) // for each create layer
-            appendLayer(n)
-          }
-      }
+          let n  = createLayer(p[i]) // for each create layer
+          appendLayer(n)
+        }
+  }
 
   function createLayer(values) {
 
         let li = document.createElement('li');
         li.className = "list-group-item"
         let x = document.createElement('p');
+//        const d = JSON.stringify(values);
         x.textContent = JSON.stringify(values);
         console.log(x.value)
         li.appendChild(x);
@@ -48,7 +53,7 @@
     }
 
 
-
+loadLayer();
 
 
 //    function storeListItems(listItemArray, key, fetch) {
