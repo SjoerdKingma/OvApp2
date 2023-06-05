@@ -4,17 +4,19 @@
   const fromValue = document.getElementById('van');
   const toValue = document.getElementById('naar');
   var inputValues =[];
-const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else if there are already values in localStorage.
-  function addFavourite(){
+  const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else if there are already values in localStorage.
 
-       addButton.addEventListener('click', function(){
+  function addFavourite(){
+      addButton.addEventListener('click', function(){
 //       localStorage.clear();
-       const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else if there are already values in localStorage.
+      const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else if there are already values in localStorage.
        console.log(values);
        inputValues.push(values);
-       localStorage.setItem('inputValues', JSON.stringify(inputValues));
+       localStorage.setItem('inputValues', JSON.stringify(inputValues)); // convert to String
        console.log(localStorage);
+        loadLayer();
     });
+
   }
 
    addFavourite();
@@ -22,9 +24,9 @@ const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else 
 
   function loadLayer() {
 
-        let p = JSON.parse(window.localStorage.getItem('inputValues'));
+        let p = JSON.parse(localStorage.getItem('inputValues')); // convert back to an object
         for (let i = 0; i < p.length; i++) {
-            let n  = createLayer(p[i])
+            let n  = createLayer(p[i]) // for each create layer
             appendLayer(n)
           }
       }
@@ -34,8 +36,8 @@ const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else 
         let li = document.createElement('li');
         li.className = "list-group-item"
         let x = document.createElement('p');
-//        x.setAttribute("value", values);
-       x.textContent = values;
+        x.textContent = JSON.stringify(values);
+        console.log(x.value)
         li.appendChild(x);
         return li
     }
@@ -45,9 +47,16 @@ const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else 
         layerList.appendChild(n);
     }
 
-    loadLayer()
 
-//
+
+
+
+//    function storeListItems(listItemArray, key, fetch) {
+//      var notes = JSON.stringify(listItemArray);
+//      fetch(localStorage.setItem(key, notes));
+//    }
+
+
 //function showFavourites(){
 //     const ulFav = document.getElementById('rectangle');
 //     var inputValues = JSON.parse(localStorage.getItem('inputValues'));
@@ -68,7 +77,7 @@ const values = { 'From': fromValue.value, 'To': toValue.value }; // add if/else 
 //
 //
 //showFavourites();
-
+//
 //function chooseFromFavourites(){
 //  const ulFav = document.getElementById('liValue');
 //  ulFav.addEventListener('click' ,function(){
