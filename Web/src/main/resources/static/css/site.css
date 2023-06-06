@@ -245,6 +245,13 @@ bottom: 0;
     font-size: 80%;
 }
 
+#addFavourite{
+    margin: 0px 3px 0px 0px;
+    width: 30%;
+    height: 27px;
+    font-size: 80%;
+}
+
 .divFromTo{
 text-align: center;
 }
