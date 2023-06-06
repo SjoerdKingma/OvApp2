@@ -9,33 +9,19 @@
 </head>
 <body>
 
+
 <div th:replace="~{fragments/header :: header}"></div>
-<form id="form" class="form">
-    <div id="Vantext" class="Vantext">
-        <label for="Van" th:text="#{van}">Van:</label>
-        <input type="text" id="van" class="van" name="van">
-    </div>
 
-    <div id="Naartext" class="Naartext" action="apiCall" method="post">
-        <label for="naar" th:text="#{naar}">Naar:</label>
-        <input type="text" class="naar" id="naar" name="naar">
-    </div>
-
-    <div class="submits" id="submits" >
-        <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
-        <button id="planReis" th:text="#{Plan}" > plan</button>
-    </div>
-</form>
 <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
     <div class="inputindex">
         <div class="gridItem"></div>
         <div class="gridItem">
-            <p th:text="#{van}" class="fromToText">van:</p>
+            <p th:text="#{van}" class="fromToText"></p>
             <select  class="fromTo" th:field="*{inputA}"  >
                 <option value="Amersfoort">Amersfoort</option>
                 <option value="Amsterdam">Amsterdam</option>
             </select>
-            <p th:text="#{naar}" class="fromToText">naar:</p>
+            <p th:text="#{naar}" class="fromToText"></p>
             <select  class="fromTo" th:field="*{inputB}">
                 <option value="Amsterdam">Amsterdam</option>
             </select>
@@ -48,14 +34,13 @@
         </div>
         <div class="gridItem"></div>
         <div class="gridSubmitRouteButton">
-            <input class="submitRouteButton" type="submit" value="Plan reis">
-                <input class="submitRouteButton" type="button" th:value="#{Voeg}" >
+            <input class="submitRouteButton" type="submit" th:value="#{Plan}">
+            <input type="button" id="addFavourite" th:value="#{button1.text}">
         </div>
         <div class="gridItem"></div>
     </div>
 </form>
 
-<ul class="rectangle" id="rectangle">
 
 <div class="favorites">
     <ul class="favorites_ul">
