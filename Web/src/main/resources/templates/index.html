@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
 </head>
-<header>
-<!-- hieronder staat de header -->
- <div th:replace="fragments/header :: header" ></div>
-</header>
 <body>
+
+
+<div th:replace="~{fragments/header :: header}"></div>
 
 <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
     <div class="inputindex">
