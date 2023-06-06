@@ -140,8 +140,8 @@ body{
       align-items: center;
       justify-content: center;
       flex-direction: column;
-}
 
+}
 .form .Vantext{
     top: 10%;
     left: 18%;
@@ -160,7 +160,6 @@ body{
     position: absolute;
 
 }
-
 .form .naar{
     height: 32px;
 }
@@ -169,7 +168,7 @@ body{
     top: 50%
     left: 50%;
 
-.form .submits .addFavourite{
+.Addtofavorites{
 
     height: 15px;
     line-height: 32px;
@@ -183,6 +182,9 @@ body{
 
 
 }
+
+}
+
 
 .favorites{
 height: 40vh;
