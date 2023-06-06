@@ -55,6 +55,7 @@ public class WebApplicationController {
             for (var j = 0; j < stations.length; j++) {
                 if (!uniqueStations.contains(stations[j].naam)){
                     uniqueStations.add(String.valueOf(stations[j].naam));
+
                 }
             }
         }
@@ -64,7 +65,7 @@ public class WebApplicationController {
 
 
     @PostMapping("/info")
-    public String infoSubmit(@ModelAttribute Info info, Model model) {
+    public  String infoSubmit(@ModelAttribute Info info, Model model) {
         ArrayList<TrajectJson> trajectJsons = null;
         try{
             trajectJsons = Traject.gettrajecten();
@@ -77,16 +78,13 @@ public class WebApplicationController {
                 ArrayList<String> uniqueStations = new ArrayList<>();
                 uniqueStations.add(stations[j].naam);
                 if(uniqueStations.contains(info.getInputA())&&uniqueStations.contains(info.getInputB())){
-                    info.setVan(info.getInputA());
+                    info.setVan("van");
                 }
             }
-
-
         }
         model.addAttribute("info", info);
         return "info";
     }
-
     @RequestMapping("/goodbye")
     public String goodbye(){
         return "Goodbye from Spring Boot";

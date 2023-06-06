@@ -10,6 +10,26 @@
 
 </head>
 <body>
+<script>
+    let favorieten = [];
+    const addfavorieten = (ev)=>{
+        ev.preventDefault();
+        let favoriet = {
+            id: Date.now(),
+            van: document.getElementById('Van').value,
+            naar: document.getElementById('naar').value
+        }
+        favorieten.push(favoriet);
+        document.forms[0].reset();
+
+
+        localStorage.setItem('myfavorites', favorieten );
+    }
+    document.addEventListener('DOMContentLoaded', ()=>{
+        document.getElementById('fav').addEventListener('click', addfavorieten);
+    })
+    document.getElementById("FavoriteVan").innerHTML="ole"
+</script>
 <!-- hieronder staat de header -->
 <div th:replace="fragments/header :: header" ></div>
 
@@ -23,13 +43,15 @@
         <input type="text" class="naar" id="naar" name="naar">
     </div>
     <div class="Addtofavorites" id="Addtofavorites">
-        <input type="submit" th:value="#{Voeg}" >
+        <input id="fav" type="button" th:value="#{Voeg}" >
         <input type="submit" th:value="#{Plan}" onclick="">
     </div>
 </form>
 <ul class="rectangle" id="rectangle">
     <li class="Favoritejourney" id="Favoritejourney">
         <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
+        <p class="FavoriteVan" id="FavoriteVanWaarde"> Van:</p>
+
         <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
         <p class="FavoriteVoertuig" id="FavoriteVoertuig"th:text="#{Voertuig}">Voertuig:</p>
     </li>
