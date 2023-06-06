@@ -24,8 +24,7 @@ public class MyBeansConfig implements WebMvcConfigurer {
 
     @Bean("messageSource")
     public MessageSource messageSource() {
-        ResourceBundleMessageSource messageSource =
-                new ResourceBundleMessageSource();
+        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
         messageSource.setBasenames("bundle");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;

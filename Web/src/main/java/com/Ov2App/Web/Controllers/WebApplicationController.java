@@ -19,20 +19,6 @@ import java.util.Arrays;
 
 @Controller
 public class WebApplicationController {
-
-    @GetMapping("/index")
-    public ModelAndView index(@RequestParam(required = false) String lang) {
-        ModelAndView model = new ModelAndView();
-
-//
-
-
-        System.out.println(lang);
-
-        return model;
-
-    }
-
     @GetMapping("/info")
     public String infofrom(Model model){
         model.addAttribute("info", new Info());
@@ -54,9 +40,11 @@ public class WebApplicationController {
         return "info";
     }
 
-    @RequestMapping("/goodbye")
-    public String goodbye(){
-        return "Goodbye from Spring Boot";
+    @GetMapping("/index")
+    public String index(Model model, @RequestParam(required = false) String lang){
+        model.addAttribute("info", new Info());
+        model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
+        return "index";
     }
 
     @RequestMapping("apiCall")
@@ -74,5 +62,6 @@ public class WebApplicationController {
 
         return new ModelAndView("index");
     }
+
 
 }

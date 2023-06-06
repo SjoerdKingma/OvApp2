@@ -53,14 +53,6 @@
   margin-left: 20px;
   }
 
-/* Connector line style */
-.connector-line {
-  width: 1px;
-  height: 20px;
-  background-color: #999;
-  margin: 0 10px;
-}
-
 /* Language options style */
 .language-options {
   display: flex;
@@ -136,7 +128,7 @@ body{
 .form{
 
       width: 100%;
-      height: 200px;
+      height: 40vh;
       position: absolute;
       top: 20%;
       left: 50%;
@@ -147,9 +139,9 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-       flex-direction: column;
-
+      flex-direction: column;
 }
+
 .form .Vantext{
     top: 10%;
     left: 18%;
@@ -168,63 +160,100 @@ body{
     position: absolute;
 
 }
+
 .form .naar{
     height: 32px;
 }
-.form .Addtofavorites{
+
+.form .submits{
     top: 50%
     left: 50%;
+
+.form .submits .addFavourite{
+
     height: 15px;
     line-height: 32px;
     font-size: 32px;
     position: absolute;
 }
-.form .Addtofavorites .Planreis{
+.form .submits .PlanReis{
     height: 15px;
     font-size: 32px;
     position: absolute;
 
+
 }
 
-.input{
-    height: 25vh;
-    background: #49cdfd;
+.favorites{
+height: 40vh;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
+
+.favorites_ul{
+    list-style-type: none;
+}
+
+.inputindex{
+    background: white;
+    height: 40vh;
+    background: #90EE90;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
     display: grid;
     grid-template-columns: 30% 40% 30%;
     text-align: center;
 }
+
+
+.input{
+    height: 25vh;
+    background: #90EE90;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+
 .gridItem {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .transportTypeGridItem {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
   align-items: center;
 }
 
 .gridSubmitRouteButton{
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
   display: flex;
-  align-items: center;
+
   justify-content: right;
 }
 
 .submitRouteButton{
     margin: 0px 3px 0px 0px;
+    width: 30%;
+    height: 27px;
+    font-size: 80%;
 }
 
 .divFromTo{
 text-align: center;
 }
 
-.input .fromTo{
+.fromTo{
 width: 100%;
+margin: 0px 3px 0px 3px;
+}
+
+.fromToText{
+text-align: center;
 margin: 0px 3px 0px 3px;
 }
 
