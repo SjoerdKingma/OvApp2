@@ -90,7 +90,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-/*
+
 .form{
       width: 100%;
       height: 200px;
@@ -102,13 +102,13 @@ body{
       background: #90EE90;
       font-family: "Times New Roman", serif;
       font-size: 18px;
-     /* display: flex;*/
- /*     align-items: center;
-  /*    justify-content: center;
-  /*   flex-direction: column;*/
+       display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
 }
-/*
+
 .form .Vantext{
     top: 10%;
     left: 18%;
@@ -129,7 +129,7 @@ body{
 }
 .form .naar{
     height: 32px;
-}*/
+}
 .submits{
     position: absolute;
     top:40%;
@@ -139,7 +139,7 @@ body{
 
 }
 
-/*.submits .addFavourite{
+.submits .addFavourite{
 
     height: 15px;
     line-height: 32px;
@@ -151,7 +151,7 @@ body{
     font-size: 32px;
    position: relativee;
 
-}*/
+}
 
 
 .rectangle{
