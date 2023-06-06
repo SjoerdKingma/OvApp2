@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
 </head>
-<header>
-<!-- hieronder staat de header -->
- <div th:replace="fragments/header :: header" ></div>
-</header>
 <body>
 
+<div th:replace="~{fragments/header :: header}"></div>
 <form id="form" class="form">
     <div id="Vantext" class="Vantext">
         <label for="Van" th:text="#{van}">Van:</label>
