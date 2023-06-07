@@ -4,14 +4,15 @@ public class Station {
     public String naam;
     public Float afstand;
     public Float reistijd;
+    public Float uitstoot;
     public Float prijs;
 
-    public Station(int id, String naam, Float afstand, Float reistijd, Float prijs) {
-
+    public Station(int id, String naam, Float afstand, Float reistijd, Float uitstoot, Float prijs) {
         this.id = id;
         this.naam = naam;
         this.afstand = afstand;
         this.reistijd = reistijd;
+        this.uitstoot = uitstoot;
         this.prijs = prijs;
     }
 
@@ -47,6 +48,14 @@ public class Station {
         this.reistijd = reistijd;
     }
 
+    public Float getUitstoot() {
+        return uitstoot;
+    }
+
+    public void setUitstoot(Float uitstoot) {
+        this.uitstoot = uitstoot;
+    }
+
     public Float getPrijs() {
         return prijs;
     }
@@ -62,6 +71,7 @@ public class Station {
                 ", naam='" + naam + '\'' +
                 ", afstand=" + afstand +
                 ", reistijd=" + reistijd +
+                ", uitstoot=" + uitstoot +
                 ", prijs=" + prijs +
                 '}';
     }
