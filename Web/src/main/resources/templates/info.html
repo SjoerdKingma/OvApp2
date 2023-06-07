@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>info</title>
@@ -11,15 +12,14 @@
 <body>
 
 <!-- hieronder staat de header -->
-<div th:replace="fragments/header :: header" ></div>
+    <div th:replace="fragments/header :: header"></div>
 
-
-    <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
+    <form action="#" th:action="@{/info}" th:object="${info}" method="post">
         <div class="input">
             <div class="gridItem"></div>
             <div class="gridItem">
                 <p th:text="#{Van}" class="fromToText"></p>
-                <select class="fromTo" th:field="*{inputA}"  >
+                <select class="fromTo" th:field="*{inputA}">
                     <option value="Amersfoort">Amersfoort</option>
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
@@ -30,8 +30,8 @@
             </div>
             <div class="transportTypeGridItem">
                 <select id="transportType">
-                    <option value="Trein">Trein</option>
-                    <option value="Bus">Bus</option>
+                    <option value="Trein" th:text="#{Trein}"></option>
+                    <option value="Bus" th:text="#{Bus}"></option>
                 </select>
             </div>
             <div class="gridItem"></div>
@@ -42,44 +42,49 @@
         </div>
     </form>
 
-<div class="route">
-    <ul class="routeList">
-        <li class="routeListItem">1</li>
-        <li class="routeListItem">2</li>
-        <li class="routeListItem">3</li>
-        <li class="routeListItem">4</li>
-        <li class="routeListItem">5</li>
-        <li class="routeListItem">6</li>
-        <li class="routeListItem">7</li>
-        <li class="routeListItem">8</li>
-    </ul>
+    <div class="route">
+        <ul class="routeList">
+            <li class="routeListItem">1</li>
+            <li class="routeListItem">2</li>
+            <li class="routeListItem">3</li>
+            <li class="routeListItem">4</li>
+            <li class="routeListItem">5</li>
+            <li class="routeListItem">6</li>
+            <li class="routeListItem">7</li>
+            <li class="routeListItem">8</li>
+        </ul>
 
-</div>
-
-
-<div class="info">
-    <div>
-        <p th:text="'van: ' + ${info.inputA}"/>
-        <p th:text="'naar: ' + ${info.inputB}" />
-        <p th:text="'test: '+ ${info.test}" />
-    </div>
-    <div class="ov2app-tooltip">
-        <span th:text="#{AccommodatiesBekijken}"></span>
-
-        <span class="ov2app-tooltipContent">
-<!--            Accommodaties-->
-            <span><b>Accommodations</b></span>
-            <span class="ov2app-tooltipItem" th:text="#{Vervoersmiddel} + ': ' + #{${selectedTrip.accommodaties.getVervoersmiddel}}"></span>
-            <span class="ov2app-tooltipItem" th:text="#{Treindelen} + ': ' + ${selectedTrip.accommodaties.getTreinDelen}"></span>
-            <span class="ov2app-tooltipItem" th:text="#{Handicaptoegankelijk} + ': ' + #{${selectedTrip.accommodaties.getHandicapToegankelijk}}"></span>
-            <span class="ov2app-tooltipItem" th:text="#{Toilet} + ': ' + #{${selectedTrip.accommodaties.getToilet}}"></span>
-            <span class="ov2app-tooltipItem" th:text="#{Handicaptoilet} + ': ' + #{${selectedTrip.accommodaties.getHandicapToilet}}"></span>
-            <span class="ov2app-tooltipItem" th:text="#{Wifi} + ': ' + #{${selectedTrip.accommodaties.getWifi}}"></span>
-        </span>
     </div>
 
-<input class="submitButtonInfo" type="submit" value="Reis plannen">
-</div>
-<script src="/javascript/SelectLang.js"></script>
+    <div class="info">
+        <div>
+            <p th:text="'van: ' + ${info.inputA}" />
+            <p th:text="'naar: ' + ${info.inputB}" />
+            <p th:text="'test: '+ ${info.test}" />
+        </div>
+        <div class="ov2app-tooltip">
+            <span th:text="#{AccommodatiesBekijken}"></span>
+
+            <span class="ov2app-tooltipContent">
+                    <!--            Accommodaties-->
+                    <span><b>Accommodations</b></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Vervoersmiddel} + ': ' + #{${selectedTrip.accommodaties.getVervoersmiddel}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Treindelen} + ': ' + ${selectedTrip.accommodaties.getTreinDelen}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Handicaptoegankelijk} + ': ' + #{${selectedTrip.accommodaties.getHandicapToegankelijk}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Toilet} + ': ' + #{${selectedTrip.accommodaties.getToilet}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Handicaptoilet} + ': ' + #{${selectedTrip.accommodaties.getHandicapToilet}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Wifi} + ': ' + #{${selectedTrip.accommodaties.getWifi}}"></span>
+                </span>
+        </div>
+
+        <input class="submitButtonInfo" type="submit" value="Reis plannen">
+    </div>
+    <script src="/javascript/SelectLang.js"></script>
 </body>
 </html>
