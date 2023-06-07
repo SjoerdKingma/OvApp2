@@ -299,6 +299,7 @@ margin: 0px 3px 0px 3px;
 }
 
 /*Start of Tooltip*/
+
 /* Tooltip container */
 .ov2app-tooltip {
   position: relative;
@@ -307,7 +308,7 @@ margin: 0px 3px 0px 3px;
 }
 
 /* Tooltip text */
-.ov2app-tooltip .ov2app-tooltiptext {
+.ov2app-tooltip .ov2app-tooltipContent {
   visibility: hidden;
   width: 240px;
   background-color: white;
@@ -323,17 +324,16 @@ margin: 0px 3px 0px 3px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.ov2app-tooltip:hover .ov2app-tooltiptext {
+.ov2app-tooltip:hover .ov2app-tooltipContent {
   visibility: visible;
 }
 
-.accommodation{
+.ov2app-tooltipItem{
     padding-left: 10px;
     text-align: left;
-}
-/*End of Tooltip*/
 
-.line-break{
+    /*This enters a linebreak after every line*/
     content: "";
     display: block;
 }
+/*End of Tooltip*/
