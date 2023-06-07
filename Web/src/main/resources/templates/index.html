@@ -16,12 +16,12 @@
     <div class="inputindex">
         <div class="gridItem"></div>
         <div class="gridItem">
-            <p th:text="#{van}" class="fromToText"></p>
+            <p th:text="#{Van}" class="fromToText"></p>
             <select  class="fromTo" th:field="*{inputA}"  >
                 <option value="Amersfoort">Amersfoort</option>
                 <option value="Amsterdam">Amsterdam</option>
             </select>
-            <p th:text="#{naar}" class="fromToText"></p>
+            <p th:text="#{Naar}" class="fromToText"></p>
             <select  class="fromTo" th:field="*{inputB}">
                 <option value="Amsterdam">Amsterdam</option>
             </select>
@@ -35,7 +35,7 @@
         <div class="gridItem"></div>
         <div class="gridSubmitRouteButton">
             <input class="submitRouteButton" type="submit" th:value="#{Plan}">
-            <input type="button" id="addFavourite" th:value="#{button1.text}">
+            <input type="button" id="addFavourite" th:value="#{Voeg}">
         </div>
         <div class="gridItem"></div>
     </div>
@@ -45,8 +45,8 @@
 <div class="favorites">
     <ul class="favorites_ul">
         <li class="Favoritejourney" id="Favoritejourney">
-            <p class="FavoriteVan" id="FavoriteVan" th:text="#{van}"> Van:</p>
-            <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{naar}">Naar:</p>
+            <p class="FavoriteVan" id="FavoriteVan" th:text="#{Van}"> Van:</p>
+            <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{Naar}">Naar:</p>
         </li>
     </ul>
 </div>
