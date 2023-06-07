@@ -17,7 +17,10 @@ public class WebApplication {
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		messageSource.setBasenames("bundle");
 		messageSource.setDefaultEncoding("UTF-8");
-		System.out.println(messageSource.getMessage("van", null, locale));
+
+		//Example of how to get something out of the resource bundle into a java variable.
+		//System.out.println(messageSource.getMessage("van", null, locale));
+
 		SpringApplication.run(WebApplication.class, args);
 	}
 
