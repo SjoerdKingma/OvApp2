@@ -7,18 +7,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class InfoController {
     @GetMapping("/info")
-    public String infofrom(Model model){
+    public String infofrom(Model model, @RequestParam(required = false) String lang){
         model.addAttribute("info", new Info());
         model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
         return "info";
     }
 
     @PostMapping("/info")
-    public String infoSubmit(@ModelAttribute Info info, Model model) {
+    public String infoSubmit(@ModelAttribute Info info, Model model, @RequestParam(required = false) String lang) {
         if(info.getInputA().equals(info.getInputB())){
             info.setTest("hetzelfde");
         }
