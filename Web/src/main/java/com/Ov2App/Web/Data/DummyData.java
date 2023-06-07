@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class DummyData {
     public static ArrayList<TrajectJson> getDummyData(){
         ArrayList trips = new ArrayList();
-        Accommodaties accomodaties = new Accommodaties("Ja", "Trein", "a, b, c", "ja", "ja", "ja");
+        Accommodaties accomodaties = new Accommodaties("Ja", "Trein", "a, b, c", "Ja", "Ja", "Ja");
         Facilities facilities = new Facilities("Ja", "Nee", "Ja");
         Station[] stations = new Station[1];
         stations[0] = new Station(1, 3f, 2f, 3f, facilities);

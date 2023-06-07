@@ -68,11 +68,9 @@
         <span class="ov2app-tooltiptext">
 <!--            Accommodaties-->
             <span><b>Accommodations</b></span>
-            <span th:text="#{Van}"></span>
-            <span th:text="#{Van}+ 'hoi'"></span>
-<!--            <span class="accommodation line-break" th:text="#{Handicaptoegankelijk}" + ": " + ${selectedTrip.accommodaties.getHandicapToegankelijk}"></span>-->
             <span class="accommodation line-break" th:text="#{Vervoersmiddel} + ': ' + #{${selectedTrip.accommodaties.getVervoersmiddel}}"></span>
             <span class="accommodation line-break" th:text="#{Treindelen} + ': ' + ${selectedTrip.accommodaties.getTreinDelen}"></span>
+            <span class="accommodation line-break" th:text="#{Handicaptoegankelijk} + ': ' + #{${selectedTrip.accommodaties.getHandicapToegankelijk}}"></span>
             <span class="accommodation line-break" th:text="#{Toilet} + ': ' + #{${selectedTrip.accommodaties.getToilet}}"></span>
             <span class="accommodation line-break" th:text="#{Handicaptoilet} + ': ' + #{${selectedTrip.accommodaties.getHandicapToilet}}"></span>
             <span class="accommodation line-break" th:text="#{Wifi} + ': ' + #{${selectedTrip.accommodaties.getWifi}}"></span>
