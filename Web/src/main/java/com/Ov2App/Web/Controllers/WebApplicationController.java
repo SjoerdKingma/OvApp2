@@ -87,6 +87,27 @@ public class WebApplicationController {
         return "info";
     }
 
+    private Double uitstootbereking(){
+        Double uitstoot= Double.valueOf(0);
+        Double Busuitstoot= 1.5;
+        Double Treinuitstoot= 0.5;
+        ArrayList<TrajectJson> trajectJsons = null;
+        try{
+            trajectJsons = Traject.gettrajecten();
+        }catch(Exception ex){
+            System.out.println(ex);
+        }
+        for (var i = 0; i < trajectJsons.size(); i++) {
+            if (trajectJsons.get(i).getReismethode().equals("Bus")){
+                uitstoot=Busuitstoot*trajectJsons.get(i).getAfstand();
+            }
+            if (trajectJsons.get(i).getReismethode().equals("Trein")){
+                uitstoot=Treinuitstoot*trajectJsons.get(i).getAfstand();
+            }
+        }
+        return uitstoot;
+    }
+
     @RequestMapping("/goodbye")
     public String goodbye(){
         return "Goodbye from Spring Boot";
