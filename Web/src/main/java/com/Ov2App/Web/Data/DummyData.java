@@ -15,9 +15,13 @@ public class DummyData {
         Facilities facilities = new Facilities("Ja", "Nee", "Ja");
         Station[] stations = new Station[1];
         stations[0] = new Station(1, 3f, 2f, 3f, facilities);
-        TrajectJson trip = new TrajectJson(1, "Amersfoort-Utrecht", "Amersfoort", 20.0, 30.0, "Trein", 18.50, "Utrecht", accomodaties, stations, "Amersfoort-Utrecht.png");
 
+        TrajectJson trip = new TrajectJson(1, "Amersfoort-Utrecht", "Amersfoort", 20.0, 30.0, "Trein", 18.50, "Utrecht", accomodaties, stations, "Amersfoort-Utrecht.png");
         trips.add(trip);
+
+        trip = new TrajectJson(2, "Amersfoort-Amsterdam", "Amersfoort", 20.0, 30.0, "Trein", 18.50, "Utrecht", accomodaties, stations, "Amersfoort-Utrecht.png");
+        trips.add(trip);
+
         return trips;
     }
 }

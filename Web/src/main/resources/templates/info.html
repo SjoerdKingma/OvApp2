@@ -43,8 +43,8 @@
     </form>
 
     <div class="route">
-        <ul class="routeList" th:each="trip: ${trips}">
-            <li class="routeListItem">
+        <ul class="routeList">
+            <li class="routeListItem" th:each="trip: ${trips}">
                 <div class="route-name" th:text="${trip.getNaam}">
 
                 </div>
