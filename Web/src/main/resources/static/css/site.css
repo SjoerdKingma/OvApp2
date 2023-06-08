@@ -154,9 +154,9 @@ body{
 }
 
 .form .submits{
-    top: 50%
+    top: 50%;
     left: 50%;
-
+}
 .Addtofavorites{
 
     height: 15px;
@@ -168,12 +168,7 @@ body{
     height: 15px;
     font-size: 32px;
     position: absolute;
-
-
 }
-
-}
-
 
 .favorites{
 height: 40vh;
