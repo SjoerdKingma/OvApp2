@@ -44,7 +44,7 @@
 
     <div class="route">
         <ul class="routeList" th:each="trip: ${trips}">
-<!--            <li class="routeListItem" th:text="trip.getNaam"></li>-->
+            <li class="routeListItem" th:text="trip.getNaam"></li>
 
 <!--            <li class="routeListItem">2</li>-->
 <!--            <li class="routeListItem">3</li>-->
@@ -70,17 +70,17 @@
                     <!--            Accommodaties-->
                     <span><b>Accommodations</b></span>
                     <span class="ov2app-tooltipItem"
-                          th:text="#{Vervoersmiddel} + ': ' + #{${selectedTrip.accommodaties.getVervoersmiddel}}"></span>
+                          th:text="#{Vervoersmiddel} + ': ' + #{${recommendedTrip.accommodaties.getVervoersmiddel}}"></span>
                     <span class="ov2app-tooltipItem"
-                          th:text="#{Treindelen} + ': ' + ${selectedTrip.accommodaties.getTreinDelen}"></span>
+                          th:text="#{Treindelen} + ': ' + ${recommendedTrip.accommodaties.getTreinDelen}"></span>
                     <span class="ov2app-tooltipItem"
-                          th:text="#{Handicaptoegankelijk} + ': ' + #{${selectedTrip.accommodaties.getHandicapToegankelijk}}"></span>
+                          th:text="#{Handicaptoegankelijk} + ': ' + #{${recommendedTrip.accommodaties.getHandicapToegankelijk}}"></span>
                     <span class="ov2app-tooltipItem"
-                          th:text="#{Toilet} + ': ' + #{${selectedTrip.accommodaties.getToilet}}"></span>
+                          th:text="#{Toilet} + ': ' + #{${recommendedTrip.accommodaties.getToilet}}"></span>
                     <span class="ov2app-tooltipItem"
-                          th:text="#{Handicaptoilet} + ': ' + #{${selectedTrip.accommodaties.getHandicapToilet}}"></span>
+                          th:text="#{Handicaptoilet} + ': ' + #{${recommendedTrip.accommodaties.getHandicapToilet}}"></span>
                     <span class="ov2app-tooltipItem"
-                          th:text="#{Wifi} + ': ' + #{${selectedTrip.accommodaties.getWifi}}"></span>
+                          th:text="#{Wifi} + ': ' + #{${recommendedTrip.accommodaties.getWifi}}"></span>
                 </span>
         </div>
 

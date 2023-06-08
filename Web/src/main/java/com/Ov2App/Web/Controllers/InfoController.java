@@ -14,7 +14,7 @@ public class InfoController {
     @GetMapping("/info")
     public String infofrom(Model model, @RequestParam(required = false) String lang){
         model.addAttribute("info", new Info());
-        model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
+        model.addAttribute("recommendedTrip", DummyData.getDummyData().get(0));
         return "info";
     }
 
