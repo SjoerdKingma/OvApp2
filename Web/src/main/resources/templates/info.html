@@ -53,7 +53,7 @@
                 <span class="route-timeOfArrival" th:text="#{Aankomsttijd} + ': ' + ${#dates.format(#dates.createNow(), 'HH:mm')}"></span>
                 <br>
 <!--                Voertuig-->
-                <span class="route-voertuig" th:text="#{Voertuig} + ': ' + ${trip.getReismethode}"></span>
+                <span class="route-voertuig" th:text="#{Voertuig} + ': ' + #{${trip.getReismethode}}"></span>
             </li>
         </ul>
     </div>
