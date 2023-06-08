@@ -5,7 +5,12 @@
   const toValue = document.getElementById('naar');
   var inputValues =[];
   const values = { 'From': fromValue.value, 'To': toValue.value };
-  let p = JSON.parse(localStorage.getItem('inputValues'));
+
+//function getName(name){
+//    console.log(name);
+//}
+//
+//getName("Reham");
 
   function addFavourite(){
 
@@ -20,23 +25,29 @@
             inputValues.push(values);
             localStorage.setItem('inputValues', JSON.stringify(inputValues)); // convert to String
             console.log(localStorage);
-            loadLayer(p);
+            loadLayer();
        }
     });
   }
 
    addFavourite();
 
+//   getFavourite(){
+//
+//    let p = JSON.parse(localStorage.getItem('inputValues')); // convert back to a JSON object
+//
+//   }
+
   function loadLayer() {
 
-        let p = JSON.parse(localStorage.getItem('inputValues')); // convert back to a JSON object
-        for (let i = 0; i < p.length; i++) {
-          let n  = createLayer(p[i]); // for each create layer
-          appendLayer(n);
+        let parse = JSON.parse(localStorage.getItem('inputValues')); // convert back to a JSON object
+        for (let i = 0; i < parse.length; i++) {
+          let layer  = createLayer(parse[i]); // for each create layer
+          appendLayer(layer);
       }
   }
 
-  function createLayer(values, p) {
+  function createLayer(values) {
 
         let li = document.createElement('li');
         li.className = "list-group-item";
@@ -48,10 +59,10 @@
         return li
     }
 
-    function appendLayer(n) {
+    function appendLayer(layer) {
         let layerList = document.getElementById('rectangle');
-        layerList.appendChild(n);
+        layerList.appendChild(layer);
     }
 
-loadLayer(p);
+loadLayer();
 
