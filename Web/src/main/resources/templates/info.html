@@ -54,6 +54,7 @@
                 <br>
 <!--                Voertuig-->
                 <span class="route-voertuig" th:text="#{Voertuig} + ': ' + #{${trip.getReismethode}}"></span>
+                <div th:replace="fragments/groenereis"></div>
             </li>
         </ul>
     </div>
