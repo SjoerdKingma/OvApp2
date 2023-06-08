@@ -273,17 +273,17 @@ margin: 0px 3px 0px 3px;
 
 .route .routeListItem{
     border-style: solid;
-    padding: 0% 0% 10% 0%;
+    padding: 0% 0% 1% 0%;
     background: #eee;
 }
 
 .routeListItem{
- position: relative;
+ /*position: relative;*/
+ /*display: inline-block;*/
 }
 
-.route-time{
-    position: absolute;
-    bottom: 0;
+.route-timeOfArrival{
+    float: right;
 }
 
 .info{
