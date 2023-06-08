@@ -278,12 +278,12 @@ margin: 0px 3px 0px 3px;
 }
 
 .routeListItem{
-
+ position: relative;
 }
 
-#route-time{
-    position: static;
-    bottom: 0px;
+.route-time{
+    position: absolute;
+    bottom: 0;
 }
 
 .info{
