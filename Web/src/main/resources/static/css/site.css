@@ -282,6 +282,15 @@ margin: 0px 3px 0px 3px;
     background: #eee;
 }
 
+.routeListItem{
+
+}
+
+#route-time{
+    position: static;
+    bottom: 0px;
+}
+
 .info{
     position: fixed;
     bottom: 0;
