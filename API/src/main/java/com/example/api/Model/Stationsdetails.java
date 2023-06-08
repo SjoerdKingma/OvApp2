@@ -3,9 +3,9 @@ package com.example.api.Model;
 public class Stationsdetails {
     public Integer id;
     public String naam;
-    public Faciliteiten faciliteiten;
+    public Facilities faciliteiten;
 
-    public Stationsdetails(Integer id, String naam, Faciliteiten faciliteiten) {
+    public Stationsdetails(Integer id, String naam, Facilities faciliteiten) {
         this.id = id;
         this.naam = naam;
         this.faciliteiten = faciliteiten;
@@ -27,11 +27,11 @@ public class Stationsdetails {
         this.naam = naam;
     }
 
-    public Faciliteiten getFaciliteiten() {
+    public Facilities getFaciliteiten() {
         return faciliteiten;
     }
 
-    public void setFaciliteiten(Faciliteiten faciliteiten) {
+    public void setFaciliteiten(Facilities faciliteiten) {
         this.faciliteiten = faciliteiten;
     }
 
