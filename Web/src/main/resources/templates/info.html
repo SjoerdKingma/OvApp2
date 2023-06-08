@@ -44,7 +44,14 @@
 
     <div class="route">
         <ul class="routeList" th:each="trip: ${trips}">
-            <li class="routeListItem" th:text="trip.getNaam"></li>
+            <li class="routeListItem">
+                <div id="trajectName" th:text="${trip.getNaam}">
+
+                </div>
+                <div id="time" th:text="#{Vertrektijd} + ': ' + ${#dates.format(#dates.createNow(), 'HH:mm')}">
+
+                </div>
+            </li>
 
 <!--            <li class="routeListItem">2</li>-->
 <!--            <li class="routeListItem">3</li>-->
