@@ -28,7 +28,8 @@ public class InfoController {
         }
         model.addAttribute("info", info);
 
-        model.addAttribute("selectedTrip", DummyData.getDummyData().get(0));
+        model.addAttribute("trips", DummyData.getDummyData());
+        model.addAttribute("recommendedTrip", DummyData.getDummyData().get(0));
         return "info";
     }
 }
