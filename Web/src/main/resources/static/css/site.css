@@ -155,15 +155,14 @@ body{
 
 
 .rectangle{
-        width: 1800px;
-        height: 1000px;
+        width: 100%;
         position: absolute;
-        top: 60%;
-        left: 6%;
+        top: 70%;
         line-height: 100px;
        /* background: #90EE90;*/
         font-family: "Times New Roman", serif;
         font-size: 18px;
+
 }
 /*
 .rectangle .Favoritejourney{

@@ -2,24 +2,24 @@
 
 
 
-   const fromValue = document.getElementById('van');
-   const toValue = document.getElementById('naar');
+   const from = document.getElementById('van');
+   const to = document.getElementById('naar');
    var inputValues =[];
 
   function addFavToStorage(){
 
       const addButton = document.getElementById('addFavourite');
       addButton.addEventListener('click', function(){
-         const values = { 'From': fromValue.value, 'To': toValue.value };
-         console.log(values)
-         const inputValuesExists = inputValues.some(val => val.From === values.From && val.To === values.To); //check if the new object values the same as in  inputvalues array
+         const locations = { 'From': from.value, 'To': to.value };
+         console.log(locations);
+         const inputValuesExists = inputValues.some(val => val.From === locations.From && val.To === locations.To); //check if the new object values the same as in  inputvalues array
          if(inputValuesExists){
               console.log('exists');
          }else {
-              inputValues.push(values);
+              inputValues.push(locations);
               localStorage.setItem('inputValues', JSON.stringify(inputValues)); // convert to String
               console.log(localStorage);
-              loadLayer(values);
+              loadLayer(locations);
          }
      });
   }
@@ -35,14 +35,16 @@
       }
   }
 
-  function createLayer(values) {
+  function createLayer(locations) {
 
         let li = document.createElement('li');
         li.className = "list-group-item";
-        let x = document.createElement('p');
-        x.textContent = "From: " + values.From + ", To: " + values.To;
-        console.log(x.value);
-        li.appendChild(x);
+        let p = document.createElement('p');
+        p.className = "list-group-para";
+        p.textContent = "From: " + locations.From + " , To: " + locations.To;
+        console.log(p);
+        console.log(p.value);
+        li.appendChild(p);
         return li;
   }
 
@@ -52,4 +54,21 @@
   }
 
 loadLayer();
+
+ function addFromFavourites(){
+       let getItem = document.querySelector('.list-group-item');
+       getItem.onclick = () => {
+       let p = document.querySelector('.list-group-para');
+       let text = p.textContent;
+       console.log(typeof text);
+       let splitText = text.split(' ');
+       let newFromValue = splitText[1];
+       let newToValue = splitText[4];
+       from.value = newFromValue;
+       to.value = newToValue;
+    }
+
+ }
+
+ addFromFavourites();
 
