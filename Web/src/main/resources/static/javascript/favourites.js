@@ -11,6 +11,7 @@
       const addButton = document.getElementById('addFavourite');
       addButton.addEventListener('click', function(){
          const values = { 'From': fromValue.value, 'To': toValue.value };
+         console.log(values)
          const inputValuesExists = inputValues.some(val => val.From === values.From && val.To === values.To); //check if the new object values the same as in  inputvalues array
          if(inputValuesExists){
               console.log('exists');
@@ -26,10 +27,10 @@
    addFavToStorage();
 
 
-  function loadLayer(values) {
-       let parse = JSON.parse(localStorage.getItem('inputValues')); // convert back to a JSON object
+  function loadLayer() {
+       let parse = JSON.parse(localStorage.getItem('inputValues')); // convert to javascript object
         for (let i = 0; i < parse.length; i++) {
-           let layer  = createLayer(parse[i]); // for each create layer
+           let layer  = createLayer(parse[i]); // for each create layer (li)
            appendLayer(layer);
       }
   }
@@ -39,23 +40,16 @@
         let li = document.createElement('li');
         li.className = "list-group-item";
         let x = document.createElement('p');
-        x.textContent = JSON.stringify(values);
-//        x.textContent = parse;
-//      for (i = 0; i < localStorage.length; i++) {
-//        let key = localStorage.key(i);
-////         x.innerHTML +=key;}
-//        let y = JSON.parse(localStorage.getItem('inputValues'));
-//         x.textContent = y.From + y.To;
-        //convert to Jsonobject and then x.textContent
+        x.textContent = "From: " + values.From + ", To: " + values.To;
         console.log(x.value);
         li.appendChild(x);
         return li;
-    }
+  }
 
-    function appendLayer(layer) {
+  function appendLayer(layer) {
         let layerList = document.getElementById('rectangle');
         layerList.appendChild(layer);
-    }
+  }
 
 loadLayer();
 
