@@ -26,7 +26,13 @@
 
    addFavToStorage();
 
-
+//   function getItem(key) {
+//       const item = localStorage.getItem(key);
+//       return JSON.parse(item);
+//   }
+//
+//  getItem('inputValues');
+//
   function loadLayer() {
        let parse = JSON.parse(localStorage.getItem('inputValues')); // convert to javascript object
         for (let i = 0; i < parse.length; i++) {
@@ -67,7 +73,6 @@ loadLayer();
        from.value = newFromValue;
        to.value = newToValue;
     }
-
  }
 
  addFromFavourites();
