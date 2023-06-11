@@ -6,37 +6,76 @@
     <title></title>
     <link rel="stylesheet" href="/css/libraries/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
-
 </head>
-<header>
-<!-- hieronder staat de header -->
- <div th:replace="fragments/header :: header" ></div>
-</header>
 <body>
 
-<form >
-    <div id="form" class="form">
-    <div id="Vantext" class="Vantext">
-        <label for="Van" th:text="#{van}">Van:</label>
-        <input type="text" id="van" class="van" name="van">
-    </div>
+<!--<<<<<<< HEAD-->
+<!--<form >-->
+<!--    <div id="form" class="form">-->
+<!--    <div id="Vantext" class="Vantext">-->
+<!--        <label for="Van" th:text="#{van}">Van:</label>-->
+<!--        <input type="text" id="van" class="van" name="van">-->
+<!--    </div>-->
 
-    <div id="Naartext" class="Naartext" action="apiCall" method="post">
-        <label for="naar" th:text="#{naar}">Naar:</label>
-        <input type="text" class="naar" id="naar" name="naar">
-    </div>
+<!--    <div id="Naartext" class="Naartext" action="apiCall" method="post">-->
+<!--        <label for="naar" th:text="#{naar}">Naar:</label>-->
+<!--        <input type="text" class="naar" id="naar" name="naar">-->
+<!--    </div>-->
+<!--=======-->
+
+<div th:replace="~{fragments/header :: header}"></div>
+
+<form action="#" th:action="@{/info}" th:object="${info}" method="post" >
+    <div class="inputindex">
+        <div class="gridItem"></div>
+        <div class="gridItem">
+            <p th:text="#{Van}" class="fromToText"></p>
+            <select id="van" class="fromTo" th:field="*{inputA}"  >
+                <option value="Amersfoort">Amersfoort</option>
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+            <p th:text="#{Naar}" class="fromToText"></p>
+            <select  id="naar" class="fromTo" th:field="*{inputB}">
+                <option value="Amsterdam">Amsterdam</option>
+            </select>
+        </div>
+        <div class="transportTypeGridItem">
+            <select id="transportType">
+                <option value="Trein" th:text="#{Trein}"></option>
+                <option value="Bus" th:text="#{Bus}"></option>
+            </select>
+        </div>
+        <div class="gridItem"></div>
+        <div class="gridSubmitRouteButton">
+            <input class="submitRouteButton" type="submit" th:value="#{Plan}">
+            <input type="button" id="addFavourite" th:value="#{Voeg}">
+        </div>
+        <div class="gridItem"></div>
+<!--&gt;>>>>>> development-->
     </div>
 </form>
 
-<div class="submits" id="submits" >
-    <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>
-    <button id="planReis" th:text="#{Plan}" > plan</button>
-</div>
+<!--<div class="submits" id="submits" >-->
+<!--    <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>-->
+<!--    <button id="planReis" th:text="#{Plan}" > plan</button>-->
+<!--</div>-->
 
+<!--<<<<<<< HEAD-->
 <ul class="rectangle" id="rectangle"></ul>
 
-<script src="/javascript/SelectLang.js"></script>
+<!--<script src="/javascript/SelectLang.js"></script>-->
+<!--&lt;!&ndash;=======&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="favorites">&ndash;&gt;-->
+<!--&lt;!&ndash;    <ul class="favorites_ul">&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="Favoritejourney" id="Favoritejourney">&ndash;&gt;-->
+<!--&lt;!&ndash;            <p class="FavoriteVan" id="FavoriteVan" th:text="#{Van}"> Van:</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{Naar}">Naar:</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--&lt;!&ndash;&gt;>>>>>> development&ndash;&gt;-->
 <script src="/javascript/favourites.js"></script>
-
+<script src="/javascript/SelectLang.js"></script>
 </body>
 </html>

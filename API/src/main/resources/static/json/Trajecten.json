@@ -5,7 +5,7 @@
     "beginstation": "Amersfoort",
     "afstand": 21.5,
     "reistijd": 13,
-    "Reismethode":"Train",
+    "reismethode":"Train",
     "prijs": 5,
     "eindstation": "Utrecht",
     "accommodaties":
@@ -20,6 +20,7 @@
     "stations": [
       {
         "id": 0,
+        "naam": "Amersfoort",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -27,14 +28,13 @@
       },
       {
         "id": 1,
+        "naam": "Utrecht",
         "afstand": 21.5,
         "reistijd": 13,
         "prijs": 5.00,
         "perron": 4
       }
     ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort-Utrecht"
   },
   {
@@ -43,7 +43,7 @@
     "beginstation": "Utrecht",
     "afstand": 40,
     "reistijd": 30,
-    "Reismethode": "Train",
+    "reismethode": "Train",
     "prijs": 8.40,
     "eindstation": "Amsterdam",
     "accommodaties":
@@ -52,12 +52,13 @@
       "Vervoersmiddel": "Trein: intercity",
       "TreinDelen": "Trein delen 7 eerste klas deel 4 & 5",
       "Toilet": "aanwezig",
-     "Handicap toilet":  "aanwezig",
+      "Handicap toilet":  "aanwezig",
       "Wifi": "Wifi: aanwezig"
     },
     "stations": [
       {
         "id": 2,
+        "naam": "Utrecht",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -65,6 +66,7 @@
       },
       {
         "id": 3,
+        "naam": "Amsterdam amstel",
         "afstand": 21,
         "reistijd": 33.8,
         "prijs": 7.30,
@@ -72,14 +74,13 @@
       },
       {
         "id": 4,
+        "naam": "Amsterdam centraal",
         "afstand": 9,
         "reistijd": 6.2,
         "prijs": 8.40,
         "perron": "8a"
       }
     ],
-    "vertrektijden": [10.21,14.19,21.12],
-    "terug vertrektijden": [10.21,14.19,21.12],
     "kaart": "Utrecht-Amsterdam"
 
   },
@@ -89,7 +90,7 @@
     "beginstation": "Amersfoort",
     "afstand": 194,
     "reistijd": 109,
-    "Reismethode": "Trein",
+    "reismethode": "Trein",
     "prijs": 25.70,
     "eindstation": "Groningen",
     "accommodaties":
@@ -98,12 +99,13 @@
       "Vervoersmiddel": "Trein: intercity dubbeldekker",
       "TreinDelen": "Trein delen 4 eerste klas nee",
       "Toilet": "aanwezig",
-     "Handicap toilet":  "aanwezig",
+      "Handicap toilet":  "aanwezig",
       "Wifi": "Wifi: aanwezig"
     },
     "stations": [
       {
         "id": 5,
+        "naam": "Amersfoort",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -111,6 +113,7 @@
       },
       {
         "id": 6,
+        "naam": "Zwolle",
         "afstand": 35,
         "reistijd": 89,
         "prijs": 13.40,
@@ -118,6 +121,7 @@
       },
       {
         "id": 7,
+        "naam": "Assen",
         "afstand": 41,
         "reistijd": 77,
         "prijs": 23.60,
@@ -125,14 +129,13 @@
       },
       {
         "id": 8,
+        "naam": "Groningen ",
         "afstand": 33,
         "reistijd": 28,
         "prijs": 25.70,
         "perron": "3b"
       }
     ],
-    "vertrektijden": [8.21,10.19,22.12],
-    "terug vertrektijden": [8.21,10.19,22.12],
     "kaart": "Amersfoort-Groningen"
   },
   {
@@ -141,7 +144,7 @@
     "beginstation": "Amersfoort",
     "afstand": 120,
     "reistijd": 80,
-    "Reismethode": "Train",
+    "reismethode": "Train",
     "prijs": 21.50,
     "eindstation": "Enschede",
     "accommodaties":
@@ -150,12 +153,13 @@
       "Vervoersmiddel": "Trein: intercity dubbeldekker",
       "TreinDelen": "Trein delen 5 eerste klas deel 3",
       "Toilet": "aanwezig",
-     "Handicap toilet":  "aanwezig",
+      "Handicap toilet":  "aanwezig",
       "Wifi": "Wifi: aanwezig"
     },
     "stations": [
       {
         "id": 9,
+        "naam": "Amersfoort centraal",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -163,6 +167,7 @@
       },
       {
         "id": 10,
+        "naam": "Apeldoorn",
         "afstand": 22,
         "reistijd": 45,
         "prijs": 9.10,
@@ -170,6 +175,7 @@
       },
       {
         "id": 11,
+        "naam": "Deventer",
         "afstand": 11,
         "reistijd": 14,
         "prijs": 11.90,
@@ -177,6 +183,7 @@
       },
       {
         "id": 12,
+        "naam": "Almelo ",
         "afstand": 26,
         "reistijd": 38,
         "prijs": 18.60,
@@ -184,6 +191,7 @@
       },
       {
         "id": 14,
+        "naam": "Hengelo ",
         "afstand": 11,
         "reistijd": 15,
         "prijs": 20.40,
@@ -191,14 +199,13 @@
       },
       {
         "id": 15,
+        "naam": "Enschede ",
         "afstand": 10,
         "reistijd": 8,
         "prijs": 21.50,
         "perron": 2
       }
     ],
-    "vertrektijden": [6.25,17.21,11.11],
-    "terug vertrektijden": [6.25,17.21,11.11],
     "kaart": "Amersfoort-Enschede"
 
   },
@@ -208,7 +215,7 @@
     "beginstation": "Amersfoort",
     "afstand": 82,
     "reistijd": 54,
-    "Reismethode": "Train",
+    "reismethode": "Train",
     "prijs": 16.20,
     "eindstation": "Den haag",
     "accommodaties":
@@ -223,6 +230,7 @@
     "stations": [
       {
         "id": 16,
+        "naam": "Amersfoort centraal",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -230,6 +238,7 @@
       },
       {
         "id": 17,
+        "naam": "Utrecht centraal",
         "afstand": 30,
         "reistijd": 21.7,
         "prijs": 9,
@@ -237,6 +246,7 @@
       },
       {
         "id": 18,
+        "naam": "Gouda centraal",
         "afstand": 31,
         "reistijd": 33.2,
         "prijs": 7.10,
@@ -244,14 +254,13 @@
       },
       {
         "id": 19,
+        "naam": "Den Haag centraal ",
         "afstand": 49,
         "reistijd": 30.70,
         "prijs": 4.20,
         "perron": 5
       }
     ],
-    "vertrektijden": [12.25,16.56,22.22],
-    "terug vertrektijden": [12.25,16.56,22.22],
     "kaart": "Amersfoort-Den Haag"
   },
   {
@@ -260,7 +269,7 @@
     "beginstation": "Amersfoort",
     "afstand": 8.8,
     "reistijd": 26,
-    "Reismethode": "Bus",
+    "reismethode": "Bus",
     "prijs": 2.53,
     "eindstation": "Leusden",
     "accommodaties":
@@ -274,6 +283,7 @@
     "stations": [
       {
         "id": 20,
+        "naam": "Amersfoort centraal",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
@@ -281,6 +291,7 @@
       },
       {
         "id": 21,
+        "naam": "Amersfoort centrum",
         "afstand": 4,
         "reistijd": 1.5,
         "prijs": 0.13,
@@ -288,6 +299,7 @@
       },
       {
         "id": 22,
+        "naam": "Amersfoort de Kei",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.13,
@@ -295,14 +307,16 @@
       },
       {
         "id": 23,
+        "naam": "Amersfoort Blekerssingel",
         "afstand": 1,
         "reistijd": 0.5,
-        "prijs": 0.26, 
+        "prijs": 0.26,
         "perron": "Hier is maar een perron aanwezig"
 
       },
       {
         "id": 24,
+        "naam": "Leusden Ursuline Weg",
         "afstand": 2,
         "reistijd": 0.5,
         "prijs": 0.52,
@@ -310,6 +324,7 @@
       },
       {
         "id": 25,
+        "naam": "Leusden Heiligenbergerweg",
         "afstand": 1,
         "reistijd": 0.3,
         "prijs": 0.13,
@@ -317,6 +332,7 @@
       },
       {
         "id": 27,
+        "naam": "Leusden Geertrudeshof ",
         "afstand": 2,
         "reistijd": 1.2,
         "prijs": 0.39,
@@ -324,6 +340,7 @@
       },
       {
         "id": 28,
+        "naam": "Leusden Bohemen",
         "afstand": 2,
         "reistijd": 0.8,
         "prijs": 0.26,
@@ -339,88 +356,91 @@
       },
       {
         "id": 30,
+        "naam": "Leusden bedrijventerrein de horst",
         "afstand": 4,
         "reistijd": 1.4,
         "prijs": 0.39,
         "perron": "Hier is maar een perron aanwezig"
       }
     ],
-    "vertrektijden": [7.30,14.21,19.22],
-    "terug vertrektijden": [7.30,14.21,19.22],
     "kaart": "Amersfoort-Leusden"
   },
   {
-  "id": "6",
-  "naam": "Amersfoort Eemplein - Amersfoort Vathorst",
-  "beginstation": "Amersfoort Eemplein",
-  "afstand": 8.7,
-  "reistijd": 21,
-  "Reismethode":"Bus",
-  "prijs": 3.34,
-  "eindstation": "Amersfoort Vathorst",
-  "accommodaties":
-  {
-    "HandicapToegankelijk": "Handicap toegankelijk: ja",
-    "Vervoersmiddel": "Trein: intercity",
-    "TreinDelen": "6 eerste klas deel 2",
-    "Toilet": "aanwezig",
-    "Handicap toilet": "niet aanwezig",
-    "Wifi": "Wifi: aanwezig"
-  },
-  "stations": [
-  {
-    "id": 31,
-    "afstand": 0,
-    "reistijd": 0,
-    "prijs": 0,
-     "perron": "Hier is maar een perron aanwezig"
-  },
-  {
-    "id": 32,
-    "afstand": 1,
-    "reistijd": 0.5,
-    "prijs": 0.13,
-     "perron": "Hier is maar een perron aanwezig"
-  },
-  {
-    "id": 33,
-    "afstand": 1,
-    "reistijd": 0.2,
-    "prijs": 0.13,
-     "perron": "Hier is maar een perron aanwezig"
-  },
-  {
-    "id": 34,
-    "afstand": 1,
-    "reistijd": 1.7,
-    "prijs": 1.26,
-     "perron": "Hier is maar een perron aanwezig"
-  },
-  {
-    "id": 35,
-    "afstand": 2,
-    "reistijd": 3.7,
-    "prijs": 0.39,
-     "perron": "Hier is maar een perron aanwezig"
-  },
-  {
-    "id": 36,
-    "naam": "Amersfoort drieberg",
-    "afstand": 7,
-    "reistijd": 2.8,
-    "prijs": 1.26,
-     "perron": "Hier is maar een perron aanwezig"
-  },
-  {
-    "id": 37,
-    "afstand": 9,
-    "reistijd": 0.4,
-    "prijs": 0.26,
-     "perron": "Hier is maar een perron aanwezig"
-  }
-],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
+    "id": "6",
+    "naam": "Amersfoort Eemplein - Amersfoort Vathorst",
+    "beginstation": "Amersfoort Eemplein",
+    "afstand": 8.7,
+    "reistijd": 21,
+    "reismethode":"Bus",
+    "prijs": 3.34,
+    "eindstation": "Amersfoort Vathorst",
+    "accommodaties":
+    {
+      "HandicapToegankelijk": "Handicap toegankelijk: ja",
+      "Vervoersmiddel": "Trein: intercity",
+      "TreinDelen": "6 eerste klas deel 2",
+      "Toilet": "aanwezig",
+      "Handicap toilet": "niet aanwezig",
+      "Wifi": "Wifi: aanwezig"
+    },
+    "stations": [
+      {
+        "id": 31,
+        "naam": "Amersfoort eemplein",
+        "afstand": 0,
+        "reistijd": 0,
+        "prijs": 0,
+        "perron": "Hier is maar een perron aanwezig"
+      },
+      {
+        "id": 32,
+        "naam": "Amersfoort de nieuwe stad",
+        "afstand": 1,
+        "reistijd": 0.5,
+        "prijs": 0.13,
+        "perron": "Hier is maar een perron aanwezig"
+      },
+      {
+        "id": 33,
+        "naam": "Amersfoort kwekersweg",
+        "afstand": 1,
+        "reistijd": 0.2,
+        "prijs": 0.13,
+        "perron": "Hier is maar een perron aanwezig"
+      },
+      {
+        "id": 34,
+        "naam": "Amersfoort meader mc",
+        "afstand": 1,
+        "reistijd": 1.7,
+        "prijs": 1.26,
+        "perron": "Hier is maar een perron aanwezig"
+      },
+      {
+        "id": 35,
+        "naam": "Hoogland pastoor pieckweg",
+        "afstand": 2,
+        "reistijd": 3.7,
+        "prijs": 0.39,
+        "perron": "Hier is maar een perron aanwezig"
+      },
+      {
+        "id": 36,
+        "naam": "Amersfoort drieberg",
+        "afstand": 7,
+        "reistijd": 2.8,
+        "prijs": 1.26,
+        "perron": "Hier is maar een perron aanwezig"
+      },
+      {
+        "id": 37,
+        "naam": "Amersfoort station vathorst",
+        "afstand": 9,
+        "reistijd": 0.4,
+        "prijs": 0.26,
+        "perron": "Hier is maar een perron aanwezig"
+      }
+    ],
     "kaart": "Amersfoort Eemplein - Amersfoort Vathorst"
   },
   {
@@ -429,7 +449,7 @@
     "beginstation": "Amersfoort centrum",
     "afstand": 3.5,
     "reistijd": 5,
-    "Reismethode":"Bus",
+    "reismethode":"Bus",
     "prijs": 1.91,
     "eindstation": "Amersfoort amerena",
     "accommodaties":
@@ -444,41 +464,44 @@
     "stations": [
       {
         "id": 38,
+        "naam": "Amersfoort centrum",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 40,
+        "naam": "Amersfoort de kei",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.13,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 41,
+        "naam": "Amersfoort blekerseiland",
         "afstand": 1,
         "reistijd": 0.5,
         "prijs": 0.13,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 42,
+        "naam": "Amersfoort hogeweg",
         "afstand": 1,
         "reistijd": 2.3,
         "prijs": 1.26,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 43,
+        "naam": "Amersfoort amerena",
         "afstand": 2,
         "reistijd": 0.5,
         "prijs": 0.39,
         "perron": "Hier is maar een perron aanwezig"
       }],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort centrum-Amersfoort amerena"
   },
   {
@@ -487,7 +510,7 @@
     "beginstation": "Hoogland esdoorlaan",
     "afstand": 3.8,
     "reistijd": 5,
-    "Reismethode":"Bus",
+    "reismethode":"Bus",
     "prijs": 1.52,
     "eindstation": "Amersfoort bovist",
     "accommodaties":
@@ -502,10 +525,11 @@
     "stations": [
       {
         "id": 44,
+        "naam": "Hoogland esdoorlaan",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 45,
@@ -513,25 +537,25 @@
         "afstand": 2,
         "reistijd": 0.6,
         "prijs": 0.13,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 46,
+        "naam": "Amersfoort spanderswoud",
         "afstand": 2,
         "reistijd": 0.4,
         "prijs": 0.13,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 47,
+        "naam": "Amersfoort bovist",
         "afstand": 1,
         "reistijd": 0.7,
         "prijs": 1.26,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       }
     ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Hoogland esdoorlaan-Amersfoort bovist"
   },
   {
@@ -540,7 +564,7 @@
     "beginstation": "Amersfoort Curacaolaan",
     "afstand": 3.7,
     "reistijd": 10,
-    "Reismethode":"Bus",
+    "reismethode":"Bus",
     "prijs": 1.52,
     "eindstation": "Amersfoort Begraafplaats Rusthof",
     "accommodaties":
@@ -555,35 +579,37 @@
     "stations": [
       {
         "id": 48,
+        "naam": "Amersfoort, Curacaolaan",
         "afstand": 0,
         "reistijd": 0,
         "prijs": 0,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 49,
+        "naam": "Amersfoort, Timorstraat ",
         "afstand": 3,
         "reistijd": 0.6,
         "prijs": 0.13,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 50,
+        "naam": "Amersfoort Royal HaskoningDHV",
         "afstand": 3,
         "reistijd": 1.2,
         "prijs": 0.13,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       },
       {
         "id": 51,
+        "naam": "Amersfoort Begraafplaats Rusthof",
         "afstand": 4,
         "reistijd": 1.9,
         "prijs": 1.26,
-         "perron": "Hier is maar een perron aanwezig"
+        "perron": "Hier is maar een perron aanwezig"
       }
     ],
-    "vertrektijden": [9.15,11.12,15.18],
-    "terug vertrektijden": [9.15,11.12,15.18],
     "kaart": "Amersfoort Curacaolaan-Amersfoort Begraafplaats Rusthof"
 
   }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>info</title>
@@ -10,44 +11,27 @@
 
 <body>
 
-<header class="header">
-    <div>
-        <div class="logo">
-            <img src="/images/bus.jpg" alt="Logo">
-            <span>FriendlyTrans</span>
-        </div>
-        <div class="go-green">Go Green</div>
-        <!--<div class="connector-line"></div> -->
+<!-- hieronder staat de header -->
+    <div th:replace="fragments/header :: header"></div>
 
-    </div>
-    <div class="language-options">
-        <img id="image-nl" src="/images/Nl.png" alt="nl">
-        <img id="image-en" src="/images/Eng.png" alt="Eng">
-
-
-        <select id="language-select">
-            <option class="option" value="en">English</option>
-            <option class="option" value="nl">Netherlands</option>
-        </select>
-    </div>
-
-</header>
-    <form action="#" th:action="@{/info}" th:object="${info}" method="post" >
+    <form action="#" th:action="@{/info}" th:object="${info}" method="post">
         <div class="input">
             <div class="gridItem"></div>
             <div class="gridItem">
-                <select class="fromTo" th:field="*{inputA}"  >
+                <p th:text="#{Van}" class="fromToText"></p>
+                <select class="fromTo" th:field="*{inputA}">
                     <option value="Amersfoort">Amersfoort</option>
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
+                <p th:text="#{Naar}" class="fromToText"></p>
                 <select class="fromTo" th:field="*{inputB}">
                     <option value="Amsterdam">Amsterdam</option>
                 </select>
             </div>
             <div class="transportTypeGridItem">
                 <select id="transportType">
-                    <option value="Trein">Trein</option>
-                    <option value="Bus">Bus</option>
+                    <option value="Trein" th:text="#{Trein}"></option>
+                    <option value="Bus" th:text="#{Bus}"></option>
                 </select>
             </div>
             <div class="gridItem"></div>
@@ -58,31 +42,52 @@
         </div>
     </form>
 
-<div class="route">
-    <ul class="routeList">
-        <li class="routeListItem">1</li>
-        <li class="routeListItem">2</li>
-        <li class="routeListItem">3</li>
-        <li class="routeListItem">4</li>
-        <li class="routeListItem">5</li>
-        <li class="routeListItem">6</li>
-        <li class="routeListItem">7</li>
-        <li class="routeListItem">8</li>
-
-    </ul>
-
-</div>
-
-
-<div class="info">
-    <div>
-        <p th:text="'van: ' + ${info.inputA}"/>
-        <p th:text="'naar: ' + ${info.inputB}" />
-        <p th:text="'test: '+ ${info.test}" />
+    <div class="route">
+        <ul class="routeList">
+            <li class="routeListItem" th:each="trip: ${trips}">
+<!--                Traject naam-->
+                <span class="route-name" th:text="${trip.getNaam}"></span>
+                <br>
+<!--                Vertrek- en aankomsttijd-->
+                <span class="route-timeOfDeparture" th:text="#{Vertrektijd} + ': ' + ${#dates.format(#dates.createNow(), 'HH:mm')}"></span>
+                <span class="route-timeOfArrival" th:text="#{Aankomsttijd} + ': ' + ${#dates.format(#dates.createNow(), 'HH:mm')}"></span>
+                <br>
+<!--                Voertuig-->
+                <span class="route-voertuig" th:text="#{Voertuig} + ': ' + #{${trip.getReismethode}}"></span>
+                <div th:replace="fragments/groenereis"></div>
+            </li>
+        </ul>
     </div>
-<input class="submitButtonInfo" type="submit" value="Reis plannen">
-</div>
 
+    <div class="info">
+        <div>
+            <p th:text="#{Van} + ': '+ ${info.inputA}" />
+            <p th:text="#{Naar} + ': '+ ${info.inputB}" />
+            <p th:text="'test: '+ ${info.test}" />
+        </div>
+        <div class="ov2app-tooltip">
+            <span th:text="#{AccommodatiesBekijken}"></span>
 
+            <span class="ov2app-tooltipContent">
+                    <!--            Accommodaties-->
+                    <span><b>Accommodations</b></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Vervoersmiddel} + ': ' + #{${recommendedTrip.accommodaties.getVervoersmiddel}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Treindelen} + ': ' + ${recommendedTrip.accommodaties.getTreinDelen}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Handicaptoegankelijk} + ': ' + #{${recommendedTrip.accommodaties.getHandicapToegankelijk}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Toilet} + ': ' + #{${recommendedTrip.accommodaties.getToilet}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Handicaptoilet} + ': ' + #{${recommendedTrip.accommodaties.getHandicapToilet}}"></span>
+                    <span class="ov2app-tooltipItem"
+                          th:text="#{Wifi} + ': ' + #{${recommendedTrip.accommodaties.getWifi}}"></span>
+                </span>
+        </div>
+
+        <input class="submitButtonInfo" type="submit" value="Reis plannen">
+    </div>
+    <script src="/javascript/SelectLang.js"></script>
 </body>
 </html>

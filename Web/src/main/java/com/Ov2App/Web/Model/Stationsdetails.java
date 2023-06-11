@@ -3,12 +3,12 @@ package com.Ov2App.Web.Model;
 public class Stationsdetails {
     public Integer id;
     public String naam;
-    public Faciliteiten faciliteiten;
+    public Facilities facilities;
 
-    public Stationsdetails(Integer id, String naam, Faciliteiten faciliteiten) {
+    public Stationsdetails(Integer id, String naam, Facilities facilities) {
         this.id = id;
         this.naam = naam;
-        this.faciliteiten = faciliteiten;
+        this.facilities = facilities;
     }
 
     public Integer getId() {
@@ -27,12 +27,12 @@ public class Stationsdetails {
         this.naam = naam;
     }
 
-    public Faciliteiten getFaciliteiten() {
-        return faciliteiten;
+    public Facilities getFaciliteiten() {
+        return facilities;
     }
 
-    public void setFaciliteiten(Faciliteiten faciliteiten) {
-        this.faciliteiten = faciliteiten;
+    public void setFaciliteiten(Facilities facilities) {
+        this.facilities = facilities;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Stationsdetails {
         return "Stationsdetails{" +
                 "id=" + id +
                 ", naam='" + naam + '\'' +
-                ", faciliteiten=" + faciliteiten +
+                ", faciliteiten=" + facilities +
                 '}';
     }
 }
