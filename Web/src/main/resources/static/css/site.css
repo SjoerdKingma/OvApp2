@@ -134,15 +134,20 @@ body{
 
 }
 
+#rectangle{
+        font-size:25px;
 
+}
 .rectangle{
-        width: 100%;
+        width: 80%;
         position: absolute;
-        top: 70%;
-        line-height: 100px;
-       /* background: #90EE90;*/
+        top: 65%;
+        left:10%;
+        line-height: 50px;
+        padding:15px;
+        background: white;
         font-family: "Times New Roman", serif;
-        font-size: 18px;
+        font-size: 15px;
 
 }
 

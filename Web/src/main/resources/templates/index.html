@@ -9,19 +9,6 @@
 </head>
 <body>
 
-<!--<<<<<<< HEAD-->
-<!--<form >-->
-<!--    <div id="form" class="form">-->
-<!--    <div id="Vantext" class="Vantext">-->
-<!--        <label for="Van" th:text="#{van}">Van:</label>-->
-<!--        <input type="text" id="van" class="van" name="van">-->
-<!--    </div>-->
-
-<!--    <div id="Naartext" class="Naartext" action="apiCall" method="post">-->
-<!--        <label for="naar" th:text="#{naar}">Naar:</label>-->
-<!--        <input type="text" class="naar" id="naar" name="naar">-->
-<!--    </div>-->
-<!--=======-->
 
 <div th:replace="~{fragments/header :: header}"></div>
 
@@ -51,31 +38,12 @@
             <input type="button" id="addFavourite" th:value="#{Voeg}">
         </div>
         <div class="gridItem"></div>
-<!--&gt;>>>>>> development-->
     </div>
 </form>
 
-<!--<div class="submits" id="submits" >-->
-<!--    <button type="button" id="addFavourite"  th:text="#{button1.text}">add</button>-->
-<!--    <button id="planReis" th:text="#{Plan}" > plan</button>-->
-<!--</div>-->
+<ul class="rectangle" id="rectangle" th:text="#{favorieten}"> </ul>
 
-<!--<<<<<<< HEAD-->
-<ul class="rectangle" id="rectangle"></ul>
-
-<!--<script src="/javascript/SelectLang.js"></script>-->
-<!--&lt;!&ndash;=======&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="favorites">&ndash;&gt;-->
-<!--&lt;!&ndash;    <ul class="favorites_ul">&ndash;&gt;-->
-<!--&lt;!&ndash;        <li class="Favoritejourney" id="Favoritejourney">&ndash;&gt;-->
-<!--&lt;!&ndash;            <p class="FavoriteVan" id="FavoriteVan" th:text="#{Van}"> Van:</p>&ndash;&gt;-->
-<!--&lt;!&ndash;            <p class="FavoriteNaar" id="FavoriteNaar" th:text="#{Naar}">Naar:</p>&ndash;&gt;-->
-<!--&lt;!&ndash;        </li>&ndash;&gt;-->
-<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;</ul>&ndash;&gt;-->
-<!--&lt;!&ndash;&gt;>>>>>> development&ndash;&gt;-->
 <script src="/javascript/favourites.js"></script>
-<script src="/javascript/SelectLang.js"></script>
+<script src="/javascript/SelectLang.js" ></script>
 </body>
 </html>
