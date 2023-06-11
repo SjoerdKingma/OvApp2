@@ -61,20 +61,22 @@ loadLayer();
 
 // add values from list of favourites back to from and to
  function addFromFavourites(){
-       let getLi = document.querySelectorAll('.list-group-item');
-       getLi.forEach( function (li){
-         li.onclick  = () => {
-            let p = document.querySelector('.list-group-para');
-            let text = p.textContent;
-            console.log(typeof text);
-            let splitText = text.split(' ');
-            let newFromValue = splitText[1];
-            let newToValue = splitText[4];
-            from.value = newFromValue;
-            to.value = newToValue;
-       }
+       let getLu = document.querySelector('.rectangle');
+       let getLi = getLu.querySelectorAll('li.list-group-item');
+       getLi.forEach(function(li) {
+         let p = li.querySelector('.list-group-para');
+         let text = p.textContent;
+         console.log(typeof text);
+         let splitText = text.split(' ');
+         let newFromValue = splitText[1];
+         let newToValue = splitText[4];
+         li.addEventListener('click', function() {
+           from.value = newFromValue;
+           to.value = newToValue;
+       });
     });
- }
+  }
+
 
  addFromFavourites();
 
