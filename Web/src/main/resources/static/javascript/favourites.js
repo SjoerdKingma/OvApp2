@@ -18,8 +18,11 @@
          const locations = { 'From': from.value,
                               'To': to.value
                            };
+         //previously added locations won't be added again using some()
+         //some() is used to check if elements in an array meet a certain condition
+         //check if the value of new object is the same as another existing object in the array
          const locationsExists = valuesArray.some(val => val.From === locations.From
-                                                        && val.To === locations.To); //check if the new object values the same as objects in array
+                                                        && val.To === locations.To);
          if(locationsExists){
               console.log('exists');
          }else {
@@ -45,9 +48,9 @@
   function createLayer(locations) {
 
         let li = document.createElement('li');
-        li.className = "list-group-item";
+        li.className = 'list-group-item';
         let p = document.createElement('p');
-        p.className = "list-group-para";
+        p.className = 'list-group-para';
         const languageSelection = document.getElementById('language-select');// change text according to the language selected
         const selectedLanguage = languageSelection.value
         if (selectedLanguage == "nl"){
@@ -78,11 +81,13 @@ loadLayer();
          let p = li.querySelector('.list-group-para');
          let text = p.textContent;
          console.log(typeof text);
-         let splitText = text.split(' ');
-         let newFromValue = splitText[1];
+         let splitText = text.split(' '); // split text between each ' '
+         let newFromValue = splitText[1];// New from value is at index 1
          let newToValue = splitText[4];
 
          li.addEventListener('click', function() {
+         // when li (layer) is clicked the from and to properties
+         // are added to from and to fields.
            from.value = newFromValue;
            to.value = newToValue;
        });

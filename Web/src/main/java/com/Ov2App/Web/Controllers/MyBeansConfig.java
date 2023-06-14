@@ -34,10 +34,6 @@ public class MyBeansConfig implements WebMvcConfigurer {
     // We also set the default locale and the timezone here.
     @Bean
     public LocaleResolver localeResolver() {
-//        CookieLocaleResolver localeResolver = new CookieLocaleResolver();
-//        localeResolver.setDefaultLocale(new Locale("nl","NL"));
-//        localeResolver.setDefaultTimeZone(TimeZone.getTimeZone("UTC"));
-//          return localeResolver;
 
         SessionLocaleResolver slr = new SessionLocaleResolver();
         slr.setDefaultLocale(new Locale("nl","NL"));

@@ -13,7 +13,6 @@ public class WebApplication {
 	public static void main(String[] args) {
 
 		Locale locale = new Locale("nl", "NL");
-//		Locale locale = LocaleContextHolder.getLocale();
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		messageSource.setBasenames("bundle");
 		messageSource.setDefaultEncoding("UTF-8");
