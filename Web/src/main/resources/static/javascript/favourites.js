@@ -4,6 +4,7 @@
 
    const from = document.getElementById('van');
    const to = document.getElementById('naar');
+
    var valuesArray =[];
 
 
@@ -35,11 +36,10 @@
          const locationsExists = valuesArray.some(val => val.From === locations.From
                                                         && val.To === locations.To);
          if(locationsExists){
-              console.log('exists');
+              alert('exists');
          }else {
               valuesArray.push(locations);
               setItem('inputValues');
-              console.log(localStorage);
               loadLayer();
          }
      });
@@ -92,7 +92,6 @@ loadLayer();
        getLi.forEach(function(li) {
          let p = li.querySelector('.list-group-para');
          let text = p.textContent;
-         console.log(typeof text);
          let splitText = text.split(' '); // split text between each ' '
          let newFromValue = splitText[1];// New from value is at index 1
          let newToValue = splitText[4];
