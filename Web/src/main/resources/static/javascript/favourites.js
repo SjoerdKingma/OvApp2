@@ -4,11 +4,22 @@
 
    const from = document.getElementById('van');
    const to = document.getElementById('naar');
-
-   const getItem = localStorage.getItem('inputValues');
-   const parse = JSON.parse(getItem); // convert to javascript object
-
    var valuesArray =[];
+
+
+   // get and set from localStorage.
+   function getItem(item) {
+
+        const getItem = localStorage.getItem(item);
+        return JSON.parse(getItem); // convert to javascript object
+   }
+
+   function setItem(item) {
+
+        const itemStringify = JSON.stringify(valuesArray);// convert to String
+        localStorage.setItem(item, itemStringify);
+   }
+
 
    // When add to favourites button is clicked, values are saved in array in localStorage and list is loaded
   function addFavToStorage(){
@@ -27,8 +38,7 @@
               console.log('exists');
          }else {
               valuesArray.push(locations);
-              valuesArrayString = JSON.stringify(valuesArray);// convert to String
-              localStorage.setItem('inputValues', valuesArrayString);
+              setItem('inputValues');
               console.log(localStorage);
               loadLayer();
          }
@@ -37,10 +47,11 @@
 
    addFavToStorage();
 
- // for each value in array we create an li element
+ // for each value in array we create an li element and load it in list of favourites.
   function loadLayer() {
-        for (let i = 0; i < parse.length; i++) {
-           let layer  = createLayer(parse[i]); // for each create layer (li)
+        const parseArray = getItem('inputValues');
+        for (let i = 0; i < parseArray.length; i++) {
+           let layer  = createLayer(parseArray[i]); // for each create layer (li)
            appendLayer(layer);
       }
   }
@@ -51,14 +62,15 @@
         li.className = 'list-group-item';
         let p = document.createElement('p');
         p.className = 'list-group-para';
+
         const languageSelection = document.getElementById('language-select');// change text according to the language selected
         const selectedLanguage = languageSelection.value
         if (selectedLanguage == "nl"){
         console.log(selectedLanguage.value);
         p.textContent = "Van: " + locations.From + " , Naar: " + locations.To;
-        } else{ p.textContent = "From: " + locations.From + " , To: " + locations.To;}
-        console.log(p);
-        console.log(p.value);
+        } else{ p.textContent = "From: " + locations.From + " , To: " + locations.To;
+        }
+
         li.appendChild(p);
         return li;
   }
